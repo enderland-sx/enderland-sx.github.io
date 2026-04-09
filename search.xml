@@ -21,6 +21,33 @@
     </entry>
     
     
+    
+    <entry>
+      <title>媒体迁移测试文章</title>
+      <link href="/2025/04/10/picturetest/"/>
+      <url>/2025/04/10/picturetest/</url>
+      
+        <content type="html"><![CDATA[<h1 id="媒体迁移测试"><a href="#媒体迁移测试" class="headerlink" title="媒体迁移测试"></a>媒体迁移测试</h1><p>本文章用于测试从 WordPress 迁移的媒体文件是否能正确显示。</p><h2 id="测试图片1：绝对路径"><a href="#测试图片1：绝对路径" class="headerlink" title="测试图片1：绝对路径"></a>测试图片1：绝对路径</h2><p><img src="http://enderland.cn/wp-content/uploads/2025/09/load_3.png" alt="测试图片1"></p><h2 id="测试图片2：站点根相对路径-这是我们的目标"><a href="#测试图片2：站点根相对路径-这是我们的目标" class="headerlink" title="测试图片2：站点根相对路径 (这是我们的目标)"></a>测试图片2：站点根相对路径 (这是我们的目标)</h2><p><img src="/wp-content/uploads/2025/09/load_3.png" alt="测试图片2"></p><h2 id="测试图片3：相对路径-备用方案"><a href="#测试图片3：相对路径-备用方案" class="headerlink" title="测试图片3：相对路径 (备用方案)"></a>测试图片3：相对路径 (备用方案)</h2><p><img src="/./wp-content/uploads/2025/09/load_3.png" alt="测试图片3"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> test </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 测试 </tag>
+            
+            <tag> 迁移 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
   
   
 </search>
