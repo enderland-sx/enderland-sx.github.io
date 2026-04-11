@@ -837,7 +837,7 @@
   </url>
   
   <url>
-    <loc>https://enderland-sx.github.io/tags/SCC-ECO/</loc>
+    <loc>https://enderland-sx.github.io/tags/SCC-TECH/</loc>
     <lastmod>2026-04-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -851,7 +851,7 @@
   </url>
   
   <url>
-    <loc>https://enderland-sx.github.io/tags/SCC-TECH/</loc>
+    <loc>https://enderland-sx.github.io/tags/SCC-ECO/</loc>
     <lastmod>2026-04-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -958,6 +958,13 @@
 
   
   <url>
+    <loc>https://enderland-sx.github.io/categories/%E7%A4%BE%E4%BC%9A%E5%92%8C%E6%94%BF%E6%B2%BB%E4%B9%8B%E5%8E%86%E5%8F%B2/</loc>
+    <lastmod>2026-04-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://enderland-sx.github.io/categories/%E6%96%B0%E9%80%89%E5%BD%95%E7%BA%B2-%E7%A4%BE%E4%BC%9A%E6%B2%BB%E7%90%86/</loc>
     <lastmod>2026-04-11</lastmod>
     <changefreq>weekly</changefreq>
@@ -972,13 +979,6 @@
   </url>
   
   <url>
-    <loc>https://enderland-sx.github.io/categories/%E7%A4%BE%E4%BC%9A%E5%92%8C%E6%94%BF%E6%B2%BB%E4%B9%8B%E5%8E%86%E5%8F%B2/</loc>
-    <lastmod>2026-04-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://enderland-sx.github.io/categories/%E7%A4%BE%E4%BC%9A%E6%94%BF%E6%B2%BB%E4%B8%93%E9%A2%98%E5%8F%B2%E5%92%8C%E6%94%BF%E6%B2%BB%E5%AD%A6%E7%BA%B2%E9%A2%86/</loc>
     <lastmod>2026-04-11</lastmod>
     <changefreq>weekly</changefreq>
@@ -986,14 +986,14 @@
   </url>
   
   <url>
-    <loc>https://enderland-sx.github.io/categories/ELA-%E6%97%B6%E9%97%B4%E4%B9%8B%E5%A4%96%E7%9A%84%E7%A7%98%E9%97%BB/</loc>
+    <loc>https://enderland-sx.github.io/categories/Enderland%E7%9A%84%E6%B3%95%E5%BE%8B%E6%B3%95%E8%A7%84/</loc>
     <lastmod>2026-04-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://enderland-sx.github.io/categories/Enderland%E7%9A%84%E6%B3%95%E5%BE%8B%E6%B3%95%E8%A7%84/</loc>
+    <loc>https://enderland-sx.github.io/categories/ELA-%E6%97%B6%E9%97%B4%E4%B9%8B%E5%A4%96%E7%9A%84%E7%A7%98%E9%97%BB/</loc>
     <lastmod>2026-04-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1021,14 +1021,14 @@
   </url>
   
   <url>
-    <loc>https://enderland-sx.github.io/categories/%E9%80%9A%E5%8F%B2%E8%A1%A5%E5%BD%95/</loc>
+    <loc>https://enderland-sx.github.io/categories/%E7%8E%AF%E5%A2%83%E5%AD%A6/</loc>
     <lastmod>2026-04-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://enderland-sx.github.io/categories/%E7%8E%AF%E5%A2%83%E5%AD%A6/</loc>
+    <loc>https://enderland-sx.github.io/categories/%E6%9B%B4%E5%A4%9A%E5%85%B3%E4%BA%8EEnderland%E7%9A%84%E6%95%85%E4%BA%8B/</loc>
     <lastmod>2026-04-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1042,7 +1042,7 @@
   </url>
   
   <url>
-    <loc>https://enderland-sx.github.io/categories/%E6%9B%B4%E5%A4%9A%E5%85%B3%E4%BA%8EEnderland%E7%9A%84%E6%95%85%E4%BA%8B/</loc>
+    <loc>https://enderland-sx.github.io/categories/%E9%80%9A%E5%8F%B2%E8%A1%A5%E5%BD%95/</loc>
     <lastmod>2026-04-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
