@@ -1,0 +1,351 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="theme-color" content="#1a1a1a"><meta name="msapplication-navbutton-color" content="#1a1a1a"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><title>Enderland·Ark 2.0</title><script>(function() {
+  // 尽早应用暗色模式，防止闪烁
+  var savedDarkMode = localStorage.getItem('darkMode') === 'true';
+  if (savedDarkMode) {
+    document.documentElement.classList.add('dark-mode');
+  }
+})();
+</script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:wght@400;500;600;700&amp;family=Fira+Code:wght@400;500&amp;display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script><link rel="icon" href="/null">
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="/css/tags.css">
+
+<link rel="stylesheet" href="/css/categories.css">
+
+<link rel="stylesheet" href="/css/categories-accordion.css">
+
+<link rel="stylesheet" href="/css/highlight.css">
+
+<link rel="stylesheet" href="/css/toc.css">
+
+<link rel="stylesheet" href="/css/image-zoom.css">
+
+<link rel="stylesheet" href="/css/share.css">
+
+<link rel="stylesheet" href="/css/mobile-nav.css">
+
+<link rel="stylesheet" href="/css/search.css">
+
+<link rel="stylesheet" href="/css/scrollbar.css">
+
+<link rel="stylesheet" href="/css/timeline.css">
+
+<link rel="stylesheet" href="/css/animations.css">
+
+<link rel="stylesheet" href="/css/ai-theme.css">
+
+<link rel="stylesheet" href="/css/loading-animation.css">
+
+<link rel="stylesheet" href="/css/article-modal.css">
+<!-- 条件加载关于页面样式--><style>:root {
+  --primary-color: #1a1a1a;
+  --secondary-color: #666666;
+  --accent-color: #d2a200;
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --overlay-color: rgba(0, 0, 0, 0.7);
+  --tag-background-color: #ffffff;
+  --card-background-color: #ffffff;
+}
+</style><link rel="stylesheet" href="https://cdn1.tianli0.top/gh/qxchuckle/Post-Summary-AI/chuckle-post-ai.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><meta name="generator" content="Hexo 7.3.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head><body><div id="app"><header class="header navbar-bubble"><nav class="nav"><div class="nav-container"><div class="nav-logo"><a href="/"><span class="nav-title">Enderland·Ark 2.0</span></a></div><div class="nav-menu"><a class="nav-item" href="/">首页</a><a class="nav-item" href="/about/">关于</a><a class="nav-item" href="/archives/">归档</a><a class="nav-item" href="/categories/">分类</a><a class="nav-item" href="/tags/">标签</a><!-- 搜索按钮--><div class="search-toggle"><i class="fas fa-search"></i></div></div><div class="nav-toggle"><span></span><span></span><span></span></div></div></nav></header><div class="search-overlay"><div class="search-container"><div class="search-form"><input class="search-input" type="text" placeholder="搜索文章..."/><div class="search-close">×</div></div><div class="search-results"></div></div></div><main class="main"><div class="post-wrapper"><div class="toc-sidebar"><div class="toc-container"><div class="toc-title">目录</div><div class="toc-content" id="table-of-contents"><!-- Table of contents will be generated by JavaScript--></div></div></div><article class="post-container"><div class="post-header"><div class="post-meta"><div class="post-category"><a href="/categories/Enderland%E7%9A%84%E6%B3%95%E5%BE%8B%E6%B3%95%E8%A7%84/">Enderland的法律法规</a></div><div class="post-date"><time datetime="2026-03-30T10:55:18.000Z">三月 30, 2026</time></div><div class="post-author"><span>By Xeuhaied</span></div></div><h1 class="post-title">Enderland共产主义星际种族共同体行政标准标识标签体系规范</h1><div class="post-tags"><a class="tag" href="/tags/SCC-STD-001/">SCC-STD-001</a></div></div><!-- AI摘要模块容器--><div id="post-ai-container"></div><div class="post-content"><p><strong>编号：SCC-STD-001</strong></p>
+<p><strong>状态：现行标准</strong></p>
+<p><strong>生效日期：2550-03-30（依据2302年紧急3C大会精神及后续立法大会决议制定）</strong></p>
+<p><strong>发布机构：Enderland文明标准理事会（隶属CIH党中央立法委员会与公民革命委员会中央常务理事小组联合监督）</strong></p>
+<hr>
+<h4 id="第一章-总则"><a href="#第一章-总则" class="headerlink" title="第一章 总则"></a><strong>第一章 总则</strong></h4><p><strong>第一条【宗旨与目的】</strong></p>
+<p>为建立系统、规范、高效的文明治理知识管理体系，对Enderland文明在<strong>行政执行、技术操作、公共服务与组织管理</strong>等领域产生的各类标准、规范与最佳实践进行统一标识、分类与管理，特制定本规范。本标准体系（【SCC】/【SCZ】/【NE】）独立于法律体系，专用于规范“如何执行”，是法律所规定的权利、义务与根本制度在操作层面的具体化与延伸。</p>
+<p><strong>第二条【核心定义】</strong></p>
+<ol>
+<li><strong>【SCC】</strong>：<strong>文明共同体行政标准</strong>。系“Standards of a Community of Civilization”的缩写。指在全Enderland文明范围内普遍适用、具有统一约束力的纲领性操作与管理标准。它定义了跨星区、跨领域的基本执行框架。</li>
+<li><strong>【SCZ】</strong>：<strong>文明区域行政标准</strong>。系“Standards of a Civilizational Zone”的缩写。指在【SCC】的框架下，针对特定星际殖民地、行政区域、行业系统或特殊环境（如生态保留地、大型星舰）制定的具体化、场景化操作标准。</li>
+<li><strong>【NE】</strong>：<strong>新编标准</strong>。系“New Edition”的缩写。特指通过本文明“各领域论文库”、“智库社区文案库”等公开知识平台，由公民或团体发起提案，经法定程序（如区域或全民公投）通过后，正式采纳或对现有标准进行重大修订后产生的新标准。这体现了标准制定的<strong>直接民主与社区智慧驱动</strong>原则。</li>
+<li><strong>【行政标准】</strong>：本体系所指标准，均属“行政标准”范畴，与“法律体系”并行。法律界定“可为与不可为”，行政标准规定“如何为与如何更好地为”。</li>
+</ol>
+<p><strong>第三条【适用范围】</strong></p>
+<p>本规范适用于所有CIH的行政机关、公民法院的司法行政单位、公共服务机构、国营生产建设单元，CRC（公民革命委员会）以及社会组织和产业联合体。任何单位在制定、发布涉及操作流程、技术规格、管理规程和服务规范的正式文件时，均应遵循本规范进行标识。</p>
+<hr>
+<h4 id="第二章-标识标签结构与编码规则"><a href="#第二章-标识标签结构与编码规则" class="headerlink" title="第二章 标识标签结构与编码规则"></a><strong>第二章 标识标签结构与编码规则</strong></h4><p><strong>第四条【基础标签结构】</strong></p>
+<p>标准标识标签采用三级编码结构，基本格式为：<code>【前缀】-【主领域】-【子领域/序列号】</code>。</p>
+<p><strong>第五条【前缀码】</strong></p>
+<p>前缀码表明标准的适用范围层级：</p>
+<ol>
+<li><strong>SCC</strong>：<strong>文明共同体标准</strong>。全文明强制执行。</li>
+<li><strong>SCZ</strong>：<strong>文明区域标准</strong>。在特定区域或系统内强制执行。</li>
+<li><strong>NE</strong>：<strong>新编标准</strong>。作为后缀或来源说明，用于标注该标准来源于社区提案与公投，小幅度修改后直接采用。例如：“<code>【SCC-TECH-COMM-105】</code>(依据 <code>【NE-DB-2775-042】</code>制定)”。</li>
+</ol>
+<p><em>若无SCC/SCZ前缀码，则一般认定为推荐性标准</em></p>
+<p><strong>第六条【主领域码】</strong></p>
+<p>主领域码由2~4个英文字母组成，标识标准的核心管理或技术范畴。常用主领域码如下：</p>
+<p>领域码</p>
+<p>全称</p>
+<p>说明（核心规范内容）</p>
+<p><strong>DEM</strong>​</p>
+<p>Democracy &amp; Voting</p>
+<p>直接民主与公投的实施细则、公民论坛（政治建设/论法论坛）管理、表决流程。</p>
+<p><strong>INFO</strong>​</p>
+<p>Information Management</p>
+<p>情报与信息管理。公民情报公正处取证流程、智库信息处理、脑机网络信息推送规则、公共内容管理。</p>
+<p><strong>LEG</strong>​</p>
+<p>Legislation &amp; Standardization</p>
+<p>立法与标准制定流程。立法大会组织、git/wiki化文本协作流程、法标部工作规范。</p>
+<p><strong>GOV</strong>​</p>
+<p>Governance &amp; Administration</p>
+<p>通用行政管理。跨部门协作流程、公文规范、会议组织、政务服务交付标准。</p>
+<p><strong>JUD</strong>​</p>
+<p>Judiciary Administration</p>
+<p>司法行政管理。法院案件流程、庭审公开、文书格式、内部监察程序、法务维基运营。</p>
+<p><strong>SUP</strong>​</p>
+<p>Supervision &amp; Anti-Corruption</p>
+<p>监督与反腐运作。公民革命委员会阵列工作模式、监察反腐流程、举报处理规范。</p>
+<p><strong>HR</strong>​</p>
+<p>Civil Service &amp; Personnel</p>
+<p>公职人员管理。上下层公职人员流动（“上挂下派”）机制、考核、培训、行为准则。</p>
+<p><strong>CONF</strong>​</p>
+<p>Conference &amp; Assembly</p>
+<p>大型会议管理。全文明大会（3C）、行政党中央全会、星际会议等各类会议的标准化组织程序。</p>
+<p><strong>DIP</strong>​</p>
+<p>Diplomacy &amp; Interstellar Affairs</p>
+<p>外交与星际事务。外交立场形成流程、协商会议组织、对外交往规范。</p>
+<p><strong>DEV</strong>​</p>
+<p>Development &amp; Strategy</p>
+<p>发展战略与工程管理。全文明工程发展战略大会组织、规划制定与公示流程。</p>
+<p><strong>TECH</strong>​</p>
+<p>Technology &amp; Engineering</p>
+<p>通用技术与工程。通信协议、制造工艺、脑机接口、网络安全等技术基准。</p>
+<p><strong>ENER</strong>​</p>
+<p>Energy Infrastructure</p>
+<p>能源基础设施。各类能源站（含轨道能源站）的建设、运营、维护与安全标准。</p>
+<p><strong>LOG</strong>​</p>
+<p>Logistics &amp; Supply Chain</p>
+<p>星际物流与供应链。物资调配、仓储管理、运输安全标准。</p>
+<p><strong>SRV</strong>​</p>
+<p>Public Service</p>
+<p>公共服务。教育、医疗、社会保障、公共交通等领域的服务提供标准。</p>
+<p>注：如果主领域码为“STD”情况下，更多属于综合标准，涵盖多个领域，难以直接界定。</p>
+<p><strong>第七条【子领域码与序列号】</strong></p>
+<p>在主领域码后，通过连字符“-”添加子领域描述缩写或数字序列号，以进行唯一性标识。</p>
+<ul>
+<li><strong>示例1</strong>：<code>【SCC-INFO-EVI】</code>表示“文明共同体标准-信息管理领域-取证子标准”。</li>
+<li><strong>示例2</strong>：<code>【SCZ-ENER-PLANT-α7】</code>表示“文明区域标准-能源领域-电站子类-阿尔法7号星区专用”。</li>
+</ul>
+<hr>
+<h4 id="第三章-应用与管理"><a href="#第三章-应用与管理" class="headerlink" title="第三章 应用与管理"></a><strong>第三章 应用与管理</strong></h4><p><strong>第八条【标签应用】</strong></p>
+<ol>
+<li>标准文档的正式标题必须包含其完整标识标签，置于标题开头。</li>
+<li>标准的元数据、引用索引中必须包含其标识标签。</li>
+<li>在口头及书面沟通中，鼓励使用标识标签作为该标准的简称。</li>
+</ol>
+<p><strong>第九条【示例】</strong></p>
+<ul>
+<li><code>【SCC-DEM-REFERENDUM】</code>：《全民公投组织与执行标准》</li>
+<li><code>【SCZ-SUP-CRC-ARRAY】</code>：《星区公民革命委员会阵列分布与协作细则》</li>
+<li><code>【SCC-TECH-COMM-QCA】</code>：《星际通用量子影音格式规范》（此标准可标注源自某【NE】提案）</li>
+<li><code>【SCC-CONF-3C】</code>：《全文明大会（3C会议）组织与议事基本标准》</li>
+</ul>
+<p><strong>第十条【与法律的关系】</strong></p>
+<p>本标准体系服务于法律体系的实施。当某项标准的具体内容有对应的法律要求时，必须在标准正文开篇明确其上位法依据（如“依据《反剥削法》第X条制定”）。</p>
+<p><strong>第十一条【解释与修订】</strong></p>
+<p>本规范本身的解释与修订权归Enderland文明标准理事会。各具体行政标准的解释与修订，由其制定机关负责，但涉及重大变更时，应评估是否需要启动【NE】程序（提交社区公投）。</p>
+<hr>
+<h4 id="第四章-附则"><a href="#第四章-附则" class="headerlink" title="第四章 附则"></a><strong>第四章 附则</strong></h4><p><strong>第十二条【生效】</strong></p>
+<p>本规范自发布之日起生效，适用于所有新制定的行政标准。鼓励对既有规范文件进行回溯性标识整理。</p>
+<p><strong>第十三条【附录：标准体系与法律体系关系说明】</strong></p>
+<p>Enderland的规范体系由“法律体系”与“行政标准体系”构成，二者权责清晰，互为支撑：</p>
+<ul>
+<li><strong>法律体系</strong>：以《反剥削法》等<strong>人民法</strong>为最高准则，<strong>宪法</strong>为协调基础，<strong>一般法（行政法）</strong>​ 为具体社会规则。法律由全民公投或立法大会制定，规定根本权利、义务与社会秩序。</li>
+<li><strong>行政标准体系</strong>：即本标准（【SCC】/【SCZ】）体系。它源于2302年紧急3C大会关于“简化立法、提高效能”的决议，将法律中过于琐碎的技术性、操作性要求剥离，形成独立的标准文件。它确保法律的要求能以统一、高效、专业的方式得到执行，其制定过程本身也受到《公投法》、《立法法》等法律的约束，并可通过【NE】途径吸收最广泛的公民智慧。</li>
+</ul>
+</div><!-- 初始化AI摘要--><!-- 传递TOC配置给前端--><script>// 创建全局TOC配置对象
+window.tocConfig = {
+  empty_toc_behavior: "placeholder"
+};
+</script><div class="post-navigation"><div class="post-nav prev"><a href="/2026/03/30/enderland%E6%96%87%E5%8C%96%E4%B8%8E%E4%BF%A1%E6%81%AF%E7%AE%A1%E7%90%86%E6%B3%95/"><span class="nav-label">← Previous</span><span class="nav-title">Enderland 共同体文化与信息管理法（2530年修订）</span></a></div><div class="post-nav next"><a href="/2026/03/30/enderland%E8%B4%A7%E5%B8%81%E4%B8%8E%E7%89%A9%E8%B5%84%E8%B0%83%E9%85%8D%E6%B3%95-2622%E4%BF%AE%E8%AE%A2%E7%89%88%E6%9C%AC/"><span class="nav-label">Next →</span><span class="nav-title">Enderland货币与物资调配法（2620修订版本）</span></a></div></div><div class="post-share"><h3 class="share-title">Share this article</h3><div class="share-buttons"><a class="share-btn twitter" href="https://twitter.com/intent/tweet?text=Enderland%E5%85%B1%E4%BA%A7%E4%B8%BB%E4%B9%89%E6%98%9F%E9%99%85%E7%A7%8D%E6%97%8F%E5%85%B1%E5%90%8C%E4%BD%93%E8%A1%8C%E6%94%BF%E6%A0%87%E5%87%86%E6%A0%87%E8%AF%86%E6%A0%87%E7%AD%BE%E4%BD%93%E7%B3%BB%E8%A7%84%E8%8C%83&amp;url=%2F2026%2F03%2F30%2FECC-STD-1%2F" target="_blank" rel="noopener"><span>Twitter</span></a><a class="share-btn facebook" href="https://www.facebook.com/sharer/sharer.php?u=%2F2026%2F03%2F30%2FECC-STD-1%2F" target="_blank" rel="noopener"><span>Facebook</span></a><a class="share-btn linkedin" href="https://www.linkedin.com/sharing/share-offsite/?url=%2F2026%2F03%2F30%2FECC-STD-1%2F" target="_blank" rel="noopener"><span>LinkedIn</span></a><a class="share-btn wechat" href="#" data-wechat="/2026/03/30/ECC-STD-1/"><span>微信</span></a><a class="share-btn qq" href="https://connect.qq.com/widget/shareqq/index.html?url=%2F2026%2F03%2F30%2FECC-STD-1%2F&amp;title=Enderland%E5%85%B1%E4%BA%A7%E4%B8%BB%E4%B9%89%E6%98%9F%E9%99%85%E7%A7%8D%E6%97%8F%E5%85%B1%E5%90%8C%E4%BD%93%E8%A1%8C%E6%94%BF%E6%A0%87%E5%87%86%E6%A0%87%E8%AF%86%E6%A0%87%E7%AD%BE%E4%BD%93%E7%B3%BB%E8%A7%84%E8%8C%83" target="_blank" rel="noopener"><span>QQ</span></a><a class="share-btn weibo" href="https://service.weibo.com/share/share.php?url=%2F2026%2F03%2F30%2FECC-STD-1%2F&amp;title=Enderland%E5%85%B1%E4%BA%A7%E4%B8%BB%E4%B9%89%E6%98%9F%E9%99%85%E7%A7%8D%E6%97%8F%E5%85%B1%E5%90%8C%E4%BD%93%E8%A1%8C%E6%94%BF%E6%A0%87%E5%87%86%E6%A0%87%E8%AF%86%E6%A0%87%E7%AD%BE%E4%BD%93%E7%B3%BB%E8%A7%84%E8%8C%83" target="_blank" rel="noopener"><span>微博</span></a><a class="share-btn copy" href="#" data-copy="/2026/03/30/ECC-STD-1/"><span>Copy Link</span></a></div></div></article></div><section class="comments-section"><div class="comments-container"><h2 class="comments-title">Comments</h2><div class="comments-content"><div id="twikoo-comments"></div><div id="twikoo"></div><script src="https://unpkg.com/twikoo@1.6.39/dist/twikoo.all.min.js"></script><script>twikoo.init({
+  envId: 'twikoo-brown-eight.vercel.app',
+  el: '#twikoo',
+  region: '',
+  path: 'window.location.pathname',
+  visitor: true,
+  onCommentLoaded: function () {
+    console.log('Twikoo评论加载成功');
+  }
+});</script></div></div></section></main><footer class="footer"><div class="footer-bottom"><div class="footer-copyright">© 2026 Enderland. All rights reserved.</div><!-- Footer centered image with link--><div class="footer-badges"><a target="_blank" rel="noopener" href="https://hexo.io/" title="博客框架为Hexo_v5.4.0"><img src="/images/loading.gif" data-original="https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Frame-Hexo.svg" alt="博客框架为Hexo_v5.4.0"/></a><a target="_blank" rel="noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"><img src="/images/loading.gif" data-original="https://npm.elemecdn.com/anzhiyu-blog@2.2.0/img/badge/Copyright-BY-NC-SA.svg" alt="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"/></a></div></div></footer></div><!-- 立即应用暗色模式，避免页面闪烁--><script>(function() {
+  // 检查本地存储中的暗色模式设置
+  const savedDarkMode = localStorage.getItem('darkMode') === 'true';
+  // 如果设置为暗色模式，立即应用到body
+  if (savedDarkMode) {
+    document.body.classList.add('dark-mode');
+  }
+
+  // 防止页面闪烁，在DOM加载完成前设置一个初始类
+  document.documentElement.style.visibility = 'hidden';
+  document.addEventListener('DOMContentLoaded', function() {
+    document.documentElement.style.visibility = 'visible';
+  });
+})();
+</script>
+<script src="/js/main.js"></script>
+
+<script src="/js/tags.js"></script>
+
+<script src="/js/categories-accordion.js"></script>
+
+<script src="/js/highlight.js"></script>
+
+<script src="/js/load-more.js"></script>
+
+<script src="/js/header-scroll.js"></script>
+
+<script src="/js/toc.js"></script>
+
+<script src="/js/image-zoom.js"></script>
+
+<script src="/js/share.js"></script>
+
+<script src="/js/search.js"></script>
+
+<script src="/js/hide-inline-interaction.js"></script>
+
+<script src="/js/hide-toggle-interaction.js"></script>
+
+<script src="/js/dark-mode-sync.js"></script>
+
+<script src="/js/animations.js"></script>
+
+<script src="/js/ai-theme.js"></script>
+
+<script src="/js/loading-animation.js"></script>
+
+<script src="/js/article-modal.js"></script>
+<script>window.theme = {
+  features: {"dark_mode":true,"smooth_scroll":true,"back_to_top":true,"loading_animation":true},
+  code_block: {"height_limit":200,"enable_folding":true,"max_height":"300px","show_lang":true},
+  ai_summary: {"enable":false,"api_key":"","summary_directly":false,"ai_name":"然-AI","ai_introduce":"我是文章辅助AI: 然-AI，一个基于deepseek的强大语言模型，有什么可以帮到您？😊","ai_version":"deepseekv3","buttons":["介绍自己","来点灵感","生成AI简介"]},
+  categories: {"layout":"accordion","accordion_animation":true,"show_empty_categories":true},
+  article_list: {"card_size":"normal","view_mode":"modal"}
+};
+</script><script src="/js/ai.js"></script><script src="/js/postai.js"></script>
+        <style>
+            [bg-lazy] {
+                background-image: none !important;
+                background-color: #eee !important;
+            }
+        </style>
+        <script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                preloadRatio: 3,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z\d\-\.\+]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(t.test(e.href)||r.test(e.href))&&(e.href=a.dataset.original)})});</script><script>(r=>{r.imageLazyLoadSetting.processImages=t;var a=r.imageLazyLoadSetting.isSPA,o=r.imageLazyLoadSetting.preloadRatio||1,d=i();function i(){var t=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")),e=Array.prototype.slice.call(document.querySelectorAll("[bg-lazy]"));return t.concat(e)}function t(t){(a||t)&&(d=i());for(var e,n=0;n<d.length;n++)0<=(e=(e=d[n]).getBoundingClientRect()).bottom&&0<=e.left&&e.top<=(r.innerHeight*o||document.documentElement.clientHeight*o)&&(()=>{var t,e,a,o,i=d[n];e=function(){d=d.filter(function(t){return i!==t}),r.imageLazyLoadSetting.onImageLoaded&&r.imageLazyLoadSetting.onImageLoaded(i)},(t=i).dataset.loaded||(t.hasAttribute("bg-lazy")?(t.removeAttribute("bg-lazy"),e&&e()):(a=new Image,o=t.getAttribute("data-original"),a.onload=function(){t.src=o,t.removeAttribute("data-original"),t.setAttribute("data-loaded",!0),e&&e()},a.onerror=function(){t.removeAttribute("data-original"),t.setAttribute("data-loaded",!1),t.src=o},t.src!==o&&(a.src=o)))})()}function e(){clearTimeout(t.tId),t.tId=setTimeout(t,500)}t(),document.addEventListener("scroll",e),r.addEventListener("resize",e),r.addEventListener("orientationchange",e)})(this);</script></body></html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="theme-color" content="#1a1a1a"><meta name="msapplication-navbutton-color" content="#1a1a1a"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><title>Enderland·Ark 2.0</title><script>(function() {
+  // 尽早应用暗色模式，防止闪烁
+  var savedDarkMode = localStorage.getItem('darkMode') === 'true';
+  if (savedDarkMode) {
+    document.documentElement.classList.add('dark-mode');
+  }
+})();
+</script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:wght@400;500;600;700&amp;family=Fira+Code:wght@400;500&amp;display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script><link rel="icon" href="/null">
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="/css/tags.css">
+
+<link rel="stylesheet" href="/css/categories.css">
+
+<link rel="stylesheet" href="/css/categories-accordion.css">
+
+<link rel="stylesheet" href="/css/highlight.css">
+
+<link rel="stylesheet" href="/css/toc.css">
+
+<link rel="stylesheet" href="/css/image-zoom.css">
+
+<link rel="stylesheet" href="/css/share.css">
+
+<link rel="stylesheet" href="/css/mobile-nav.css">
+
+<link rel="stylesheet" href="/css/search.css">
+
+<link rel="stylesheet" href="/css/scrollbar.css">
+
+<link rel="stylesheet" href="/css/timeline.css">
+
+<link rel="stylesheet" href="/css/animations.css">
+
+<link rel="stylesheet" href="/css/ai-theme.css">
+
+<link rel="stylesheet" href="/css/loading-animation.css">
+
+<link rel="stylesheet" href="/css/article-modal.css">
+<!-- 条件加载关于页面样式--><style>:root {
+  --primary-color: #1a1a1a;
+  --secondary-color: #666666;
+  --accent-color: #d2a200;
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --overlay-color: rgba(0, 0, 0, 0.7);
+  --tag-background-color: #ffffff;
+  --card-background-color: #ffffff;
+}
+</style><link rel="stylesheet" href="https://cdn1.tianli0.top/gh/qxchuckle/Post-Summary-AI/chuckle-post-ai.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><meta name="generator" content="Hexo 7.3.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head><body><div id="app"><header class="header navbar-bubble"><nav class="nav"><div class="nav-container"><div class="nav-logo"><a href="/"><span class="nav-title">Enderland·Ark 2.0</span></a></div><div class="nav-menu"><a class="nav-item" href="/">首页</a><a class="nav-item" href="/about/">关于</a><a class="nav-item" href="/archives/">归档</a><a class="nav-item" href="/categories/">分类</a><a class="nav-item" href="/tags/">标签</a><!-- 搜索按钮--><div class="search-toggle"><i class="fas fa-search"></i></div></div><div class="nav-toggle"><span></span><span></span><span></span></div></div></nav></header><div class="search-overlay"><div class="search-container"><div class="search-form"><input class="search-input" type="text" placeholder="搜索文章..."/><div class="search-close">×</div></div><div class="search-results"></div></div></div><main class="main"><div class="post-wrapper"><div class="toc-sidebar"><div class="toc-container"><div class="toc-title">目录</div><div class="toc-content" id="table-of-contents"><!-- Table of contents will be generated by JavaScript--></div></div></div><article class="post-container"><div class="post-header"><div class="post-meta"><div class="post-category"><a href="/categories/%E7%A4%BE%E4%BC%9A%E5%92%8C%E6%94%BF%E6%B2%BB%E4%B9%8B%E5%8E%86%E5%8F%B2/">社会和政治之历史</a></div><div class="post-date"><time datetime="2025-12-20T10:42:52.000Z">十二月 20, 2025</time></div><div class="post-author"><span>By Xeuhaied</span></div></div><h1 class="post-title">文明通史大纲-4.3- （囻之重器发展篇）Enderland成为星际社会发展的重要推手之一</h1><div class="post-tags"></div></div><!-- AI摘要模块容器--><div id="post-ai-container"></div><div class="post-content"><h1 id="第二次大远征运动的复盘会议和终生元首制的确立"><a href="#第二次大远征运动的复盘会议和终生元首制的确立" class="headerlink" title="第二次大远征运动的复盘会议和终生元首制的确立"></a><strong>第二次大远征运动的复盘会议和终生元首制的确立</strong></h1><p>2537年1月8日，第二次星际大远征运动结束的一年后，第一个“远航日”召开了史上最大的全文明大会——共有14856人到达灵都市新公民大会堂出席此次会议，此次会议旨在汇报和复盘2355~2536这近两百年以来的第二次星际大远征运动时的各种行动规划，在此前原有表彰的基础上，此次再次对努力建立星际伙伴外交、星际社会化、星际外贸、星际资源开拓、研发新型技术的人才授予“远航者”（voyager）固化辉金勋章。167岁的Uor·Cas元首宣布卸职，之后转生进入下一世，宣布斯人已逝；Serliner末代子嗣，GOE·Serlineren·Vic被选举上位（Serliner7世）</p>
+<p>此前Uor·Cas元首在第二次星际大远征行动时的一系列外星城市、民生建设规划已广受好评，且Uor重点关注星际大学的建设，在乎星际外交，为Enderland带来了一定的影响力，成为了新兴外交主流文明。而Uor·Cas的退位和转生无疑是让与Enderland建交的伙伴带来了一定的失落，导致对外贸易额下滑，人们认为：元首退位对Enderland的外交形象有所影响。</p>
+<p>之后，在全民公投99.88%的通过率下，为保障文明稳定运行，授予元首强制永生权（无其他特权），出台《元首法（修订）》，其中承认：元首的意识体安全和记忆安全属于文明安全的一部分。这就是后续Serliner7世的千年执政的渊源。</p>
+<p><em>Serliner7世说：这是我见过我们囻内最荒唐的法律了，不过既然你们放不下我这根旗杆，那我就占着位置吧，反正我不干事你们也更加欣喜。</em></p>
+<h1 id="黑洞的利用"><a href="#黑洞的利用" class="headerlink" title="黑洞的利用"></a><strong>黑洞的利用</strong></h1><p>早在2553年，就有人汇报，有战略合作建交允许通航的外星文明的商船有时会直接开启一条穿过Enderland黑洞星系的黑洞的弯曲航道进行跃迁，因为是小规模观察，所以这其中的用意令人百思不得其解。在此前，更加是“没什么人留意”。</p>
+<p>2600年前后，Serlineren7世基于此前对亚空间的对应比例受主空间对应点引力影响的观察和发现该汇报，发现黑洞的引力一样有效，发表了《星门》期刊论文，认为：大引力天体在第二次大远征运动后变得不再危险，因为我们已经通过技术消除了亚空间航道在经过大引力天体时的稳定性问题，剩下的只是比例尺的伸缩，这反而是借力发力的契机——如果，是穿过黑洞或者擦过黑洞，那我们是不是可以几秒时间内穿越上万光年？</p>
+<p>2600年10月，科研项目正式启动。11月，科研船规划和创建好亚空间航道——建立一条穿过黑洞中心的航道，之后仅用2.1秒就穿过了航道，出来后发现到达宇宙的边缘。证实了可以用黑洞当做星门。“黑洞星门计划”正式可行，科研规模变大，相关建设规划开始立项。</p>
+<p>2609年，相关科研完毕，相关代表研究人员Aron·Stark发表文章指出：“黑洞在星际中的的价值远比Enderland人想象中的高。尤其是经济价值，黑洞在宇宙里一定程度上属于战略资源，在中等（II型）文明之间特别抢手。”之后，开始建设。</p>
+<p>2613年，Enderland领土内所有黑洞星系实行“封关”，并实行“星星相系”星际外交经济建设计划（类似“一带一路”）。<strong>建成一个星际海关监管特殊区域</strong>，健全相关适应各文明的公共设施、空间站、收费站以及贸易港，并为黑洞专属配置自动计算星门，同时将该星系团内的各大黑洞进行航线测画。这使各文明之间货物输出更自由便利，可以直接在黑洞星系进行高效补给和交接资源，且对出入口资源提供了高速通道（特区贸易港功能）。</p>
+<p>2626年，各个黑洞贸易港已成熟按计划运行，新建设圆满成功。据“大公理”频道反馈，这个建设确实便利了周边其他星际文明的贸易往来。</p>
+<h1 id="23进制“天干地支”计算法的弦振量子超级计算机——Enderland超级计算机及大数据处理领域的最高成果"><a href="#23进制“天干地支”计算法的弦振量子超级计算机——Enderland超级计算机及大数据处理领域的最高成果" class="headerlink" title="23进制“天干地支”计算法的弦振量子超级计算机——Enderland超级计算机及大数据处理领域的最高成果"></a>23进制“天干地支”计算法的弦振量子超级计算机——Enderland超级计算机及大数据处理领域的最高成果</h1><p>随着第二次大远征运动后带来的更深入的多元文化交流和物质个性化需求，物品建模所需的数据量也呈指数级上涨，远程星际航行民用化使星际航线等计算也带来了算力增长的需求。在2499年，就有Enderland基层计算机科学爱好者团体发现蓝星文明中华古老文化中的“天干”、“地支”、“五行”等用卦象古朴的观测天象，尝试预知未来的迷信色彩的体系蕴含了突破传统三进制量子超级计算机的可借鉴思路。</p>
+<p>传统的量子纠缠技术尽管延迟低，传统的能量场硬盘存储量虽然也大，质子微型计算机虽然也快，但仍然无法解决在数据量日益增长后带来的检索速度低的弊端，因此研发一个新计算机算法和架构变得尤为重要。2506年，该计算机科学民间团体被Enderland发展局招入科学部成为解决算力难题的中坚力量，该新型超级计算机开始正式进入全力研发。2510年，首台原型机出现；2523年，首台全新体系的23进制计算机成功投入运营。虽然如此，但离解决这个运算能力的世纪难题仍有一定距离，且意识体工程技术即将投入全域普及安装，使得该超级计算机系统的研制成为了技术攻坚点之一。</p>
+<p>2551年，首个23进制“天干地支”计算法的弦振量子超级计算机矩阵“双生花”在灵都市中央高新区墨华数据中心投入运营，且做到为传统智库系统的对接和运算代理以及数据迁移，使对数据分发和数据检索的效率提高到了天文数字般的倍数。而如果要大范围应用，在其他文明看来是散热成为了大问题，Enderland的技术方案是通过高维透析技术进行分子热运动的压制。</p>
+<p>2631年，同年“AZ”科研团队用民用室温（_对的，是真的字面意思的室温：25摄氏度）_超导融合上传统大型导能系统，研制出了新的微型能量流动抑制器兼转换器，在之后成功投入普遍应用。</p>
+<p>2680年，经过不断改良和发展，该种计算机成本大大降低，已经完全成为Enderland服务器标配（主流），遍布全文明各个数据中心，甚至在各民生单位（如医院、学校）内的服务器系统也采用这种规格的计算机，对应新一代高速互联网逐渐建立起来。</p>
+<p>截止到2700年1月，该领域已经趋于饱和，Enderland所有存储中心的可利用存储上限达到了1.45×10⁸⁶ ZB（已转换为二进制字节，是可利用的，即划分了备份矩阵后可存入的），文明服务器处理器单核主频达到6087Phz，而最高传输带宽也迭代到了3.1×10⁶ Zbps（民用最高只有16Zbps带宽）。民用脑机芯片的存储空间也达到了5ZB，民用单核主频达到了7Phz，编码频率达到781Mhz（编入大脑是要特别兼容的，这个已经很高了）</p>
+<p>2703年后，存储中心共投入运行了约<strong>150 万个最高级运算核心，</strong>组合成总共约<strong>8万个最高级运算单元（Unit）</strong>，民用CPU（Cerebral Processing Unit）平均有<strong>2232</strong> 个民用最高级运算核心组成。而微型计算机（上传端）也同步提升了扫描速度和上传带宽。1024B-3进制AI（最高级AI，再高级的不给造）得到数据提取速率的优化。</p>
+<p>这让Enderland成为了星际社会中新兴的信息中心文明之一，且让物质打印机的扫描精度大大提高。但带来的局限性是新型脑机芯片对其他智慧生物的兼容性大大降低了——好在Enderland没有大范围在星际学生应用脑机芯片，主流上还是用传统教育方法，没什么实质影响。</p>
+<div class="hide-toggle">
+    <div class="hide-toggle-title">关于该系统的概述</div>
+    <div class="hide-toggle-content"><p>所谓这个23进制超级计算机系统，它是一种基于混合数制与抽象代数的非经典计算架构，其核心在于利用一套源自东方哲学体系的符号逻辑，对量子态及其演化进行编码与运算。系统采用二十三进制数制，其基本数字集合由十二地支、十天干及一个表示虚无的“一和（0）”共同构成。一个天干符号与一个地支符号耦合形成一个基本的信息单元，称为“干支”——即你们说的量子字节，它表征一个具有叠加与纠缠潜势的量子态。八个这样的量子字节进一步组成一个“行（xing或hang都可以）”，每行附有一个决定其属性与操作方式的前缀标识。系统的关键创新在于其运算逻辑：每一行数据均被映射至“金、木、水、火、土”五行属性之一，所有计算过程并非基于传统的布尔代数，而是通过模拟五行属性之间的“生、克、制、化”关系来驱动。这种运算的目标是导向一种特殊的终态，称为“合”——即在系统演化中，所有相互作用力或量子概率幅达到动态平衡，使得整体状态的净效应为零，或处于一种完美的相干叠加平衡态，且这个过程一般在授权执行操作后是瞬时自动组合和匹配的。  </p>
+<p>从计算功能的角度看，“合”态构成了该系统普适性的目标函数。在微观量子领域，它对应于多种本征态以特定相位和概率共存、内部“张力”抵消的叠加态；在宏观经典领域，它则等价于所有作用力向量和为零的静力学平衡或动量守恒状态。这使得该系统能够以同一套符号逻辑与运算规则，无缝处理从亚原子粒子行为到多天体引力动力学的跨尺度问题。例如，在求解三体运动时，三个星体被编码为三行数据，其间的万有引力相互作用被转化为五行生克关系进行实时并行演算，系统通过追踪所有可能轨迹的叠加并寻找使合力归零的“合”态，从而直接呈现稳定解或最优路径。该种架构的意义不仅是提供了一种全新的计算范式，也暗示了一种宇宙观：即复杂系统从混沌中涌现的秩序，均可被理解为某种更深层逻辑下趋向“合”的自然过程。  </p>
+<p>该运算系统的基础单元，即天干地支耦合构成的“量子字节”，其物理实质是某种<strong>人工调控的微观量子系统</strong>，如超冷原子阵列或拓扑量子位。每个单元的状态（如能级、自旋）被对应到二十三进制符号。数据写入，便是通过精密场操控这些单元，使其进入代表特定天干地支组合的量子态；而数据存储的稳定性，则依赖于系统内生的<strong>五行生克反馈机制</strong>——若某一“行”内数据（五行属性）因干扰而失衡，其相生相克的关联规则会驱动邻近单元对其状态进行协同校准，从而实现硬件层面的<strong>自我冗余与纠错</strong>，其稳固性远非被动存储的经典比特可比。  </p>
+<p>作为常规民用数据中心时，其算力核心在于“五行运算”。当执行如数据检索、压缩或加密等任务时，系统并非进行布尔逻辑比较，而是将任务目标转化为一个目标“合”态。例如，一次加密操作，便是将原始数据流与密钥流作为输入，驱动整个相关数据块进行五行演算，直至其整体达到一个新的、平衡的“密文合态”。此过程本质上是<strong>在信息熵的层面直接进行能量最低化重构</strong>，因此无论传输还是检阅上，效率极高，且理论上无法被暴力破解，因为任何非法扰动都会破坏“合”态的精密平衡而被立即感知。</p>
+</div>
+  </div>
+
+<h1 id="Enderland的军事建设；担起星际正义执法责任"><a href="#Enderland的军事建设；担起星际正义执法责任" class="headerlink" title="Enderland的军事建设；担起星际正义执法责任"></a><strong>Enderland的军事建设</strong>；<strong>担起星际正义执法责任</strong></h1><p>在第二次大远征运动时期，Enderland普遍没有想过专门将操控时空（亚空间）等技术用在军事领域，星际军事上普遍还是使用如同地球文明那种伽马激光炮和核武器，在威慑上略有一点环境改造威慑和爆星威慑，可以说，Enderland是一个“田园文明”。即使有着可以操控物质的技术，也用在民生福祉上而没有想过用于跟别的文明战斗，使得军事发展总体落后于同级文明，在非威慑、精准打击的军事领域只有0.9~1.6型文明的程度。甚至在第一次大远征时期及以前，Enderland的非威慑（大破坏力）武器方面上只有地球1930年代的水平。此外，星海共同体军事委员会在第二次大远征时期，就发信劝说Enderland尽快建立完备的对应等级对外军事主权防御系统（这个在那时候早就干了）和履行对应的派兵共同维护星区秩序的法定责任（在有弱小文明被非法文明开启战争侵害时，予以支援和反击）</p>
+<p>2700年代之前，Enderland普遍忙于基础建设和和平外交建设，无暇管远在天边的星际战争，主流思潮认为：面对外来战争时，可以借力发力，无需浪费自身高科技资源在军事上。</p>
+<p>而在基础建设发展趋于完美般的饱和后，Enderland迎来了第一次外星的实质威胁，宇宙中法西斯主义文明实行灭绝式的殖民与扩张，为了资源集中是不择手段的，且实力上，有的文明是不容小觑的——</p>
+<p>2702年4月5日，达尼流木（Tairyniuerium）文明异化为法西斯主义文明，突然发动军事行动，大举入侵Enderland文明，欲要夺取黑洞资源和其他恒星资源，对边陲星系强行攻占，重挫了Enderland的可谓“古老”的星际防御系统。在一年间，达尼流木人干扰了Enderland的高维透析系统，使其可以用中子灭杀技术，之后使用该技术对边陲的Enderland军民进行大屠杀，到次年7月战争结束后，共死亡59万Enderland人和13万余名包括但不限于蓝星的外星友人，带来了严重的人道主义灾难（所幸Enderland本土人在破坏意识收集器和传导系统前进行紧急意识收集和召回，在首都内进行避难）。Serliner7世当机立断联系星海共同体军事委员会和安全理事会，可惜在战争初期通讯频道受阻，后通过发现黑洞引力场广播可以突破达尼流木的信号阻断，用这个方式成功联系到了星海共同体，星海共同体也发现了Enderland被侵略，高级星际援兵在付出了9单位宜居天体沦陷后赶来肃清了达尼流木文明。这成为了Enderland文明诞生以来面临的最大的外星军事威胁。</p>
+<p>*当时达尼流木文明也想直接打到首都的，好歹是我叫他们利用隐性亚空间的原理，制造了大面积的亚空间投影让他们航线偏转了，使得他们不断在边境打转，最后只能逐个星系攻破，不能一步到位跃迁到首都所在的核心星区。——某个军事将领的回忆(之后被被授予“铁人”军事贡献勋章)</p>
+<p>“这个侵略恰好说明，就算有星海共同体的律法庇护，也需要自身的军事实力进行与非法文明的拖延和周旋，降低损失。”——新星际文明军事防护部副首席李雄安说道。</p>
+<p>在2703年12月，战争结束的5个月后，沦陷星球恢复的一个月后，CIH文明安全部和最高公民革命委员会在全文明101%的人们对星际灭绝行动的憎恶下，被授予权力，宣布成立Enderland新星际文明军事防护部，正式开始研发新型军事主权防卫系统，发出了“遇鬼锄头变镰刀，遇魔黑洞变子弹”的口号并作为科研风向标。同时确立12月5日为“<strong>新建军日</strong>”。（又称建新军日、新军日）</p>
+<p>2703年，Enderland外交方面在会议上解释此前的无视信号行为，并公开计划书，Serliner7世被99.81%的公投通过下，担任军委首席，同时李雄安担任副首席（LiXiom’an），在 <strong>Kepler-725</strong>的星海共同体轨道空间站上宣誓、申请加入星海共同体军事委员会。承诺更好维护星际社会的秩序和和平，在此后担起星际法的责任，履行星际级文明出征执法的法定义务。</p>
+<p>2705年，确立4月5日为Enderland的反侵略日，在这天实行降半旗，为无辜牺牲的境内外星际友人默哀。</p>
+<p>2706年，Xeuhaied Atopos出生，2722年成功破解了Enderland的通讯系统和计算机加密系统，因为是实践先行，被抓获后未有被判刑，而是因为“未有实质社会危害且发现文明潜在漏洞”而被任命为地方科学部主席，后又发表多篇星际安全技术方面的学术论文及社会学论文。</p>
+<p>2734年2月，经过一段时间的囻防建设，Enderland的各方面军事力量已经与文明生产力基本齐平。（发展起来之后战力基本上就是像由无人深空里的战斗系统跃升到了群星的战斗系统，甚至再加一点）</p>
+<h1 id="《纳尔维兹公告》达成精准打击不扫荡的共识"><a href="#《纳尔维兹公告》达成精准打击不扫荡的共识" class="headerlink" title="《纳尔维兹公告》达成精准打击不扫荡的共识"></a><strong>《纳尔维兹公告》达成精准打击不扫荡的共识</strong></h1><p>2735年5月，Enderland针对当前星区日益频繁的军事战争，面对其他高级同盟文明的滥用高科技军事武器导致“误伤”的可能存在，签署并广播了此前就有但被雪藏的《纳尔维兹公告》，明确要求：星海共同体文明开展正义军事行动前要计算好波及范围和提前发表好防空预告，不得果断地，泛滥地使用爆星级以上的军事科技。此后，相当一部分文明同样签署了该公告，且补充提到：签署后的文明受该公告保护，该公告具有主权保护合法性，不容侵犯、亵渎；对签署文明违反公告的文明，一定程度上与侵犯主权无异。</p>
+<p>《纳尔维兹公告》本质是 Enderland 将自身 “非专政、重规制” 的文明内核，升级为星海共同体的<strong>人道主义军事准则</strong>—— 它既借鉴了星际战争中对平民与中立文明的保护逻辑，又针对爆星级高科技武器的毁灭性特点，立下了双重硬性约束。一方面要求精准测算军事行动波及范围，避免像过往盟友星域那样被无差别破坏，这和国际社会限制大规模杀伤性武器滥用的思路异曲同工；另一方面强制提前发布防空预告，给非参战方留出避险时间，延续了战争法中 “预警避险” 的核心原则。而禁止 “果断泛滥” 使用爆星级以上科技，更是直接给星际战争划定了 “文明红线”，杜绝了以 “正义” 为名的无底线毁灭。这份公告让 Enderland 的规则影响力从本土管控，延伸到了星际秩序构建，既保护了自身星门连接的飞地与本土安全，也给整个星海共同体立下了 “能战但不嗜战” 的行为标杆，促进一齐达成精准打击不扫荡的共识。</p>
+</div><!-- 初始化AI摘要--><!-- 传递TOC配置给前端--><script>// 创建全局TOC配置对象
+window.tocConfig = {
+  empty_toc_behavior: "placeholder"
+};
+</script><div class="post-navigation"><div class="post-nav prev"><a href="/2025/12/20/%E7%A7%A9%E5%BA%8F/"><span class="nav-label">← Previous</span><span class="nav-title">以秩序之名：在地球文明视角下的关于Enderland抗侵略战争与文明觉醒的史论</span></a></div><div class="post-nav next"><a href="/2025/12/19/History-Enderland-4-2/"><span class="nav-label">Next →</span><span class="nav-title">文明通史大纲-4.2- Enderland 第一次和第二次大远征时期的更多补充</span></a></div></div><div class="post-share"><h3 class="share-title">Share this article</h3><div class="share-buttons"><a class="share-btn twitter" href="https://twitter.com/intent/tweet?text=%E6%96%87%E6%98%8E%E9%80%9A%E5%8F%B2%E5%A4%A7%E7%BA%B2-4.3-%20%EF%BC%88%E5%9B%BB%E4%B9%8B%E9%87%8D%E5%99%A8%E5%8F%91%E5%B1%95%E7%AF%87%EF%BC%89Enderland%E6%88%90%E4%B8%BA%E6%98%9F%E9%99%85%E7%A4%BE%E4%BC%9A%E5%8F%91%E5%B1%95%E7%9A%84%E9%87%8D%E8%A6%81%E6%8E%A8%E6%89%8B%E4%B9%8B%E4%B8%80&amp;url=%2F2025%2F12%2F20%2FHistory-Enderland-4-3%2F" target="_blank" rel="noopener"><span>Twitter</span></a><a class="share-btn facebook" href="https://www.facebook.com/sharer/sharer.php?u=%2F2025%2F12%2F20%2FHistory-Enderland-4-3%2F" target="_blank" rel="noopener"><span>Facebook</span></a><a class="share-btn linkedin" href="https://www.linkedin.com/sharing/share-offsite/?url=%2F2025%2F12%2F20%2FHistory-Enderland-4-3%2F" target="_blank" rel="noopener"><span>LinkedIn</span></a><a class="share-btn wechat" href="#" data-wechat="/2025/12/20/History-Enderland-4-3/"><span>微信</span></a><a class="share-btn qq" href="https://connect.qq.com/widget/shareqq/index.html?url=%2F2025%2F12%2F20%2FHistory-Enderland-4-3%2F&amp;title=%E6%96%87%E6%98%8E%E9%80%9A%E5%8F%B2%E5%A4%A7%E7%BA%B2-4.3-%20%EF%BC%88%E5%9B%BB%E4%B9%8B%E9%87%8D%E5%99%A8%E5%8F%91%E5%B1%95%E7%AF%87%EF%BC%89Enderland%E6%88%90%E4%B8%BA%E6%98%9F%E9%99%85%E7%A4%BE%E4%BC%9A%E5%8F%91%E5%B1%95%E7%9A%84%E9%87%8D%E8%A6%81%E6%8E%A8%E6%89%8B%E4%B9%8B%E4%B8%80" target="_blank" rel="noopener"><span>QQ</span></a><a class="share-btn weibo" href="https://service.weibo.com/share/share.php?url=%2F2025%2F12%2F20%2FHistory-Enderland-4-3%2F&amp;title=%E6%96%87%E6%98%8E%E9%80%9A%E5%8F%B2%E5%A4%A7%E7%BA%B2-4.3-%20%EF%BC%88%E5%9B%BB%E4%B9%8B%E9%87%8D%E5%99%A8%E5%8F%91%E5%B1%95%E7%AF%87%EF%BC%89Enderland%E6%88%90%E4%B8%BA%E6%98%9F%E9%99%85%E7%A4%BE%E4%BC%9A%E5%8F%91%E5%B1%95%E7%9A%84%E9%87%8D%E8%A6%81%E6%8E%A8%E6%89%8B%E4%B9%8B%E4%B8%80" target="_blank" rel="noopener"><span>微博</span></a><a class="share-btn copy" href="#" data-copy="/2025/12/20/History-Enderland-4-3/"><span>Copy Link</span></a></div></div></article></div><section class="comments-section"><div class="comments-container"><h2 class="comments-title">Comments</h2><div class="comments-content"><div id="twikoo-comments"></div><div id="twikoo"></div><script src="https://unpkg.com/twikoo@1.6.39/dist/twikoo.all.min.js"></script><script>twikoo.init({
+  envId: 'twikoo-brown-eight.vercel.app',
+  el: '#twikoo',
+  region: '',
+  path: 'window.location.pathname',
+  visitor: true,
+  onCommentLoaded: function () {
+    console.log('Twikoo评论加载成功');
+  }
+});</script></div></div></section></main><footer class="footer"><div class="footer-bottom"><div class="footer-copyright">© 2026 Enderland. All rights reserved.</div><!-- Footer centered image with link--><div class="footer-badges"><a target="_blank" rel="noopener" href="https://hexo.io/" title="博客框架为Hexo_v5.4.0"><img src="/images/loading.gif" data-original="https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Frame-Hexo.svg" alt="博客框架为Hexo_v5.4.0"/></a><a target="_blank" rel="noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"><img src="/images/loading.gif" data-original="https://npm.elemecdn.com/anzhiyu-blog@2.2.0/img/badge/Copyright-BY-NC-SA.svg" alt="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"/></a></div></div></footer></div><!-- 立即应用暗色模式，避免页面闪烁--><script>(function() {
+  // 检查本地存储中的暗色模式设置
+  const savedDarkMode = localStorage.getItem('darkMode') === 'true';
+  // 如果设置为暗色模式，立即应用到body
+  if (savedDarkMode) {
+    document.body.classList.add('dark-mode');
+  }
+
+  // 防止页面闪烁，在DOM加载完成前设置一个初始类
+  document.documentElement.style.visibility = 'hidden';
+  document.addEventListener('DOMContentLoaded', function() {
+    document.documentElement.style.visibility = 'visible';
+  });
+})();
+</script>
+<script src="/js/main.js"></script>
+
+<script src="/js/tags.js"></script>
+
+<script src="/js/categories-accordion.js"></script>
+
+<script src="/js/highlight.js"></script>
+
+<script src="/js/load-more.js"></script>
+
+<script src="/js/header-scroll.js"></script>
+
+<script src="/js/toc.js"></script>
+
+<script src="/js/image-zoom.js"></script>
+
+<script src="/js/share.js"></script>
+
+<script src="/js/search.js"></script>
+
+<script src="/js/hide-inline-interaction.js"></script>
+
+<script src="/js/hide-toggle-interaction.js"></script>
+
+<script src="/js/dark-mode-sync.js"></script>
+
+<script src="/js/animations.js"></script>
+
+<script src="/js/ai-theme.js"></script>
+
+<script src="/js/loading-animation.js"></script>
+
+<script src="/js/article-modal.js"></script>
+<script>window.theme = {
+  features: {"dark_mode":true,"smooth_scroll":true,"back_to_top":true,"loading_animation":true},
+  code_block: {"height_limit":200,"enable_folding":true,"max_height":"300px","show_lang":true},
+  ai_summary: {"enable":false,"api_key":"","summary_directly":false,"ai_name":"然-AI","ai_introduce":"我是文章辅助AI: 然-AI，一个基于deepseek的强大语言模型，有什么可以帮到您？😊","ai_version":"deepseekv3","buttons":["介绍自己","来点灵感","生成AI简介"]},
+  categories: {"layout":"accordion","accordion_animation":true,"show_empty_categories":true},
+  article_list: {"card_size":"normal","view_mode":"modal"}
+};
+</script><script src="/js/ai.js"></script><script src="/js/postai.js"></script>
+        <style>
+            [bg-lazy] {
+                background-image: none !important;
+                background-color: #eee !important;
+            }
+        </style>
+        <script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                preloadRatio: 3,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z\d\-\.\+]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(t.test(e.href)||r.test(e.href))&&(e.href=a.dataset.original)})});</script><script>(r=>{r.imageLazyLoadSetting.processImages=t;var a=r.imageLazyLoadSetting.isSPA,o=r.imageLazyLoadSetting.preloadRatio||1,d=i();function i(){var t=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")),e=Array.prototype.slice.call(document.querySelectorAll("[bg-lazy]"));return t.concat(e)}function t(t){(a||t)&&(d=i());for(var e,n=0;n<d.length;n++)0<=(e=(e=d[n]).getBoundingClientRect()).bottom&&0<=e.left&&e.top<=(r.innerHeight*o||document.documentElement.clientHeight*o)&&(()=>{var t,e,a,o,i=d[n];e=function(){d=d.filter(function(t){return i!==t}),r.imageLazyLoadSetting.onImageLoaded&&r.imageLazyLoadSetting.onImageLoaded(i)},(t=i).dataset.loaded||(t.hasAttribute("bg-lazy")?(t.removeAttribute("bg-lazy"),e&&e()):(a=new Image,o=t.getAttribute("data-original"),a.onload=function(){t.src=o,t.removeAttribute("data-original"),t.setAttribute("data-loaded",!0),e&&e()},a.onerror=function(){t.removeAttribute("data-original"),t.setAttribute("data-loaded",!1),t.src=o},t.src!==o&&(a.src=o)))})()}function e(){clearTimeout(t.tId),t.tId=setTimeout(t,500)}t(),document.addEventListener("scroll",e),r.addEventListener("resize",e),r.addEventListener("orientationchange",e)})(this);</script></body></html>

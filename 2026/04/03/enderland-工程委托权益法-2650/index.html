@@ -1,0 +1,300 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="theme-color" content="#1a1a1a"><meta name="msapplication-navbutton-color" content="#1a1a1a"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><title>Enderland·Ark 2.0</title><script>(function() {
+  // 尽早应用暗色模式，防止闪烁
+  var savedDarkMode = localStorage.getItem('darkMode') === 'true';
+  if (savedDarkMode) {
+    document.documentElement.classList.add('dark-mode');
+  }
+})();
+</script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:wght@400;500;600;700&amp;family=Fira+Code:wght@400;500&amp;display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script><link rel="icon" href="/null">
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="/css/tags.css">
+
+<link rel="stylesheet" href="/css/categories.css">
+
+<link rel="stylesheet" href="/css/categories-accordion.css">
+
+<link rel="stylesheet" href="/css/highlight.css">
+
+<link rel="stylesheet" href="/css/toc.css">
+
+<link rel="stylesheet" href="/css/image-zoom.css">
+
+<link rel="stylesheet" href="/css/share.css">
+
+<link rel="stylesheet" href="/css/mobile-nav.css">
+
+<link rel="stylesheet" href="/css/search.css">
+
+<link rel="stylesheet" href="/css/scrollbar.css">
+
+<link rel="stylesheet" href="/css/timeline.css">
+
+<link rel="stylesheet" href="/css/animations.css">
+
+<link rel="stylesheet" href="/css/ai-theme.css">
+
+<link rel="stylesheet" href="/css/loading-animation.css">
+
+<link rel="stylesheet" href="/css/article-modal.css">
+<!-- 条件加载关于页面样式--><style>:root {
+  --primary-color: #1a1a1a;
+  --secondary-color: #666666;
+  --accent-color: #d2a200;
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --overlay-color: rgba(0, 0, 0, 0.7);
+  --tag-background-color: #ffffff;
+  --card-background-color: #ffffff;
+}
+</style><link rel="stylesheet" href="https://cdn1.tianli0.top/gh/qxchuckle/Post-Summary-AI/chuckle-post-ai.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><meta name="generator" content="Hexo 7.3.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head><body><div id="app"><header class="header navbar-bubble"><nav class="nav"><div class="nav-container"><div class="nav-logo"><a href="/"><span class="nav-title">Enderland·Ark 2.0</span></a></div><div class="nav-menu"><a class="nav-item" href="/">首页</a><a class="nav-item" href="/about/">关于</a><a class="nav-item" href="/archives/">归档</a><a class="nav-item" href="/categories/">分类</a><a class="nav-item" href="/tags/">标签</a><!-- 搜索按钮--><div class="search-toggle"><i class="fas fa-search"></i></div></div><div class="nav-toggle"><span></span><span></span><span></span></div></div></nav></header><div class="search-overlay"><div class="search-container"><div class="search-form"><input class="search-input" type="text" placeholder="搜索文章..."/><div class="search-close">×</div></div><div class="search-results"></div></div></div><main class="main"><div class="post-wrapper"><div class="toc-sidebar"><div class="toc-container"><div class="toc-title">目录</div><div class="toc-content" id="table-of-contents"><!-- Table of contents will be generated by JavaScript--></div></div></div><article class="post-container"><div class="post-header"><div class="post-meta"><div class="post-category"><a href="/categories/Enderland%E7%9A%84%E6%B3%95%E5%BE%8B%E6%B3%95%E8%A7%84/">Enderland的法律法规</a></div><div class="post-date"><time datetime="2026-04-02T16:04:42.000Z">四月 03, 2026</time></div><div class="post-author"><span>By Xeuhaied</span></div></div><h1 class="post-title">Enderland 工程委托权益法（2650）</h1><div class="post-tags"></div></div><!-- AI摘要模块容器--><div id="post-ai-container"></div><div class="post-content"><h2 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h2><p>为规范Enderland共产主义星际种族共同体境内工程委托活动，明确委托方与受托方的权利义务，捍卫公有制经济根基与反剥削核心原则，保障工程建设质量与公民合法权益，促进公共项目与民事工程有序开展，依据《反剥削法》《宪法》《货币与物资调配法》及共产主义直接民主精神，制定本法。本法为一般法，独立调整工程委托关系，不适用劳动关系相关规定，其解释权归公民革命委员会中央常务理事小组。</p>
+<h2 id="第一编-总则"><a href="#第一编-总则" class="headerlink" title="第一编 总则"></a>第一编 总则</h2><p><strong>第一条【立法目的与依据】</strong></p>
+<p>维护工程委托活动的公平有序，防范以委托名义变相实施雇佣剥削、资本投机等行为，保障委托方工程目标实现与受托方劳动成果、合法权益不受侵害，推动资源优化配置与文明建设高质量发展。</p>
+<p><strong>第二条【适用范围】</strong></p>
+<p>本法适用于Enderland主权范围内（含殖民星球、星际设施、意识体网络空间等）所有工程委托活动，包括公共设施建设、星际工程、技术改造、设备修缮等各类工程的委托、承接、实施及相关权益保障，覆盖行政机关、公有机构、社会组织及完全权利公民之间的工程委托关系。</p>
+<p><strong>第三条【核心原则】</strong></p>
+<p>（一）反剥削原则：工程委托不得形成人身依附、雇佣从属关系，禁止以委托为名索取剩余价值，受托方独立享有劳动成果相关权益；<br>（二）自愿公平原则：委托关系基于双方真实意愿建立，权利义务对等，委托条件公开透明，不得存在胁迫、欺诈等不正当手段；<br>（三）按质取酬原则：受托方报酬依据工程静态价值（V）核算结果确定，与工程难度、技术要求、完成质量、贡献程度直接挂钩；<br>（四）全程监督原则：工程委托全流程接受公民革命委员会（CRC）监督，涉及公共利益的工程需按规定公开相关信息；<br>（五）技术合规原则：工程实施需符合【SCC-TECH】系列行政标准，涉密工程严格遵循《加密法》相关规定。</p>
+<p><strong>第四条【核心定义】</strong></p>
+<p>（一）工程委托：委托方基于特定工程目标，委托具备相应资质的受托方完成工程任务，向其支付合理报酬的民事合作关系，不构成劳动关系；</p>
+<p>（二）委托方：发起工程委托的行政机关、公有机构、社会组织或完全权利公民；</p>
+<p>（三）受托方：具备相应工程资质，自愿承接工程任务的半完全权利公民、公民联合体或公有工程服务机构，若委托方相应的工程要素有明确对高等技术的资质与其技术权利的法律法规规定，则受托方应是完全权利公民。</p>
+<p>（四）常务工程师执照：经委托方推荐、相关主管部门备案，授予长期从事特定设施工程服务的受托方的职业资质凭证，仅代表专业能力认证，不构成身份依附；</p>
+<p>（五）工程价值核算：依据“静态价值V-动态价值ΔV”体系，结合工程物料消耗、加工周期、技术难度等参数计算的工程合理价值。</p>
+<p>（六）组织公费：指公有机构、公共工程单位在官方银行体系下开立的对公监管账户AVU值额，属于公共可支配财力，实行专款专用、账户隔离管理，不得由机构负责人或个人随意支配、挪用、私分或用于分红；工程委托报酬、项目相关支出均从本账户列支，机构经营收益按规定上缴或归入本账户统一核算。</p>
+<h2 id="第二编-委托关系的设立、变更与终止"><a href="#第二编-委托关系的设立、变更与终止" class="headerlink" title="第二编 委托关系的设立、变更与终止"></a>第二编 委托关系的设立、变更与终止</h2><p><strong>第五条【委托设立条件】</strong></p>
+<p>（一）委托方需明确工程范围、质量标准、完成期限、安全要求等核心事项，涉及公共利益的工程需提前公示委托方案；<br>（二）受托方需具备相应工程资质或常务工程师执照，征信评级符合工程要求，无重大违规记录；<br>（三）委托双方需签订书面委托协议，明确权利义务、报酬标准、验收方式等关键内容，协议需通过“个人交易备案平台”备案（公共工程除外）；<br>（四）涉密工程委托需经CRC审查批准，签订保密协议，严格执行加密管理规定。</p>
+<p><strong>第六条【委托协议核心条款】</strong></p>
+<p>（一）工程名称、地点、范围及具体技术要求；<br>（二）工程实施期限、阶段性节点及验收标准；<br>（三）报酬数额、支付方式（以AVU结算）及支付节点，报酬不得低于工程价值核算结果的80%；<br>（四）工程物料供应方式及责任划分，物料消耗需符合【SCC-LOG】物流标准；<br>（五）双方协作与沟通机制，委托方不得非法干预受托方正常工作流程；<br>（六）违约责任与争议解决方式；<br>（七）涉密工程需包含保密义务、解密权限及责任条款。</p>
+<p><strong>第七条【委托变更】</strong></p>
+<p>（一）因工程客观条件变化需变更协议的，需经双方协商一致，签订书面变更协议，涉及公共利益的需报相关主管部门备案；<br>（二）变更内容不得加重受托方义务或降低报酬标准，确需调整报酬的，需重新进行工程价值核算；<br>（三）涉密工程的变更需经原审批机关同意，同步更新保密措施。</p>
+<p><strong>第八条【委托终止情形】</strong></p>
+<p>（一）工程完成并通过验收，委托方支付全部报酬；<br>（二）双方协商一致终止委托关系；<br>（三）因不可抗力导致工程无法继续实施；<br>（四）受托方丧失履约能力（如征信评级大幅下降、失去相应资质），委托方可依法终止委托；<br>（五）委托方存在严重违约行为，经受托方催告后仍未纠正的，受托方可终止委托。</p>
+<p><strong>第九条【常务工程师常驻委托特别规定】</strong></p>
+<p>（一）受托方经委托方推荐，可凭工程服务记录、资质证明向相关主管部门申请常务工程师执照，备案后可长期承接特定设施工程委托；<br>（二）常驻委托不改变委托关系性质，受托方有权随时申请注销执照、终止常驻，无需承担违约责任；<br>（三）常驻受托方享有相应的资源申购优先级及AVU报酬上浮权益，具体标准参照征信评级与工程贡献确定；<br>（四）委托方不得限制常驻受托方承接其他合法委托，不得干涉其正常职业选择。</p>
+<h2 id="第三编-委托双方的权利与义务"><a href="#第三编-委托双方的权利与义务" class="headerlink" title="第三编 委托双方的权利与义务"></a>第三编 委托双方的权利与义务</h2><p><strong>第十条【委托方权利】</strong></p>
+<p>（一）要求受托方按协议约定完成工程任务，遵守安全与技术规范；<br>（二）对工程实施过程进行合理监督，发现违规行为有权要求纠正；<br>（三）对工程成果进行验收，验收不合格的有权要求受托方整改；<br>（四）涉及公共利益的工程，有权要求受托方公开非涉密实施信息。</p>
+<p><strong>第十一条【委托方义务】</strong></p>
+<p>（一）向受托方提供工程所需的相关资料、场地及必要协助；<br>（二）按协议约定及时支付工程报酬，不得拖欠、克扣；<br>（三）保障受托方在工程实施过程中的人身安全与合法权益，提供必要的安全防护条件；<br>（四）不得要求受托方从事协议约定外的工作，不得非法限制受托方人身自由或意识自由；<br>（五）涉密工程委托方需向受托方提供必要的加密技术支持，严格履行保密协作义务。</p>
+<p><strong>第十二条【受托方权利】</strong></p>
+<p>（一）要求委托方提供工程所需的合理条件与相关信息；<br>（二）按协议约定获得相应AVU报酬，报酬标准不得低于工程价值核算结果；<br>（三）拒绝委托方提出的超出协议范围、违反法律规定或危害安全的要求；<br>（四）工程实施过程中遇到合理困难，有权要求委托方协助解决；<br>（五）对委托方的违约行为，有权要求承担违约责任或解除委托协议。</p>
+<p><strong>第十三条【受托方义务】</strong></p>
+<p>（一）按协议约定的质量标准、期限完成工程任务，遵守【SCC-TECH】【SCC-SRV】等相关行政标准；<br>（二）合理使用工程物料，不得浪费或非法侵占公有物料，物料消耗需按规定报备；<br>（三）遵守工程安全规范，承担因自身过错导致的安全责任；<br>（四）涉及公共利益的工程，需按规定接受公众监督，公开非涉密实施情况；<br>（五）涉密工程受托方需严格履行保密义务，遵守加密管理规定，不得泄露工程涉密信息；<br>（六）工程完成后，向委托方提交完整的工程成果资料与验收申请。</p>
+<h2 id="第四编-报酬与支付"><a href="#第四编-报酬与支付" class="headerlink" title="第四编 报酬与支付"></a>第四编 报酬与支付</h2><p><strong>第十四条【报酬核算依据】</strong></p>
+<p>（一）工程报酬以“静态价值V”核算为基础，计算公式为：V=（p×s）/（o×d）+e×t，结合工程技术难度系数（1.0-2.5）确定；其余核算基准以**<em>SCC-ECO-36</em>**为遵循。<br>（二）核算需考虑物料消耗、加工周期、技术复杂度、安全风险等因素，由双方协商或委托第三方专业机构核算；<br>（三）公共工程报酬核算结果需报经济计划中心备案，接受CRC监督；<br>（四）长期常驻受托方的报酬可在核算基础上上浮10%-30%，具体比例根据服务年限、贡献程度确定。</p>
+<p><strong>第十五条【报酬支付规则】</strong></p>
+<p>（一）报酬以额定AVU叠加支付，支付时从组织公费扣除，不得使用其他货币形式，单次支付额度不受个人交易限额限制，但需按规定备案；<br>（二）支付方式可采用阶段性支付与竣工结算相结合，阶段性支付总额不得低于报酬总额的60%；<br>（三）工程验收合格后，委托方需在30个工作日内支付剩余报酬；<br>（四）因委托方原因导致工程延期或变更的，需相应增加报酬；因受托方原因导致工程延期或质量问题的，可按协议约定扣减部分报酬，但扣减比例不得超过报酬总额的20%。</p>
+<p><strong>第十六条【禁止性支付行为】</strong></p>
+<p>（一）禁止以委托报酬名义支付工资、劳务费等雇佣性质报酬；<br>（二）禁止以AVU以外的任何形式支付报酬，不得要求受托方接受物资抵偿（双方自愿且符合规定的除外）；<br>（三）禁止拖欠、克扣、变相降低约定报酬，不得将报酬与无关条件绑定；<br>（四）禁止以报酬为诱饵要求受托方从事涉密工程以外的保密义务。</p>
+<h2 id="第五编-工程验收与争议解决"><a href="#第五编-工程验收与争议解决" class="headerlink" title="第五编 工程验收与争议解决"></a>第五编 工程验收与争议解决</h2><p><strong>第十七条【工程验收标准】</strong></p>
+<p>（一）验收依据包括委托协议约定、【SCC-TECH】系列行政标准、工程价值核算相关参数等；<br>（二）验收需对工程质量、技术指标、完成期限、物料消耗等进行全面核查，形成书面验收报告；<br>（三）公共工程验收需邀请CRC代表或公民代表参与，验收结果需按规定公示；<br>（四）涉密工程验收需在加密环境下进行，验收资料按绝密级信息管理。</p>
+<p><strong>第十八条【验收结果处理】</strong></p>
+<p>（一）验收合格的，双方签署验收确认书，委托方支付剩余报酬；<br>（二）验收不合格但可整改的，受托方需在约定期限内整改，整改费用由责任方承担；<br>（三）验收不合格且无法整改的，受托方需退还已领取报酬，委托方有权要求赔偿损失，但赔偿额度不得超过报酬总额的100%；<br>（四）对验收结果有争议的，可共同委托第三方专业机构进行复核。</p>
+<p>第十九条【争议解决途径】</p>
+<p>（一）双方协商解决；<br>（二）协商不成的，可向工程所在地的公民法院提起诉讼；<br>（三）涉及公共利益的工程争议，可向CRC申请调解；<br>（四）涉密工程争议的解决需遵守保密规定，不得泄露涉密信息。</p>
+<h2 id="第六编-法律责任"><a href="#第六编-法律责任" class="headerlink" title="第六编 法律责任"></a>第六编 法律责任</h2><p><strong>第二十条【委托方违约责任】</strong></p>
+<p>（一）未按协议约定提供工程条件导致受托方损失的，需赔偿相应AVU损失；<br>（二）拖欠、克扣报酬的，需按日支付报酬总额0.5%的违约金，逾期超过60日的，需额外赔偿报酬总额50%的损失；<br>（三）非法干预受托方工作、限制人身或意识自由的，按《治安法》相关规定处罚，构成犯罪的，依法追究刑事责任；<br>（四）涉密工程委托方违反保密规定的，按《加密法》相关规定处罚。</p>
+<p><strong>第二十一条【受托方违约责任】</strong></p>
+<p>（一）未按约定完成工程任务或工程质量不合格的，需承担整改责任，造成损失的，赔偿额度不得超过报酬总额；<br>（二）浪费或非法侵占工程物料的，需退还相应物料或按价值赔偿，下调征信评级；<br>（三）违反安全规范导致事故的，需承担赔偿责任，情节严重的吊销工程资质或常务工程师执照；<br>（四）涉密工程受托方泄露涉密信息的，按《加密法》《刑法》相关规定从重处罚。</p>
+<p><strong>第二十二条【非法委托行为责任】</strong></p>
+<p>（一）以工程委托名义变相建立雇佣关系、实施剥削的，没收非法所得，下调征信评级，情节严重的追究刑事责任；<br>（二）委托或承接无资质工程的，责令终止委托关系，对双方处以1000-5000 临时AVU罚没；<br>（三）伪造常务工程师执照或工程资质的，没收相关证件，处以5000-10000 临时AVU罚没，情节严重的，计入征信记录，罚除800-2000额定AVU，永久限制承接工程委托资格。</p>
+<h2 id="第二十三条【监督与追责】"><a href="#第二十三条【监督与追责】" class="headerlink" title="第二十三条【监督与追责】"></a><strong>第二十三条【监督与追责】</strong></h2><p>（一）CRC负责对工程委托活动进行监督，发现违规行为有权责令整改，对相关责任方提出追责建议；<br>（二）公民情报公正处有权对工程委托中的违法违规行为进行调查取证，为执法提供支持；<br>（三）任何公民发现工程委托中的违规行为，有权向CRC或公民情报公正处举报，举报属实的给予适当AVU奖励。</p>
+<h2 id="第七编-附则"><a href="#第七编-附则" class="headerlink" title="第七编 附则"></a>第七编 附则</h2><p><strong>第二十四条【与相关法律的衔接】</strong></p>
+<p>本法未规定的，适用《宪法》《反剥削法》《货币与物资调配法》《行政标准标识标签体系规范》等相关法律、标准的规定。</p>
+<p><strong>第二十五条【实施细则】</strong></p>
+<p>共同体经济执行局会同公民革命委员会、科学技术发展部门，依据本法制定《工程委托价值核算实施细则》《常务工程师执照管理办法》等配套文件，经立法大会审议通过后施行。</p>
+<p><strong>第二十六条【生效日期】</strong></p>
+<p>本法经全民公投70%以上赞成后，由公民革命委员会公布之日起正式施行，原有相关规定与本法不一致的，以本法为准。</p>
+</div><!-- 初始化AI摘要--><!-- 传递TOC配置给前端--><script>// 创建全局TOC配置对象
+window.tocConfig = {
+  empty_toc_behavior: "placeholder"
+};
+</script><div class="post-navigation"><div class="post-nav prev"><a href="/2026/04/05/elaxc/"><span class="nav-label">← Previous</span><span class="nav-title">ELA智库解密归档(xc)</span></a></div><div class="post-nav next"><a href="/2026/03/30/enderland%E5%8A%A0%E5%AF%86%E6%B3%95-2530%E5%B9%B4%E4%BF%AE%E8%AE%A2/"><span class="nav-label">Next →</span><span class="nav-title">Enderland 加密法（2530年修订）</span></a></div></div><div class="post-share"><h3 class="share-title">Share this article</h3><div class="share-buttons"><a class="share-btn twitter" href="https://twitter.com/intent/tweet?text=Enderland%20%E5%B7%A5%E7%A8%8B%E5%A7%94%E6%89%98%E6%9D%83%E7%9B%8A%E6%B3%95%EF%BC%882650%EF%BC%89&amp;url=%2F2026%2F04%2F03%2Fenderland-%25E5%25B7%25A5%25E7%25A8%258B%25E5%25A7%2594%25E6%2589%2598%25E6%259D%2583%25E7%259B%258A%25E6%25B3%2595-2650%2F" target="_blank" rel="noopener"><span>Twitter</span></a><a class="share-btn facebook" href="https://www.facebook.com/sharer/sharer.php?u=%2F2026%2F04%2F03%2Fenderland-%25E5%25B7%25A5%25E7%25A8%258B%25E5%25A7%2594%25E6%2589%2598%25E6%259D%2583%25E7%259B%258A%25E6%25B3%2595-2650%2F" target="_blank" rel="noopener"><span>Facebook</span></a><a class="share-btn linkedin" href="https://www.linkedin.com/sharing/share-offsite/?url=%2F2026%2F04%2F03%2Fenderland-%25E5%25B7%25A5%25E7%25A8%258B%25E5%25A7%2594%25E6%2589%2598%25E6%259D%2583%25E7%259B%258A%25E6%25B3%2595-2650%2F" target="_blank" rel="noopener"><span>LinkedIn</span></a><a class="share-btn wechat" href="#" data-wechat="/2026/04/03/enderland-%E5%B7%A5%E7%A8%8B%E5%A7%94%E6%89%98%E6%9D%83%E7%9B%8A%E6%B3%95-2650/"><span>微信</span></a><a class="share-btn qq" href="https://connect.qq.com/widget/shareqq/index.html?url=%2F2026%2F04%2F03%2Fenderland-%25E5%25B7%25A5%25E7%25A8%258B%25E5%25A7%2594%25E6%2589%2598%25E6%259D%2583%25E7%259B%258A%25E6%25B3%2595-2650%2F&amp;title=Enderland%20%E5%B7%A5%E7%A8%8B%E5%A7%94%E6%89%98%E6%9D%83%E7%9B%8A%E6%B3%95%EF%BC%882650%EF%BC%89" target="_blank" rel="noopener"><span>QQ</span></a><a class="share-btn weibo" href="https://service.weibo.com/share/share.php?url=%2F2026%2F04%2F03%2Fenderland-%25E5%25B7%25A5%25E7%25A8%258B%25E5%25A7%2594%25E6%2589%2598%25E6%259D%2583%25E7%259B%258A%25E6%25B3%2595-2650%2F&amp;title=Enderland%20%E5%B7%A5%E7%A8%8B%E5%A7%94%E6%89%98%E6%9D%83%E7%9B%8A%E6%B3%95%EF%BC%882650%EF%BC%89" target="_blank" rel="noopener"><span>微博</span></a><a class="share-btn copy" href="#" data-copy="/2026/04/03/enderland-%E5%B7%A5%E7%A8%8B%E5%A7%94%E6%89%98%E6%9D%83%E7%9B%8A%E6%B3%95-2650/"><span>Copy Link</span></a></div></div></article></div><section class="comments-section"><div class="comments-container"><h2 class="comments-title">Comments</h2><div class="comments-content"><div id="twikoo-comments"></div><div id="twikoo"></div><script src="https://unpkg.com/twikoo@1.6.39/dist/twikoo.all.min.js"></script><script>twikoo.init({
+  envId: 'twikoo-brown-eight.vercel.app',
+  el: '#twikoo',
+  region: '',
+  path: 'window.location.pathname',
+  visitor: true,
+  onCommentLoaded: function () {
+    console.log('Twikoo评论加载成功');
+  }
+});</script></div></div></section></main><footer class="footer"><div class="footer-bottom"><div class="footer-copyright">© 2026 Enderland. All rights reserved.</div><!-- Footer centered image with link--><div class="footer-badges"><a target="_blank" rel="noopener" href="https://hexo.io/" title="博客框架为Hexo_v5.4.0"><img src="/images/loading.gif" data-original="https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Frame-Hexo.svg" alt="博客框架为Hexo_v5.4.0"/></a><a target="_blank" rel="noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"><img src="/images/loading.gif" data-original="https://npm.elemecdn.com/anzhiyu-blog@2.2.0/img/badge/Copyright-BY-NC-SA.svg" alt="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"/></a></div></div></footer></div><!-- 立即应用暗色模式，避免页面闪烁--><script>(function() {
+  // 检查本地存储中的暗色模式设置
+  const savedDarkMode = localStorage.getItem('darkMode') === 'true';
+  // 如果设置为暗色模式，立即应用到body
+  if (savedDarkMode) {
+    document.body.classList.add('dark-mode');
+  }
+
+  // 防止页面闪烁，在DOM加载完成前设置一个初始类
+  document.documentElement.style.visibility = 'hidden';
+  document.addEventListener('DOMContentLoaded', function() {
+    document.documentElement.style.visibility = 'visible';
+  });
+})();
+</script>
+<script src="/js/main.js"></script>
+
+<script src="/js/tags.js"></script>
+
+<script src="/js/categories-accordion.js"></script>
+
+<script src="/js/highlight.js"></script>
+
+<script src="/js/load-more.js"></script>
+
+<script src="/js/header-scroll.js"></script>
+
+<script src="/js/toc.js"></script>
+
+<script src="/js/image-zoom.js"></script>
+
+<script src="/js/share.js"></script>
+
+<script src="/js/search.js"></script>
+
+<script src="/js/hide-inline-interaction.js"></script>
+
+<script src="/js/hide-toggle-interaction.js"></script>
+
+<script src="/js/dark-mode-sync.js"></script>
+
+<script src="/js/animations.js"></script>
+
+<script src="/js/ai-theme.js"></script>
+
+<script src="/js/loading-animation.js"></script>
+
+<script src="/js/article-modal.js"></script>
+<script>window.theme = {
+  features: {"dark_mode":true,"smooth_scroll":true,"back_to_top":true,"loading_animation":true},
+  code_block: {"height_limit":200,"enable_folding":true,"max_height":"300px","show_lang":true},
+  ai_summary: {"enable":false,"api_key":"","summary_directly":false,"ai_name":"然-AI","ai_introduce":"我是文章辅助AI: 然-AI，一个基于deepseek的强大语言模型，有什么可以帮到您？😊","ai_version":"deepseekv3","buttons":["介绍自己","来点灵感","生成AI简介"]},
+  categories: {"layout":"accordion","accordion_animation":true,"show_empty_categories":true},
+  article_list: {"card_size":"normal","view_mode":"modal"}
+};
+</script><script src="/js/ai.js"></script><script src="/js/postai.js"></script>
+        <style>
+            [bg-lazy] {
+                background-image: none !important;
+                background-color: #eee !important;
+            }
+        </style>
+        <script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                preloadRatio: 3,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z\d\-\.\+]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(t.test(e.href)||r.test(e.href))&&(e.href=a.dataset.original)})});</script><script>(r=>{r.imageLazyLoadSetting.processImages=t;var a=r.imageLazyLoadSetting.isSPA,o=r.imageLazyLoadSetting.preloadRatio||1,d=i();function i(){var t=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")),e=Array.prototype.slice.call(document.querySelectorAll("[bg-lazy]"));return t.concat(e)}function t(t){(a||t)&&(d=i());for(var e,n=0;n<d.length;n++)0<=(e=(e=d[n]).getBoundingClientRect()).bottom&&0<=e.left&&e.top<=(r.innerHeight*o||document.documentElement.clientHeight*o)&&(()=>{var t,e,a,o,i=d[n];e=function(){d=d.filter(function(t){return i!==t}),r.imageLazyLoadSetting.onImageLoaded&&r.imageLazyLoadSetting.onImageLoaded(i)},(t=i).dataset.loaded||(t.hasAttribute("bg-lazy")?(t.removeAttribute("bg-lazy"),e&&e()):(a=new Image,o=t.getAttribute("data-original"),a.onload=function(){t.src=o,t.removeAttribute("data-original"),t.setAttribute("data-loaded",!0),e&&e()},a.onerror=function(){t.removeAttribute("data-original"),t.setAttribute("data-loaded",!1),t.src=o},t.src!==o&&(a.src=o)))})()}function e(){clearTimeout(t.tId),t.tId=setTimeout(t,500)}t(),document.addEventListener("scroll",e),r.addEventListener("resize",e),r.addEventListener("orientationchange",e)})(this);</script></body></html>

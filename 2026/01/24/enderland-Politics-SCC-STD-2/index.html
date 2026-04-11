@@ -1,0 +1,443 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="theme-color" content="#1a1a1a"><meta name="msapplication-navbutton-color" content="#1a1a1a"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><title>Enderland·Ark 2.0</title><script>(function() {
+  // 尽早应用暗色模式，防止闪烁
+  var savedDarkMode = localStorage.getItem('darkMode') === 'true';
+  if (savedDarkMode) {
+    document.documentElement.classList.add('dark-mode');
+  }
+})();
+</script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:wght@400;500;600;700&amp;family=Fira+Code:wght@400;500&amp;display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script><link rel="icon" href="/null">
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="/css/tags.css">
+
+<link rel="stylesheet" href="/css/categories.css">
+
+<link rel="stylesheet" href="/css/categories-accordion.css">
+
+<link rel="stylesheet" href="/css/highlight.css">
+
+<link rel="stylesheet" href="/css/toc.css">
+
+<link rel="stylesheet" href="/css/image-zoom.css">
+
+<link rel="stylesheet" href="/css/share.css">
+
+<link rel="stylesheet" href="/css/mobile-nav.css">
+
+<link rel="stylesheet" href="/css/search.css">
+
+<link rel="stylesheet" href="/css/scrollbar.css">
+
+<link rel="stylesheet" href="/css/timeline.css">
+
+<link rel="stylesheet" href="/css/animations.css">
+
+<link rel="stylesheet" href="/css/ai-theme.css">
+
+<link rel="stylesheet" href="/css/loading-animation.css">
+
+<link rel="stylesheet" href="/css/article-modal.css">
+<!-- 条件加载关于页面样式--><style>:root {
+  --primary-color: #1a1a1a;
+  --secondary-color: #666666;
+  --accent-color: #d2a200;
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --overlay-color: rgba(0, 0, 0, 0.7);
+  --tag-background-color: #ffffff;
+  --card-background-color: #ffffff;
+}
+</style><link rel="stylesheet" href="https://cdn1.tianli0.top/gh/qxchuckle/Post-Summary-AI/chuckle-post-ai.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><meta name="generator" content="Hexo 7.3.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head><body><div id="app"><header class="header navbar-bubble"><nav class="nav"><div class="nav-container"><div class="nav-logo"><a href="/"><span class="nav-title">Enderland·Ark 2.0</span></a></div><div class="nav-menu"><a class="nav-item" href="/">首页</a><a class="nav-item" href="/about/">关于</a><a class="nav-item" href="/archives/">归档</a><a class="nav-item" href="/categories/">分类</a><a class="nav-item" href="/tags/">标签</a><!-- 搜索按钮--><div class="search-toggle"><i class="fas fa-search"></i></div></div><div class="nav-toggle"><span></span><span></span><span></span></div></div></nav></header><div class="search-overlay"><div class="search-container"><div class="search-form"><input class="search-input" type="text" placeholder="搜索文章..."/><div class="search-close">×</div></div><div class="search-results"></div></div></div><main class="main"><div class="post-wrapper"><div class="toc-sidebar"><div class="toc-container"><div class="toc-title">目录</div><div class="toc-content" id="table-of-contents"><!-- Table of contents will be generated by JavaScript--></div></div></div><article class="post-container"><div class="post-header"><div class="post-meta"><div class="post-category"><a href="/categories/%E7%A4%BE%E4%BC%9A%E5%92%8C%E6%94%BF%E6%B2%BB%E4%B9%8B%E5%8E%86%E5%8F%B2/">社会和政治之历史</a></div><div class="post-date"><time datetime="2026-01-24T07:52:56.000Z">一月 24, 2026</time></div><div class="post-author"><span>By Xeuhaied</span></div></div><h1 class="post-title">[SCC]Enderland的政治、社会治理和文官制度</h1><div class="post-tags"><a class="tag" href="/tags/SCC-STD/">SCC-STD</a></div></div><!-- AI摘要模块容器--><div id="post-ai-container"></div><div class="post-content"><p>1.注意：本篇除了特别详细描述发展历程或标注时间的制度之外，其余默认在2450年的体系文书记录<br>2.【SCC】的意思是Standards of a Community of Civilization<br>详见另一规范文章</p>
+<h2 id="文明徽标和旗帜"><a href="#文明徽标和旗帜" class="headerlink" title="文明徽标和旗帜"></a>文明徽标和旗帜</h2><p><img src="/images/loading.gif" data-original="http://enderland.cn/wp-content/uploads/2026/01/LOGB1.png"></p>
+<p>文明徽标</p>
+<p><img src="/images/loading.gif" data-original="http://enderland.cn/wp-content/uploads/2026/01/%E5%9B%BD%E5%BE%BD%E6%97%97-1024x567.png"></p>
+<p>文明徽标旗帜，也是CIH的党旗</p>
+<p><img src="/images/loading.gif" data-original="http://enderland.cn/wp-content/uploads/2026/01/%E5%9B%BD%E6%97%977-1024x567.png"></p>
+<p>文明共同体旗帜</p>
+<h2 id="民主制度和信息收集方式"><a href="#民主制度和信息收集方式" class="headerlink" title="民主制度和信息收集方式"></a><strong>民主制度和信息收集方式</strong></h2><h3 id="直接民主为主，代议制民主辅助"><a href="#直接民主为主，代议制民主辅助" class="headerlink" title="直接民主为主，代议制民主辅助"></a><strong>直接民主为主，代议制民主辅助</strong></h3><p>2069年的建制行动后，正式成立了Enderland的直接民主政治制度，对于完全行为能力的、基础教育毕业的公民赋予完全公民权利，即是完全权利公民，完全公民权利就包含有行驶直接民主的权利，具体在包括但不限于公投、修改法律草案并提交分支版本（智库分官方文件草稿论坛）。而对于没有完全行为权利的半完全权利公民和非完全权利公民，则实行监护人代议，通过监护人收集意见后集中行驶民主权利。完全公民有法定义务对改革进行表态，表态包括弃权。</p>
+<h3 id="区域公投和全民公投——区域自治和中央底线"><a href="#区域公投和全民公投——区域自治和中央底线" class="headerlink" title="区域公投和全民公投——区域自治和中央底线"></a><strong>区域公投和全民公投——区域自治和中央底线</strong></h3><p>如果地方行政政策实行也需要全文明公投，未免有点繁琐。在2074年后，就逐步规定了地方区域行政自治，对于地区范围的改革，在经过区域公投和中央审查通过后，或通过夸区域上一级公民革命委员会等下层政治机关审查后，方可实行；在2200年后，收回地方法规权力，改为地方无立法权，但有制定地方标准的权力，并完善地方政务论坛建设。而全民公投多出现在决定全文明发展方向的大改革，如立法、选举文明元首，等等。</p>
+<p>公民公投不止表态，依照《公投法》第2条规定：公民公投可以指向任何公权力方面；第3条规定：公民公投活动不仅表态为“支持”、“反对”、“弃权”，还应当留下宝贵意见，在公投选举重要公职人员及其编制小组时，应做到在统一平台公平公投和配置人员。（司法解释：如果在一个平台上选举这么多个下级人员提拔到上级，人们得选择他们选举的那个人担任什么角色，一人一到二职位，除特殊情况外禁止兼多职和兼重职，元首除外）</p>
+<p><em>在2673年后，重编为《政治权利法》《司法法》等法律，原《公投法》被析解</em></p>
+<h3 id="信息收纳方式和民主方式"><a href="#信息收纳方式和民主方式" class="headerlink" title="信息收纳方式和民主方式"></a><strong>信息收纳方式和民主方式</strong></h3><p>信息采集由公民情报公正处、智库信息部门负责，通过引导、普及相关渠道，让公民及时参加如公投等民主活动，2090年后，新增通过脑机芯片网络信息进行信息传达，极大提高了信息采集效率。</p>
+<p>在公民公投活动中，分为异议、弃权和支持，且在结束前可以改投，在2100年后，政治文书开始隶属于智库，运行方式呈现出git化和wiki化，即多分支、全民编辑、发布和评分。（2100年后也变革为实名化、绑定脑机的平台）；另外，还有大数据推送，文化部有权责对一些文章进行置顶和加大推送力度，但无权限制人们的发布（除被有效举证举报违法害公，经文化部法务审查部门核实后确凿的内容之外）。</p>
+<p><em>已经成型的文章（如实行中的法律）没法直接更改，会锁定并公开，但能克隆然后发布分支到政治建设-论法论坛。</em></p>
+<h2 id="立法方式"><a href="#立法方式" class="headerlink" title="立法方式"></a><strong>立法方式</strong></h2><p>每两年在6<del>10月份举行1</del>2次立法大会或民文大会，一次25~30天。上下层政治机关立法委员会集中对政治建设论坛上的优秀修改分支进行单开板块的推送和公投，呼吁人们进行编辑和发表意见，开放该板块的编辑权限（编辑文段会单独出分支或在评论区留底，且要备注编辑说明）——对既有法律等文书进行开放公投选取最佳收敛版本，会后进行总结，经相关部门核实以及最后公革委中央常务小组签名，定期实行。如果发生重要漏洞和失误，公民革命委员会有权组织发起公投，通过后可直接针对特别文书（法律）进行公开修改方案采集。</p>
+<p>其余时间，创作文章可评分但不要求人人表态。</p>
+<p>成文法和司法解释、司法评论、司法审理另收录于法务维基分站，属司法机关法标部工作。</p>
+<p>立法大会通常只对新出台的、有争议内容的一般法进行修改，而人民法和宪法通常因为公投条件苛刻且争议较少而通常不进行修改。</p>
+<p>原则：权力由公民全体通过公投或立法赋予，有时效和文书（法律）和反腐机关约束。</p>
+<h2 id="法律分类和立法要求"><a href="#法律分类和立法要求" class="headerlink" title="法律分类和立法要求"></a><strong>法律分类和立法要求</strong></h2><p><strong>人民法</strong></p>
+<p>2069年后，新增人民法，人民法是公民革命委员会等下层政治机关负责解读的法律，通常是保护公民基本权利和变革上层政治的最底线的法律，如《反剥削法》（分支：《公民革命法》、《反贪腐法》）、《公投法》、《公民情报法》、《公民革命式诉讼法》、《阵列人事制度》、《直接民主程序系列法典》（含分支：《立法法》），等等。人民法是对上层政治（CIH）的强有力的约束，修改、制定法律需要有99.5%以上的非CIH党内完全权利公民公投支持通过才可。人民法的地位高于宪法，在一些具体内容等同于刑事法律，但无行政的、管理具体社会方面的权力，同下层政治机关，只有对上层政治的约束，如弹劾、重组，甚至地方公投后的依法武装革命，即“民治官”。</p>
+<h3 id="宪法"><a href="#宪法" class="headerlink" title="宪法"></a><strong>宪法</strong></h3><p>宪法是化解一般法和人民法之间矛盾的天平。如果双方法律都奔赴了保民和保公权力人员的极端，就难必有利益相争，而宪法提供了协商的平台和准绳，成为旨在谋求行政管理和民主民生最大共同利益的法律。一般法的制定需要遵循宪法和人民法，而人民法的制定可在遵循宪法的前提下依照宪法减少一定的公投支持率要求。修改和制定法律的公投支持率为全文明98%以上。</p>
+<h3 id="一般法"><a href="#一般法" class="headerlink" title="一般法"></a><strong>一般法</strong></h3><p>一般法，即行政法，是最为复杂的法律，通常是对文明方方面面的具体法律，一般法的制定需要遵循宪法和人民法，但一般除了是广泛应用于群众的如《公共社会安全管理治理法》、《严重危害社会安全处罚法（刑法）》、《环境保护法》、《合同法》、《对外关系法》，等等；其余法律制定要求公投多数在65%~70%以上加上签名、审查等工作即可试行/实行。</p>
+<h3 id="标准"><a href="#标准" class="headerlink" title="标准"></a><strong>标准</strong></h3><p>基于繁杂的法律体系，已经让立法工作变得繁琐且低效，2302年的紧急3C大会上，正式将法律中的一些冗余详细要求进行划分到“中标”（中央标准）上，地方也完善了一些具体标准和要求。</p>
+<h2 id="司法解释"><a href="#司法解释" class="headerlink" title="司法解释"></a>司法解释</h2><p>程序上，法律解释通常在对应法律正文附录，司法解释在立法大会时通过民主立法进行收敛式收录解释，且可能会引入试行期时的判例。法理上，根据《立法法》规定是：一般法解释权归属共进党中央立法委员会，宪法和人民法解释权归属公民革命委员会中央常务理事小组。</p>
+<h2 id="下层政治机关（或叫反腐机关）"><a href="#下层政治机关（或叫反腐机关）" class="headerlink" title="下层政治机关（或叫反腐机关）"></a><strong>下层政治机关</strong>（或叫反腐机关）</h2><p><strong>下层政治机关</strong>不受上层政治机关（行政和上层政治）约束，坚持政治中立，坚持人民结果正义（合乎人道），行动过程相对正义（合法）。</p>
+<h3 id="公民革命委员会"><a href="#公民革命委员会" class="headerlink" title="公民革命委员会"></a><strong>公民革命委员会</strong></h3><div class="tabs" id="A01">
+    <div class="nav-tabs"><button class="tab-btn active" data-tab="A01-0">概述**公民革命委员会**</button><button class="tab-btn " data-tab="A01-2">基层服务科</button><button class="tab-btn " data-tab="A01-4">常务理事小组</button><button class="tab-btn " data-tab="A01-6">公民资源配置小组</button><button class="tab-btn " data-tab="A01-8">公革委重组机制</button></div>
+    <div class="tab-content"><div class="tab-item active" id="A01-0">
+      <p>公民革命委员会是Enderland反腐机关的主力机关，有常务理事小组、监察反腐科、基层服务科等，拥有统筹发动大范围公投权力的是监察反腐科和常务理事小组，权力范围隧地方到中央，基层服务科也可以紧急传唤和请求监察反腐科，公民公民委员会也可以利用公民情报公正处获取证据。监察反腐科成员上下三代以内不得加入行政党（即使退出原来组织），行政党内高编制公职人员也不得加入公民革命委员会（即使退出原来组织）（如：省级以上干部的不能加入市的公民革命委员会）</p>
+<!-- endtab -->
+    </div><div class="tab-item " id="A01-2">
+      <p>基层服务处（科）是市以下的遍布社区的组织，负责为群众服务，真的居委会，公民自愿选择加入，基础单位为街道或城市行政片区，不设立行政片区以上的基层服务科。内部晋升或公民自愿加入更高级，接受考验。若部分上级基层服务科人员空缺，不影响运行。</p>
+<!-- endtab -->  
+<!-- 监察反腐科 -->  
+<p>监察反腐科，原监察科和反腐科，2085年后合并。有权发布弹劾/解除和紧急任命上层政治工作人员公投的权力，责令重组上层政治机关某一部门和其某一层级的公职人员，由<strong>基层服务科非CIH人员选举组成</strong>，受全体基层公民监督和授权，对全体基层公民负责。<strong>监察反腐科</strong>有权力提出否决式公投，以60%<strong>非常务理事小组</strong>且为基层公民的支持率否决<strong>常务理事小组</strong>的决策。<br>各级监察反腐科由下一级以及对应产生的行政区内的完全权利公民45%公投（55%以下弃权或反对）选举组成各级人员。</p>
+<!-- endtab -->
+    </div><div class="tab-item " id="A01-4">
+      <p>常务理事小组，通常用于通讯，发表公告汇报工作情况，驻留在公民革命委员会不受任何改编的常任人员，具有保护底线、维持运转的作用，拥有依照《反剥削法》制造舆论、弹劾元首、发动联合公投以地方革命的权力。各级行政区内<strong>常务理事小组</strong>对应区内权力，由下一级<strong>常务理事小组</strong>+80%公民公投商议选举产生。  </p>
+<p>各级<strong>常务理事小组</strong>由下一级以及对应产生的行政区内的完全权利公民50%公投（50%以下弃权或反对）选举组成各级人员。具有协调各方基层单位的重要作用，<strong>通常以市级为单位基础</strong>。各级<strong>常务理事小组</strong>受一切<strong>监察反腐科</strong>监督。  </p>
+<p><em>无党派公民统称为基层公民</em>  </p>
+<p><em>《公民革命法》规定：在必要时，监察反腐科有权依法成立特别法庭，处理受制约的司法机关问题，和发起公投革命。</em>  </p>
+<p><strong>常务理事小组</strong>有权在紧急时发起应急生产分配政策，依照<strong>《反剥削法》</strong>  </p>
+<p><strong><em>公民革命委员会每两年进行一次考核，以分机关人员互相考核和审查为形式，以公民评论收集为主要参照，通常流程为7天。</em></strong></p>
+<!-- endtab -->
+    </div><div class="tab-item " id="A01-6">
+      <p>2080年设立的特殊小组，是用于特殊情况下组织和配置生产、采购、分配设施的公革委小组，各级资源配置小组受常务理事小组直接管理。该部门人员的上级管理层由基层服务科和常务理事小组选举产生，基层职员由基层服务科挂职组成。<br>除了法律中允许的情形外，该小组通常属于虚职中的虚职，日常工作与基层服务处重合。</p>
+<!-- endtab -->
+    </div><div class="tab-item " id="A01-8">
+      <p>《反剥削法》规定：基层服务处的个人有权利通过一些公众平台（留证）发起实名一人一票的公民公投以重组其他公革委部门（含其他分支）、更高级部门的人员（重新开始选举）公投支持率只需要65%以上即可有权依法责令对应公革委单位实行。</p>
+<!-- endtab -->
+    </div></div>
+  </div>
+
+<h3 id="公民情报公正处"><a href="#公民情报公正处" class="headerlink" title="公民情报公正处"></a><strong>公民情报公正处</strong></h3><p>公民情报公正处，是破除信息差的最佳利器，是站在广大基层公民视角的取证机关，2150年后，它的职能被科技赋能而大大提升，可以操控智子、天眼等高级情报工具进行情报获取。</p>
+<p>对于一般信息采集，根据《公民情报法》规定：公共情报人员获取各种公务信息时，无权进行阻拦和威胁中断进程，也不应提前销毁证据隐瞒事实。除意外情况和公民情报人员违法对个人隐私公开外，一般公务信息理应公开透明。公共情报人员的取证工具和取证方法也必须留下过程记录（留痕），以供日后审查。（否则就违法）</p>
+<p>对于加密信息，公民情报公正处也可以进行采集，但需要全程留痕和签署保密协议，不得公开，仅限于对相关办案组织交流（如办理这单贪腐案件的公民革命委员会、办理间谍活动的文明安全部机构）。</p>
+<p>公民情报公正处不分上下级，遍布基层，2400年后，除社区选举出的社区常务工作人员外，不再需要注册人员，使用取证工具者即为公共情报人员。2400年公民革命委员会中央常务理事小组代表Owanky在<strong>下层政治常务理事总局会议</strong>指出：公民情报公正处在如今的星际化发展下，务必要设施遍布文明，必须让客观事实证据公之于众，让法的尊严得以保障。</p>
+<p>2780年后3C大会外交部首席指出：在对外方面，要合理使用星海共同体的取证装置，让外部极端分子无处遁形。</p>
+<p><em>公民情报公正处是可以联合上层政治机关的，如公安部调查案件时。</em></p>
+<h3 id="阵列人事分布模式"><a href="#阵列人事分布模式" class="headerlink" title="阵列人事分布模式"></a><strong>阵列人事分布模式</strong></h3><p><strong>公民情报公正处</strong>通常各处分布和渗透部署，意在工作内容公开透明，里应外合，且2400年后《公民情报法（修订）》也正式规定：在各处上层政治单位部署至少一处公民情报公正处。</p>
+<p><strong>公民革命委员会</strong>也通常各处分布和渗透部署，意在工作内容公开透明，里应外合，互为表里、呈阵列式分布。2086年后《阵列人事法》出台：成立公民革命委员会ABCDEFG七支，互相独立和互相监督且人员不得人事贯通，但允许信息交流和在互相讨论工作。执行工作独立，皆对全体基层公民负责。</p>
+<p>公民在自身所在行政区域内的分支<strong>公民革命委员会</strong>办事受阻时（如A支），可以去寻找别的分支（B支），为了避免单一分支在某一区域过密形成地方保护主义。《阵列人事法》规定：当一行政区内同一个分支的<strong>公民革命委员会</strong>超过40%，其他分支的<strong>公民革命委员会</strong>有权联络起来，进行施压、问责，对方支坚持拒绝解散冗余组织不变后，有权力发起公投然后对地区实行武装解放，原行政区内的违法<strong>公民革命委员会</strong>分支解散、重组成多支合理生态。</p>
+<p>下级选举产生上级<strong>公民革命委员会</strong>时，或产生基层<strong>公民革命委员会</strong>时，先要产生对应行政区的<strong>常务理事小组</strong>，<strong>常务理事小组</strong>对上级某一支的<strong>常务理事小组</strong>进行注册登记，之后受上级<strong>常务理事小组</strong>管理，除有地区冗余被迫解散重组外，不得更改分支。</p>
+<p>公民革命委员会的基层服务科的分支跟随所属行政区的常务理事小组。（所以如果公民要找别的支的公民革命委员会，但就得跨市联络，但也有罕见的一个城市多个分支，那是以城市片区为单位的成立<strong>常务理事小组</strong>，通常在大城市、特大城市、经济特别贸易市出现，毕竟原文是：“<strong>通常</strong>以市级为单位基础”）</p>
+<p>各支流<strong>监察反腐科</strong>职能相等，皆可以公投弹劾任何具体公职人员，但区域弹劾区域，如果要往上一级，需要更高一级行政区级别的<strong>监察反腐科</strong>联合公投进行弹劾。</p>
+<p><em>幽默的，有些经常被贬的低职级文官也会去寻求公革委帮忙，只为公道。</em></p>
+<h2 id="上层政治机关"><a href="#上层政治机关" class="headerlink" title="上层政治机关"></a><strong>上层政治机关</strong></h2><p><strong>Enderland以法律形式确立的行政党–<br>共产主义共同理想进步党（Communist Initiative of Homogeneity）</strong></p>
+<p><strong><em>简称CIH、共同进步党、共进党、CIH党</em></strong></p>
+<p>共进党由2000年成立，初为执政党，2069年后逐渐降格为行政党，2160年在宪法修订中正式表明为“行政党”，是更好建设、发展文明的领导组织，是Enderland人民的先锋队，拥有共同理想、远大抱负的文明建设者和维护者团队，随时接受群众的监督和现实的挑战，共进党为Enderland带来了无数专业人才的应许之地。相关安全部门也为社会治安、个体刚性底线的守护带来了严格执法的密网，在于更好地运行、更好地尊重和保障个体人权。</p>
+<p><em>党内人员有更丰富的发展契机和资源分配，而《反剥削法》和《资源配置法》都在2200年版规定：文明先进科技的25%成果及以下必须实现普惠普及，公民免费申领。<strong>2350年后《反剥削法》《资源配置法》修订为“30~35%”</strong></em></p>
+<h3 id="党内各部门文官任用和考核制度"><a href="#党内各部门文官任用和考核制度" class="headerlink" title="党内各部门文官任用和考核制度"></a><strong><strong><strong>党内各部门文官任用和考核制度</strong></strong></strong></h3><div class="tabs" id="A02">
+    <div class="nav-tabs"><button class="tab-btn active" data-tab="A02-0">概述</button><button class="tab-btn " data-tab="A02-2">成为党员</button><button class="tab-btn " data-tab="A02-4">进入行政事业单位/部门</button><button class="tab-btn " data-tab="A02-6">考核程序</button><button class="tab-btn " data-tab="A02-8">特殊任命</button><button class="tab-btn " data-tab="A02-10">权力交接程序</button></div>
+    <div class="tab-content"><div class="tab-item active" id="A02-0">
+      <p><strong>党内各部门文官任用和考核制度</strong>坚持是内部成立，外部决定，因此尽量减少对群众的干扰，毕竟社会专业领域多，不可能什么都要公投一遍然后组成人员，因为这很繁琐。</p>
+<!-- endtab -->
+    </div><div class="tab-item " id="A02-2">
+      <p>凭基础教育毕业证即可申请加入。加入后一般加入对应职级单位及以下的公革委-<strong>基层服务科</strong>和对应职级及以上的<strong>常务理事小组</strong>会被依法拒绝，更不用说<strong>监察反腐科</strong>了。</p>
+<!-- endtab -->
+    </div><div class="tab-item " id="A02-4">
+      <p>凭对应专业证书（考试取得，如科学部内的物理技术部门就得物理学专业，政治运行的就得公务员考试通过）、以及论文审查和评级后通过人事部面试进入，或通过党员选举任命。</p>
+<!-- endtab -->
+    </div><div class="tab-item " id="A02-6">
+      <p>定期的，通过在任职内的成果贡献，以及解决群众问题的方式、群众支持度和党内其他人员认可度等进行综合评价，作为晋升的政绩依据。由内部政治委员监察组和<strong>公革委监察反腐科</strong>负责协同审查，通常都可以开出凭证。</p>
+<!-- endtab -->  
+<!-- 晋升和调职 -->  
+<p><strong>晋升</strong>：在上述考核通过之后，由该部门的同级和下级的人员选举产生。调岗由该部门负责人审批或发起，降职需要负责人有充分理由进行降职处理。人员有权进行复议以争取保留职位/原职级。</p>
+<!-- endtab -->
+    </div><div class="tab-item " id="A02-8">
+      <p>特殊任命通常是公民公投授权，依照法定程序临危受命；元首或该部门的中央首席官发出任用聘书。聘书在对应地方、等级的公民革命委员会<strong>常务理事小组</strong>审阅通过，并针对受聘人资格评核和回复建议后，发送给对应受聘人，受聘人对聘书签名同意开始生效。聘书的书写有明文规定，需要指出任用时间和职位，职位的具体要求，等等。</p>
+<!-- endtab -->
+    </div><div class="tab-item " id="A02-10">
+      <p>Enderland的任何文官（公职人员），都只能在自身对应的职级里用被赋予的职能/公权力办事，《反剥削法》《公务员法》等法律规定严禁任何公职人员因私利而越权办事，也禁止任何公职人员未经法定程序和法定公民授权路线进行权力分配、交接、交替。<em>下层政治机关人员也是如此，只是基层民主泛化而自决有权。</em></p>
+<!-- endtab -->
+    </div></div>
+  </div>
+
+<h2 id="元首（Chief-Leader）"><a href="#元首（Chief-Leader）" class="headerlink" title="元首（Chief Leader）"></a><strong>元首</strong>（<strong>Chief Leader</strong>）</h2><p>Enderland的元首是兼具精神引领与身份象征的核心角色，其定位并非权力的掌控者，而是文明航向的凝聚者与守护者，起到精神凝聚、外交代表、文明整体发展战略宣读者的作用，其权力由公民公投赋予和《元首法》赋予。</p>
+<p>元首任期通常为终身制，不过可以基于具体情况申请退休。任期内，依旧要依法接受监督，依然有被弹劾的机会。退休后，由民政部首席暂时顶替，并在下一次<strong>3C大会</strong>中通过全民公投选举出新元首。</p>
+<h2 id="一般行政机关"><a href="#一般行政机关" class="headerlink" title="一般行政机关"></a><strong>一般行政机关</strong></h2><div class="tabs" id="departments">
+    <div class="nav-tabs"><button class="tab-btn active" data-tab="departments-0">行政分级</button><button class="tab-btn " data-tab="departments-2">民政部（公民政府/囻务院）</button><button class="tab-btn " data-tab="departments-4">外交部</button><button class="tab-btn " data-tab="departments-6">文明安全部（囻防部）</button><button class="tab-btn " data-tab="departments-8">科学技术发展部门（科学部）</button><button class="tab-btn " data-tab="departments-10">教育部</button><button class="tab-btn " data-tab="departments-12">技术发展与人文建设部（≈发改委）</button><button class="tab-btn " data-tab="departments-14">工业部</button><button class="tab-btn " data-tab="departments-16">工信部</button><button class="tab-btn " data-tab="departments-18">对外信息和认知安全部（≈国安部）</button><button class="tab-btn " data-tab="departments-20">文化部（文化部+司法解释部）</button><button class="tab-btn " data-tab="departments-22">内外经济部（工商部+商务部）</button><button class="tab-btn " data-tab="departments-24">资源部（=人力资源和社会保障部）</button></div>
+    <div class="tab-content"><div class="tab-item active" id="departments-0">
+      <p>根据地区行政划分，行政分级为：<br>部（中央，囻级）<br>堡（星域）<br>庭（星区、天体）<br>府（洲）<br>台（国）<br>厅（行省）<br>局（市及以下）<br>处（一般是基层，有特别命名的除外）</p>
+<p>所有层级行政单位需接受公民革命委员会监督和依法约束；中央部对下级单位有规划、监督与资源调配权。<br>除元首外，其他部门各级领导人皆设置副职，副职组成流程与其他人员相同。</p>
+<p><em>文官职级划分类似中国，一一对应。</em></p>
+<!-- endtab -->
+    </div><div class="tab-item " id="departments-2">
+      <p>民政部，又称为最高公民政府、囻务院。Enderland民政部是通过在全文明范围内组织一系列的行政管理活动的最高行政机关，直接下属有地方民政组织，即地方公民政府；工作涉及文明综合的大量的日常公共事务的处理，为所有社会公民提供服务。依法办事。<br>除有政府综合性职能外，还可以对其他组成部门和机构有管理权。</p>
+<p>依法办事，重大民生政策需经立法大会或公投确认；与资源部协同调配民生资源，接受对外财政审计处审计。</p>
+<!-- endtab -->
+    </div><div class="tab-item " id="departments-4">
+      <p>外交部是Enderland处理对异星文明、星海共同体之间关系的外交机关，是民政部主管外交事务的组成部门。2460年后不再设地方外交机关，而改编为地方外事署，负责贯彻执行对外方针政策，管理和发展对外关系，参与外事活动与礼宾工作，以及其他相关职责；旨在促进民间外交。</p>
+<p><em>参与星海共同体星区协商会议、寰宇发展战略会议；重大外交决策需经 3C 大会公投授权，与文明安全部协同应对星际安全议题。</em></p>
+<!-- endtab -->
+    </div><div class="tab-item " id="departments-6">
+      <p>统筹星际国防与文明全域安全，管理星际舰队、轨道防御系统，应对异星军事威胁与行星级灾害，参与星海共同体安全协作。实行军民协同机制，重大军事行动需经全民公投，装备研发对接工业部和科学部。</p>
+<!-- endtab -->
+    </div><div class="tab-item " id="departments-8">
+      <p>主攻前沿 / 基础科技研发，管理科研智库与实验室，落实科技成果普惠，研发方向经全文明工程发展战略大会审议，推动技术落地。</p>
+<!-- endtab -->
+    </div><div class="tab-item " id="departments-10">
+      <p>搭建全周期教育体系，制定公民全方位发展培养方案，推脑机辅助教学，将基础教育毕业 + 完全行为能力作为完全公民权利前提，保障公民受教育权。兼统筹高等教育院校建设，提升教育设施。</p>
+<!-- endtab -->
+    </div><div class="tab-item " id="departments-12">
+      <p>统筹文明中长期发展规划，制定星际基建、产业升级策略，协调跨部门资源，推动科技民生转化，规划需经公民政府审议、审计处审计，2355年后需经公民革命委员会常务理事小组审议签名。</p>
+<!-- endtab -->
+    </div><div class="tab-item " id="departments-14">
+      <p>统筹星际工业体系建设与制造业升级，监管核心设备生产，推动工业技术迭代，配合科技部落地前沿技术，保障工业产能。在2780年后兼为囻防部提供装备支撑。</p>
+<!-- endtab -->
+    </div><div class="tab-item " id="departments-16">
+      <p>统筹星际工业信息化、数字产业发展与通信网络建设，推动工业生产数字化、智能化升级，管理星际通信、工业数据安全。负责工业技术标准制定，衔接工业部做产能数字化调控，保障星际政务、工业、民生的通信与数据网络畅通，落实信息安全防护。</p>
+<!-- endtab -->
+    </div><div class="tab-item " id="departments-18">
+      <p>守护文明信息主权与认知安全，防范异星文明信息渗透、打击星际间谍活动，保护核心科技与政治信息安全。依据《公民情报法》开展取证工作，全程留痕，且与文明安全部、公民情报公正处联动办案，涉密信息依照《加密法》严格执行保密协议。</p>
+<!-- endtab -->
+    </div><div class="tab-item " id="departments-20">
+      <p>一般法专属司法解释机关，负责解读各类一般法条文、采纳合法释法建议，重大释法需提交立法大会确认。同时统筹文化创作扶持、星际文明遗产保护、跨星区文旅推广，可置顶政务论坛优质内容，仅有权下架经核实的违法害公内容。</p>
+<!-- endtab -->
+    </div><div class="tab-item " id="departments-22">
+      <p>统筹全文明内外经济管理，负责市场监管、星际贸易合作、产业扶持与经济数据统计。推动文明经济与星海共同体融合发展，与星际人民银行协同调控星际货币政策，对接工业部、工信部做产业经济规划，经济政策接受财政审计处审计。</p>
+<!-- endtab -->
+    </div><div class="tab-item " id="departments-24">
+      <p>统筹全文明人力资源与社会保障工作，负责人才供需调配、社保体系建设、劳动力权益保障。对接教育部建立人才储备与输出机制，依据《资源配置法》分配人力资源与社保资源，保障跨星区社保互通，资源分配受公民革命委员会监督。</p>
+<!-- endtab -->
+    </div></div>
+  </div>
+<div class="tabs" id="departments02">
+    <div class="nav-tabs"><button class="tab-btn active" data-tab="departments02-0">环境部（自然资源部+生态环境部）</button><button class="tab-btn " data-tab="departments02-2">民用设施部（＞住房和城乡建设部）</button><button class="tab-btn " data-tab="departments02-4">交通运输部</button><button class="tab-btn " data-tab="departments02-6">生物科学部（卫生部）</button><button class="tab-btn " data-tab="departments02-8">应急人事防护管理部（人防部）</button><button class="tab-btn " data-tab="departments02-10">Enderland星际人民银行</button><button class="tab-btn " data-tab="departments02-12">对外财政审计处</button><button class="tab-btn " data-tab="departments02-14">公共社会安全部（公安部）</button><button class="tab-btn " data-tab="departments02-16">[Sp-特殊]新军事委员会</button><button class="tab-btn " data-tab="departments02-18">市场采购部</button></div>
+    <div class="tab-content"><div class="tab-item active" id="departments02-0">
+      <p>统筹星际自然资源勘探与生态环境保护，开展行星生态修复、星际污染防控，落实《环境保护法》。参与星海共同体生态协作，推动星际资源可持续开发，与民用设施部、交通部协同开展基建项目生态评估，严控开发中的生态破坏。</p>
+<!-- endtab -->
+    </div><div class="tab-item " id="departments02-2">
+      <p>统筹星际民用基础设施建设与运维，规划建设跨星区居住、公共服务、民生配套设施，推动宜居性改造。与技术发展与人文建设部、交通部协同推进星际基建网络建设，设施建设安全接受公共社会安全部监督，项目资源调动接受财政审计处审计。</p>
+<!-- endtab -->
+    </div><div class="tab-item " id="departments02-4">
+      <p>统筹全文明星际与行星交通网络，负责星际航线规划、飞船调度、地面交通管理，保障跨星区人员与物资流通。与民用设施部协同建设交通枢纽，与内外经济部对接物流贸易需求，交通数据与公民情报公正处共享，交通设施运维接受审计处监督。</p>
+<!-- endtab -->
+    </div><div class="tab-item " id="departments02-6">
+      <p>统筹星际生命科学与公共卫生工作，研发星际医学技术、开展跨星区疾病防控、监管生物安全。保障公民健康权益，建立星际公共卫生预警体系，与科学部合作开展生命科学研究，与应急人事管理部协同处置公共卫生突发事件。</p>
+<!-- endtab -->
+    </div><div class="tab-item " id="departments02-8">
+      <p>统筹全文明应急管理与跨部门人事调度，负责灾害预警、应急救援、突发危机处置，调配应急人员与资源。制定各类应急方案并上报最高公民政府备案，与文明安全部、生物科学部、环境部联动开展各类突发应急工作，建立跨星区应急协作机制。</p>
+<!-- endtab -->
+    </div><div class="tab-item " id="departments02-10">
+      <p>文明核心金融机关，负责星际货币发行、货币政策调控、金融市场监管，建立跨星区结算体系。落实金融科技普惠公民，与内外经济部协同调控经济，维护星际金融稳定，严控金融风险，金融政策与资金使用接受对外财政审计处全程审计。</p>
+<!-- endtab -->
+    </div><div class="tab-item " id="departments02-12">
+      <p>统筹全文明财政审计工作，监督中央与地方各级行政部门财政收支、重大项目资金使用、部门预算执行。审计结果向公民革命委员会备案，接受公民革命委员会和公民情报公正处监督和依法约束，发现财政问题可推动问责机制，覆盖所有行政部门的财政审计，确保全文明对外贸易-财政透明、对内建设-资源合规使用。</p>
+<!-- endtab -->
+    </div><div class="tab-item " id="departments02-14">
+      <p>维护境内公共安全与社会秩序，处置治安事件、打击跨星区刑事犯罪，管理公民身份与公共安全数据。与文明安全部协同处置境内外联动安全威胁，与公民情报公正处共享基层安全信息，执法行为全程留痕并接受公民革命委员会监督和依法约束。</p>
+<!-- endtab -->
+    </div><div class="tab-item " id="departments02-16">
+      <p>Enderland文明中央军事委员会，简称新军委，是达尼流木战争之后成立的囻防部之外的特殊部门，是唯一非传统层级政治机关，也是新式军事部门，独立授权，独立由公民革命委员会和CIH共同组成人员，受二者共同监督。直接统一管理Enderland的核心军事设施和军事力量，作为对外防御的最终底牌。2800年之后，前囻防部改为对外军事交流部门（说人话就是谈判和卖军火的），核心军事内容由新军委直接管理。</p>
+<!-- endtab -->
+    </div><div class="tab-item " id="departments02-18">
+      <p>2632年后新设部门，用于对外进口资源引入到政府内部各处前的把控部门，人员必须熟悉各星际流通产品的市场行情。在一些政策情况下，还兼顾关口出入口市场资源的监督，与囻防部下属关口监审单位协同工作。</p>
+<!-- endtab -->
+    </div></div>
+  </div>
+
+<h2 id="司法机关"><a href="#司法机关" class="headerlink" title="司法机关"></a><strong>司法机关</strong></h2><p>各级司法机关，又称公民法院，是 Enderland 文明行使司法审判权的核心机关，其层级设置与行政分级体系一一对应，从中央最高公民法院到基层公民法庭，形成覆盖全文明的司法审判网络。主要负责审理各类民事、行政与星际涉法案件，依据人民法、宪法及一般法作出公正裁决，并执行生效判决，维护公民合法权益与文明社会秩序。公民法院的办案流程受内部政治委员监察组的全程监督，司法标准严格遵循法标部制定的统一规范，同时接受公民革命委员会的外部监督；部分重大案件的审理过程会通过法务维基向公民公开，体现 “司法为民” 的核心原则。</p>
+<h3 id="自我纠正：内部监察制度（内部政治委员监察组）以及检察机关"><a href="#自我纠正：内部监察制度（内部政治委员监察组）以及检察机关" class="headerlink" title="自我纠正：内部监察制度（内部政治委员监察组）以及检察机关"></a><strong>自我纠正：内部监察制度（内部政治委员监察组）</strong>以及检察机关</h3><p>这是司法机关为保障自身廉洁公正设立的专属内部监察机制，内部政治委员监察组独立于常规办案体系，全程监督司法人员的履职行为，重点核查案件办理中的程序合规性与结果公正性，一旦发现司法偏差、违规操作或廉洁风险，将立即启动内部问责与纠错程序。作为司法体系的自我净化 通道，它同时接受公民革命委员会的外部监督，形成 “内部自纠 + 外部制衡” 的双重保障，确保司法权力始终在阳光下运行。2160年后其精神和部分方略引用到公民革命委员会和行政机关。</p>
+<p>文明后期新设检察机关，除司法监督略弱于公民革命委员会、统筹和监督法标部工作之外，其余职能与大部分文明的检察院职能基本一致。各级人民法院受CRC反腐监察科管理，部分细处职能部门与CRC部分职能部门重合。</p>
+<h3 id="一般立法与标准讨论部（二合一，简称法标部）"><a href="#一般立法与标准讨论部（二合一，简称法标部）" class="headerlink" title="一般立法与标准讨论部（二合一，简称法标部）"></a><strong>一般立法与标准讨论部</strong>（二合一，简称法标部）</h3><p>法标部是统筹一般法立法与司法标准制定的精英部门，承担着一般法的起草、修订、听证与论证工作。有权组织跨部门研讨与各行业的<strong>文明建设积极公民</strong>听证，收集来自基层、智库与行政部门的意见，推动法律条文适配星际文明的复杂治理需求。其制定的立法草案需提交到智库论坛，通过基础评核后在立法大会进行统一全民立法操作，司法执行标准则与文化部的司法解释紧密衔接，确保法律条文的统一性与可操作性。整个过程接受公民革命委员会的监督，保障一般法既能回应现实治理需求，又能维护公民的核心权益。</p>
+<h2 id="上下层公职人员流动"><a href="#上下层公职人员流动" class="headerlink" title="上下层公职人员流动"></a><strong>上下层公职人员流动</strong></h2><p>上下层公职人员流动机制，是参照《阵列人事制度》设计的环式治理通道，旨在打破行政、司法与反腐机关的层级壁垒，让上下层公职人员互为表里、循环流动，消解信息差与阶层固化。</p>
+<p>流动层级与行政分级、司法体系一一对应，覆盖从囻级中央到基层处 / 公民法庭的所有公职人员。核心形式为 “上挂下派”：中央公职人员（如民政部、法标部专员）定期开展活动：下派至基层办事处挂职，深度参与跨星区民生治理与案件审理；基层优秀公职人员（如行政处干事、公民法庭法官）则跟随任期内上级公职人员举荐上挂至中央部门轮岗，熟悉全文明战略规划与立法标准。</p>
+<p>同时包含上下层政治机关间的人员流动，上层为 CIH 行政党体系的各类行政机关，下层为公民革命委员会、公民情报公正处等反腐机关，流动严格遵循既有回避原则，如监察反腐科成员上下三代以内不得加入行政党等，不做人员直接互通，仅以挂职交流、视角互换为形式：CIH 行政党体系的行政骨干，会以观察员身份派驻至下层政治机关，参与反腐、取证等工作；下层政治机关的工作人员，会以政策顾问身份进入上层行政机关，为决策提供基层监督视角，此类流动实行双向考核、全程留痕，行政人员挂职表现由公民革命委员会常务理事小组评定，下层机关人员轮岗表现由内部政治委员监察组评估。</p>
+<p>这一机制受《反剥削法》精神约束，全程接受公民革命委员会监督，履职表现由对应层级监察机构（内部政治委员监察组、监察反腐科）考核。2395 年后内部监察制度的精神和部分方略被引用到公民革命委员会和行政机关后，司法、行政及下层政治机关的监察岗人员，也被全面纳入上下层公职人员流动范围，让整个流动机制形成了完整的莫比乌斯环闭环，让监督与行政、基层与中央真正实现互为表里、循环赋能，适配全文明的星际化治理需求。</p>
+<h2 id="常规定时大型会议"><a href="#常规定时大型会议" class="headerlink" title="常规定时大型会议"></a><strong>常规定时大型会议</strong></h2><p>Enderland 的常规定时大型会议体系，是其<strong>直接民主与分层治理</strong>的核心载体，覆盖从顶层战略到基层监督、从内政治理到星际事务的全维度决策场景，所有会议均以公民意志为核心，全程透明留痕、接受监督，确保权力始终掌握在全体公民手中。</p>
+<h3 id="公民大会-公民代表大会-全文明代表大会→全文明大会"><a href="#公民大会-公民代表大会-全文明代表大会→全文明大会" class="headerlink" title="公民大会/公民代表大会/全文明代表大会→全文明大会"></a><strong>公民大会/公民代表大会/全文明代表大会→全文明大会</strong></h3><p><em><strong>全文明大会（Congress of Civilizational Communities），后被俗称3C会议。此前多被称为公民大会/公民代表大会/全文明代表大会……</strong>（类似全国代表大会）</em></p>
+<p><strong>全文明大会</strong>（Congress of Civilizational Communities）是 Enderland 直接民主的盛大全民会议，每10<del>15年召开一次。对过往10</del>15年的发展进行一次总结和对未来发展制定新的策划—— 全体公民通过 git 化、wiki 化民主平台直接参与。<br>会议法定为定期10年盛大召开一次，也可由各机关领导层依照《公投法》发起全民公投，在90%公民公投通过后紧急召开。完全权利公民可在论坛对应的大会板块直接提交提案、参与议题审议（参政议政），大会内容涵盖法律修订和制定、重大囻策表决、公职人员任职投票、元首选举、首席官选举评核、汇报工作，等等。所有决议以全体公民的直接表决结果为最终依据，全程留痕且可追溯。</p>
+<h3 id="行政党中央大会（类似政治局会议）"><a href="#行政党中央大会（类似政治局会议）" class="headerlink" title="行政党中央大会（类似政治局会议）"></a><strong>行政党中央大会</strong>（类似政治局会议）</h3><p><strong>行政党全体会议</strong>，俗称”全会“是CIH 行政党的最高工作会议，每年召开1~3次，十年内通常有十五次。核心是对接公民直接意志：基于 git 化平台的公民提案、反馈，制定行政体系执行方案与职能衔接策略，提名各级行政机关负责人选（若是领导人最终需经公民直接投票确认）。决策全程公开，接受公民实时监督和公民革命委员会依法约束，体现 “行政执行服务于公民直接意志” 的逻辑。</p>
+<p>通常命名跟中国“全会”一致，为XX届XX”中”全会，中依旧表达中央的意思。</p>
+<h3 id="下层政治常务理事总局会议（公民革命委员会常务理事会大会）"><a href="#下层政治常务理事总局会议（公民革命委员会常务理事会大会）" class="headerlink" title="下层政治常务理事总局会议（公民革命委员会常务理事会大会）"></a><strong>下层政治常务理事总局会议（公民革命委员会常务理事会大会）</strong></h3><p>这是公民革命委员会各级常务理事小组和监察反腐科成员的<strong>最高工作会议</strong>，内容完全基于基层公民通过情报公正处提交的监督信息：审议公民举报的反腐线索、优化监督机制，向下层监察岗下达指令，同时将监督结果同步至民主平台供公民核验。会议定期与<strong>行政党全体会议</strong>联动，是 “公民直接监督 - 机关执行” 的重要衔接点。</p>
+<h3 id="星海共同体星区协商会议"><a href="#星海共同体星区协商会议" class="headerlink" title="星海共同体星区协商会议"></a><strong>星海共同体星区协商会议</strong></h3><p>这是 Enderland 参与星际治理的协商会议，一般50~100年召开一次：内部会议上，外交部将协商议题同步至全文明平台，公民直接提交立场建议，外交部基于公民共识形成协商口径，协商结果需回传平台由公民表决确认，确保星际事务决策权始终在全体公民手中。外部会议上，Enderland外交部及其代表总结公民意见，形成观点发表在<strong>星海共同体星区协商会议</strong>上。</p>
+<h3 id="外交局会议-寰宇发展战略会议（对接外星文明的建设）"><a href="#外交局会议-寰宇发展战略会议（对接外星文明的建设）" class="headerlink" title="外交局会议/寰宇发展战略会议（对接外星文明的建设）"></a><strong>外交局会议/寰宇发展战略会议</strong>（对接外星文明的建设）</h3><p>外交部会议是整理公民在平台提交的对外交流提案，形成具体外交动作方案，基于公民对星际扩张、资源开发的直接意见，制定跨星区建设规划的重要会议，每5年召开一次。</p>
+<h3 id="全文明工程发展战略大会（地位仅次于全文明大会）"><a href="#全文明工程发展战略大会（地位仅次于全文明大会）" class="headerlink" title="全文明工程发展战略大会（地位仅次于全文明大会）"></a><strong>全文明工程发展战略大会（地位仅次于全文明大会）</strong></h3><p>这是统筹基建、科技、产业的核心决策会议，每5年一次：技术发展与人文建设部将初步规划同步至平台，公民可直接修改补充，最终方案由公民直接表决确认后，交由各部门协同执行。会议结果需接受财政审计处审计，并同步至平台供公民监督执行进度。</p>
+<h1 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h1><p>Enderland 的民主政治坚持 <strong>“程序正义”</strong> 和 <strong>“结果正义”</strong> 相结合 ** 的核心原则，不仅要求所有政治活动、治理行为必须遵循法定程序（如权力分配的公民授权路线、文官履职的职级边界、政策落地的民主审议流程），更强调治理成效的最终导向 —— 兑现对广大群众的承诺，让文明建设的成果惠及每一位公民。<br>程序正义是民主的 “骨架”，它锚定了权力运行的边界：从全民公投的召开流程，到文官的职级履职规范，再到政策提案的审议投票，均需严格遵循宪法、人民法及各项专项法律（《反剥削法》《公务员法》等），杜绝任何 “拍脑袋决策”“越权办事” 的行为，确保每一步治理动作都有法可依、有规可循。<br>结果正义是民主的 “血肉”，它赋予了程序的实际意义：一套再完善的程序，若最终无法兑现民生承诺、无法杜绝剥削现象、无法推动文明向好发展，便是失去灵魂的 “纸面规则”。Enderland 的民主从不追求 “程序正确却结果空泛” 的形式主义，而是将 “群众是否满意、承诺是否兑现、权益是否保障” 作为检验治理成效的最终标准。<br>而连接 “程序正义” 与 “结果正义” 的关键纽带，正是<strong>公民革命委员会与广大基层群众</strong>。公革委的独特属性 —— 成员本身就是普通百姓的邻居、朋友、同事，决定了它既懂 “程序规矩”（作为下层政治机关，熟练掌握法定监督流程），又知 “群众冷暖”（能第一时间感知政策落地的实际效果）。<br>基于这种 “心连心” 的紧密联系，公革委与基层群众形成了常态化监督合力：一方面，监督上层政治是否严格遵守法定程序，比如行政党权力交接是否符合公民授权路线、执政党政策提案是否经过民主审议；另一方面，紧盯治理结果是否符合群众预期，比如跨星区工程是否真正改善民生、公职人员是否存在隐蔽的剥削行为。<br>这种监督不是 “对立式挑错”，而是 “协同式纠错”—— 日常里，它是约束上层权力、防止偏离民意的 “缰绳”；极端情况下，它是启动《人民法》终极权力、依法纠正剥削乱象的 “安全阀”。最终，通过 “程序 + 结果” 的双重正义，Enderland 的民主政治实现了 “上层决策不悬空、基层权益有保障” 的逻辑闭环，让整个文明的建设始终行走在 “为民谋利” 的轨道上。  </p>
+<p>*公革委的工作运行成熟，则标志着广大百姓理性思维的觉醒，且公民素养（该基础板块涵盖社会历史学、法律学、逻辑学三大基础能力）的提升，为公革委的运行提供了有力人才资源_</p>
+</div><!-- 初始化AI摘要--><!-- 传递TOC配置给前端--><script>// 创建全局TOC配置对象
+window.tocConfig = {
+  empty_toc_behavior: "placeholder"
+};
+</script><div class="post-navigation"><div class="post-nav prev"><a href="/2026/02/07/enderland%E5%9C%A82300%E5%B9%B4%E5%90%8E%E8%A1%8D%E7%94%9F%E7%9A%84%E5%87%A0%E4%B8%AA%E6%88%90%E8%AF%AD/"><span class="nav-label">← Previous</span><span class="nav-title">Enderland在2300年后衍生的几个成语</span></a></div><div class="post-nav next"><a href="/2026/01/16/SCC-NE-SCI-1/"><span class="nav-label">Next →</span><span class="nav-title">[SCC-NE-SCI]Enderland初高等通用论文体系</span></a></div></div><div class="post-share"><h3 class="share-title">Share this article</h3><div class="share-buttons"><a class="share-btn twitter" href="https://twitter.com/intent/tweet?text=%5BSCC%5DEnderland%E7%9A%84%E6%94%BF%E6%B2%BB%E3%80%81%E7%A4%BE%E4%BC%9A%E6%B2%BB%E7%90%86%E5%92%8C%E6%96%87%E5%AE%98%E5%88%B6%E5%BA%A6&amp;url=%2F2026%2F01%2F24%2Fenderland-Politics-SCC-STD-2%2F" target="_blank" rel="noopener"><span>Twitter</span></a><a class="share-btn facebook" href="https://www.facebook.com/sharer/sharer.php?u=%2F2026%2F01%2F24%2Fenderland-Politics-SCC-STD-2%2F" target="_blank" rel="noopener"><span>Facebook</span></a><a class="share-btn linkedin" href="https://www.linkedin.com/sharing/share-offsite/?url=%2F2026%2F01%2F24%2Fenderland-Politics-SCC-STD-2%2F" target="_blank" rel="noopener"><span>LinkedIn</span></a><a class="share-btn wechat" href="#" data-wechat="/2026/01/24/enderland-Politics-SCC-STD-2/"><span>微信</span></a><a class="share-btn qq" href="https://connect.qq.com/widget/shareqq/index.html?url=%2F2026%2F01%2F24%2Fenderland-Politics-SCC-STD-2%2F&amp;title=%5BSCC%5DEnderland%E7%9A%84%E6%94%BF%E6%B2%BB%E3%80%81%E7%A4%BE%E4%BC%9A%E6%B2%BB%E7%90%86%E5%92%8C%E6%96%87%E5%AE%98%E5%88%B6%E5%BA%A6" target="_blank" rel="noopener"><span>QQ</span></a><a class="share-btn weibo" href="https://service.weibo.com/share/share.php?url=%2F2026%2F01%2F24%2Fenderland-Politics-SCC-STD-2%2F&amp;title=%5BSCC%5DEnderland%E7%9A%84%E6%94%BF%E6%B2%BB%E3%80%81%E7%A4%BE%E4%BC%9A%E6%B2%BB%E7%90%86%E5%92%8C%E6%96%87%E5%AE%98%E5%88%B6%E5%BA%A6" target="_blank" rel="noopener"><span>微博</span></a><a class="share-btn copy" href="#" data-copy="/2026/01/24/enderland-Politics-SCC-STD-2/"><span>Copy Link</span></a></div></div></article></div><section class="comments-section"><div class="comments-container"><h2 class="comments-title">Comments</h2><div class="comments-content"><div id="twikoo-comments"></div><div id="twikoo"></div><script src="https://unpkg.com/twikoo@1.6.39/dist/twikoo.all.min.js"></script><script>twikoo.init({
+  envId: 'twikoo-brown-eight.vercel.app',
+  el: '#twikoo',
+  region: '',
+  path: 'window.location.pathname',
+  visitor: true,
+  onCommentLoaded: function () {
+    console.log('Twikoo评论加载成功');
+  }
+});</script></div></div></section></main><footer class="footer"><div class="footer-bottom"><div class="footer-copyright">© 2026 Enderland. All rights reserved.</div><!-- Footer centered image with link--><div class="footer-badges"><a target="_blank" rel="noopener" href="https://hexo.io/" title="博客框架为Hexo_v5.4.0"><img src="/images/loading.gif" data-original="https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Frame-Hexo.svg" alt="博客框架为Hexo_v5.4.0"/></a><a target="_blank" rel="noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"><img src="/images/loading.gif" data-original="https://npm.elemecdn.com/anzhiyu-blog@2.2.0/img/badge/Copyright-BY-NC-SA.svg" alt="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"/></a></div></div></footer></div><!-- 立即应用暗色模式，避免页面闪烁--><script>(function() {
+  // 检查本地存储中的暗色模式设置
+  const savedDarkMode = localStorage.getItem('darkMode') === 'true';
+  // 如果设置为暗色模式，立即应用到body
+  if (savedDarkMode) {
+    document.body.classList.add('dark-mode');
+  }
+
+  // 防止页面闪烁，在DOM加载完成前设置一个初始类
+  document.documentElement.style.visibility = 'hidden';
+  document.addEventListener('DOMContentLoaded', function() {
+    document.documentElement.style.visibility = 'visible';
+  });
+})();
+</script>
+<script src="/js/main.js"></script>
+
+<script src="/js/tags.js"></script>
+
+<script src="/js/categories-accordion.js"></script>
+
+<script src="/js/highlight.js"></script>
+
+<script src="/js/load-more.js"></script>
+
+<script src="/js/header-scroll.js"></script>
+
+<script src="/js/toc.js"></script>
+
+<script src="/js/image-zoom.js"></script>
+
+<script src="/js/share.js"></script>
+
+<script src="/js/search.js"></script>
+
+<script src="/js/hide-inline-interaction.js"></script>
+
+<script src="/js/hide-toggle-interaction.js"></script>
+
+<script src="/js/dark-mode-sync.js"></script>
+
+<script src="/js/animations.js"></script>
+
+<script src="/js/ai-theme.js"></script>
+
+<script src="/js/loading-animation.js"></script>
+
+<script src="/js/article-modal.js"></script>
+<script>window.theme = {
+  features: {"dark_mode":true,"smooth_scroll":true,"back_to_top":true,"loading_animation":true},
+  code_block: {"height_limit":200,"enable_folding":true,"max_height":"300px","show_lang":true},
+  ai_summary: {"enable":false,"api_key":"","summary_directly":false,"ai_name":"然-AI","ai_introduce":"我是文章辅助AI: 然-AI，一个基于deepseek的强大语言模型，有什么可以帮到您？😊","ai_version":"deepseekv3","buttons":["介绍自己","来点灵感","生成AI简介"]},
+  categories: {"layout":"accordion","accordion_animation":true,"show_empty_categories":true},
+  article_list: {"card_size":"normal","view_mode":"modal"}
+};
+</script><script src="/js/ai.js"></script><script src="/js/postai.js"></script>
+        <style>
+            [bg-lazy] {
+                background-image: none !important;
+                background-color: #eee !important;
+            }
+        </style>
+        <script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                preloadRatio: 3,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z\d\-\.\+]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(t.test(e.href)||r.test(e.href))&&(e.href=a.dataset.original)})});</script><script>(r=>{r.imageLazyLoadSetting.processImages=t;var a=r.imageLazyLoadSetting.isSPA,o=r.imageLazyLoadSetting.preloadRatio||1,d=i();function i(){var t=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")),e=Array.prototype.slice.call(document.querySelectorAll("[bg-lazy]"));return t.concat(e)}function t(t){(a||t)&&(d=i());for(var e,n=0;n<d.length;n++)0<=(e=(e=d[n]).getBoundingClientRect()).bottom&&0<=e.left&&e.top<=(r.innerHeight*o||document.documentElement.clientHeight*o)&&(()=>{var t,e,a,o,i=d[n];e=function(){d=d.filter(function(t){return i!==t}),r.imageLazyLoadSetting.onImageLoaded&&r.imageLazyLoadSetting.onImageLoaded(i)},(t=i).dataset.loaded||(t.hasAttribute("bg-lazy")?(t.removeAttribute("bg-lazy"),e&&e()):(a=new Image,o=t.getAttribute("data-original"),a.onload=function(){t.src=o,t.removeAttribute("data-original"),t.setAttribute("data-loaded",!0),e&&e()},a.onerror=function(){t.removeAttribute("data-original"),t.setAttribute("data-loaded",!1),t.src=o},t.src!==o&&(a.src=o)))})()}function e(){clearTimeout(t.tId),t.tId=setTimeout(t,500)}t(),document.addEventListener("scroll",e),r.addEventListener("resize",e),r.addEventListener("orientationchange",e)})(this);</script></body></html>

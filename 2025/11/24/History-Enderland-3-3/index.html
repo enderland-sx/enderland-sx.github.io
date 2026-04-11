@@ -1,0 +1,302 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="theme-color" content="#1a1a1a"><meta name="msapplication-navbutton-color" content="#1a1a1a"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><title>Enderland·Ark 2.0</title><script>(function() {
+  // 尽早应用暗色模式，防止闪烁
+  var savedDarkMode = localStorage.getItem('darkMode') === 'true';
+  if (savedDarkMode) {
+    document.documentElement.classList.add('dark-mode');
+  }
+})();
+</script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:wght@400;500;600;700&amp;family=Fira+Code:wght@400;500&amp;display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script><link rel="icon" href="/null">
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="/css/tags.css">
+
+<link rel="stylesheet" href="/css/categories.css">
+
+<link rel="stylesheet" href="/css/categories-accordion.css">
+
+<link rel="stylesheet" href="/css/highlight.css">
+
+<link rel="stylesheet" href="/css/toc.css">
+
+<link rel="stylesheet" href="/css/image-zoom.css">
+
+<link rel="stylesheet" href="/css/share.css">
+
+<link rel="stylesheet" href="/css/mobile-nav.css">
+
+<link rel="stylesheet" href="/css/search.css">
+
+<link rel="stylesheet" href="/css/scrollbar.css">
+
+<link rel="stylesheet" href="/css/timeline.css">
+
+<link rel="stylesheet" href="/css/animations.css">
+
+<link rel="stylesheet" href="/css/ai-theme.css">
+
+<link rel="stylesheet" href="/css/loading-animation.css">
+
+<link rel="stylesheet" href="/css/article-modal.css">
+<!-- 条件加载关于页面样式--><style>:root {
+  --primary-color: #1a1a1a;
+  --secondary-color: #666666;
+  --accent-color: #d2a200;
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --overlay-color: rgba(0, 0, 0, 0.7);
+  --tag-background-color: #ffffff;
+  --card-background-color: #ffffff;
+}
+</style><link rel="stylesheet" href="https://cdn1.tianli0.top/gh/qxchuckle/Post-Summary-AI/chuckle-post-ai.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><meta name="generator" content="Hexo 7.3.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head><body><div id="app"><header class="header navbar-bubble"><nav class="nav"><div class="nav-container"><div class="nav-logo"><a href="/"><span class="nav-title">Enderland·Ark 2.0</span></a></div><div class="nav-menu"><a class="nav-item" href="/">首页</a><a class="nav-item" href="/about/">关于</a><a class="nav-item" href="/archives/">归档</a><a class="nav-item" href="/categories/">分类</a><a class="nav-item" href="/tags/">标签</a><!-- 搜索按钮--><div class="search-toggle"><i class="fas fa-search"></i></div></div><div class="nav-toggle"><span></span><span></span><span></span></div></div></nav></header><div class="search-overlay"><div class="search-container"><div class="search-form"><input class="search-input" type="text" placeholder="搜索文章..."/><div class="search-close">×</div></div><div class="search-results"></div></div></div><main class="main"><div class="post-wrapper"><div class="toc-sidebar"><div class="toc-container"><div class="toc-title">目录</div><div class="toc-content" id="table-of-contents"><!-- Table of contents will be generated by JavaScript--></div></div></div><article class="post-container"><div class="post-header"><div class="post-meta"><div class="post-category"><a href="/categories/%E7%A4%BE%E4%BC%9A%E5%92%8C%E6%94%BF%E6%B2%BB%E4%B9%8B%E5%8E%86%E5%8F%B2/">社会和政治之历史</a></div><div class="post-date"><time datetime="2025-11-24T15:37:53.000Z">十一月 24, 2025</time></div><div class="post-author"><span>By Xeuhaied</span></div></div><h1 class="post-title">文明通史大纲-3.3 Enderland从后太空时代逐步迈入宏观星际社会时代</h1><div class="post-tags"></div></div><!-- AI摘要模块容器--><div id="post-ai-container"></div><div class="post-content"><div class="timeline">
+    <h2 class="timeline-title">前奏-后太空文明时期</h2>
+    <div class="timeline-body">
+      <!-- timeline 2085年 -->
+<h3 id="第一艘可控核聚变空天星舰竣工"><a href="#第一艘可控核聚变空天星舰竣工" class="headerlink" title="第一艘可控核聚变空天星舰竣工"></a>第一艘可控核聚变空天星舰竣工</h3><p>部署在轨道，最高速度可以达到1%光速，2100年后逐渐实现了星舰的规模化生产，并不断循环（回收重铸）迭代。2110年开始，在星系内进行了第一步的太空殖民，相比于之前的单纯在母星轨道上建空间站和发射火箭、卫星，取得了极大的飞跃。<strong>此后100多年，都是在Endsol星系进行资源采集和能源利用/转换。</strong></p>
+<!-- endtimeline -->
+<!-- timeline 2142年4月 -->
+<h3 id="环境部B137团队出色完成了对Endoria-β星球的环境改造"><a href="#环境部B137团队出色完成了对Endoria-β星球的环境改造" class="headerlink" title="环境部B137团队出色完成了对Endoria-β星球的环境改造"></a>环境部B137团队出色完成了对Endoria-β星球的环境改造</h3><p>Endoria-β变成第二个基本宜居星球，耗时31.3年。有效解决了环境恶化危机和常规资源、常规能源危机，促进生活保障进一步提升。此后，大量生产设施、住宅单元（人口）迁往了该星球，进行了一定规模的登陆殖民。</p>
+<!-- endtimeline -->
+<!-- timeline 2176年-->
+<h3 id="亚空间空间初代跃迁技术正式落地！"><a href="#亚空间空间初代跃迁技术正式落地！" class="headerlink" title="亚空间空间初代跃迁技术正式落地！"></a>亚空间空间初代跃迁技术正式落地！</h3><p>国家元首-101岁高龄的Serliner4世得益于在2076年后生物工程的成熟，仍然健在，同时也显得已经力不从心。尽管如此，仍然在BL团队共同协作推动亚空间折跃航道定位的技术迭代。同年12月，随着360次3~30光年内无星球大气层大影响的定位跃迁完全成功后，这项被盼望许久的在此前不成熟只在“大公理”频道学习的亚空间超光速技术正式落地民生！</p>
+<!-- endtimeline -->
+<!-- timeline 2158年-->
+<h3 id="新阿力号建设完毕"><a href="#新阿力号建设完毕" class="headerlink" title="新阿力号建设完毕"></a>新阿力号建设完毕</h3><p>2150年阿力号事件在前文有所概述，复述并无意义。2158年，新阿力号建设完毕并安全投入使用，新颖的离合式太空电梯技术为以后星环城的天地登录奠定了科学基础。这让星际社会间的外交交流不再是通讯器内的线上交流，让线下见面有了可能——截止到2184年的技术，只能创造出可以一次跃迁最多68.98光年的1.2倍光速亚空间陪船航道。（陪船航道指跃迁核心在星舰上），且还是有点臃肿。</p>
+<!-- endtimeline -->
+<!-- timeline 2183年-->
+
+<h3 id="109岁的Serliner4世卸职"><a href="#109岁的Serliner4世卸职" class="headerlink" title="109岁的Serliner4世卸职"></a>109岁的Serliner4世卸职</h3><p>Serliner4世正式决定安度晚年，全员选举一致决定候选人之一的Mily·Bardiluck任职文明元首。</p>
+<!-- endtimeline -->
+<!-- timeline 2190年后-->
+<h3 id="钅闪元素巧妙地进一步解决了能源携带和大功率充放问题"><a href="#钅闪元素巧妙地进一步解决了能源携带和大功率充放问题" class="headerlink" title="钅闪元素巧妙地进一步解决了能源携带和大功率充放问题"></a>钅闪元素巧妙地进一步解决了能源携带和大功率充放问题</h3><p>钅闪元素的初步应用为能源携带和“大”功率释放的问题提供了解决方案。星际航行的能源携带问题进一步解决，星系内能源转换和利用效率进一步提升，发电量达到里程碑式的突破。</p>
+<!-- endtimeline -->
+    </div>
+  </div>
+
+
+<div class="hide-toggle">
+    <div class="hide-toggle-title">引用自《[环境学 – 星球及宇宙空间自然环境 第一章 宇宙和Endoria 3. Endsol中的其他星球](http://enderland.cn/%e7%8e%af%e5%a2%83%e5%ad%a6/111)》的对Endoria-β的概述</div>
+    <div class="hide-toggle-content"><p>Endoria-β：内区最大的 “超级岩质行星”<br>位于 1.82AU 轨道的 Endoria-β，是 Endsol 星系内区体积最大的类地行星：<br><strong>物理参数</strong>：赤道面直径 15800km（约为 Enderland-α 赤道直径的 123.9%），公转周期 687 宇宙协和日（约为 Enderland-α 公转周期的 1.78 倍），自转周期 24.6 宇宙协和小时（昼夜节律与 Enderland-α 接近）；<br><strong>环境特征</strong>：岩质表面覆盖大量火山地貌（板块活动强度约为 Enderland-α 的 70%，但仍属活跃），大气稀薄（主要成分为二氧化碳，气压仅为 Enderland-α 的 1/20），无液态水（表面日间温度约 35℃，夜间降至 – 15℃，水分以冰态固定于两极区域）；<br><strong>环境学意义</strong>：虽无多细胞生物生存条件，但其 “超级岩质行星” 的体积与地质活动特征，为Endoria/Enderland文明早期研究行星质量与大气保留能力、地质演化速率的关联提供了关键样本，补充了 Enderland-α 地质研究的参数边界。此外，因该星球存在部分单细胞生物，为外星生物的早期研究提供了重要样本。</p>
+</div>
+  </div>
+
+<div class="note info simple"><p>在10年前，由于Serliner终生不婚不育，GOE氏族出于同情，将他外甥推荐给他，签定亲属转移契约，变为Serliner4世的契子——Serliner5世。2196年，Serliner4世逝世，享年125岁。27岁的Serliner5世被“莫须有”的公投送上了元首的位置，而Mily·Bardiluck被顶替的同时保留外交权力、文化权力、科技发展方向主持权力，调配去当任刚前任卸职的<strong>民政总理</strong>。（民政总理又叫民政部首席，地位等同于我们的国务院总理）</p>
+</div>
+
+<p><em><strong>其他技术发展已在3.1有所概述，此处不再赘述。</strong></em></p>
+<h1 id="2189年6月-全文明上下的外交策略大讨论"><a href="#2189年6月-全文明上下的外交策略大讨论" class="headerlink" title="2189年6月 全文明上下的外交策略大讨论"></a><strong>2189年6月 全文明上下的外交策略大讨论</strong></h1><p>随着交通和通讯技术的双管齐全，越来越多人憧憬着以后会可以见到怎么样的实质文明——在此前，也只是大公理和星海共同体里面与一些陌生文明进行咨询，而没有仔细想过他们的文明是怎么个形态。</p>
+<p>针对这个问题，在2189年6月的全文明公民大会上，展开了激烈讨论。Mily·Bardiluck指出：“我们应该谨慎对待其它文明，因为我们不知道它们来者是否友善”</p>
+<p>这句话被CIH发展委员会公民代表Kandibarcy立刻反驳：“我们在进入星海共同体开始，已经初步接入星际社会，我们的坐标在发布宇宙安全声明取得文明合法性时已经被广播。那我问你，为什么在这之后这么多年都没有外星不法分子来攻打掠夺我们？但凡你在‘大公理’频道中查阅《星海共同体宪章》和《星际法》就知道：超过共同体标准1.2级的非法文明可以随便清理，且文明若侵犯他方主权，星海共同体各方可以对该文明宣战。所以是和平与发展的共识让这个银河系的合法星际文明不敢肆意妄为，更何况非法文明。”</p>
+<p><strong>这个主张提出后，全文明找到了接下来发展的方向。</strong></p>
+<p>Mily·Bardiluck的主张在大会上未能取得民意，最终全员表彰决定：同意并实现Kandibarcy的主张。同时文化部联动发展部，出台《非母星星系开拓规划书》《外交拜访规划书》，CIH党员共同行驶文明意志，依照宪法，出台一般法《星际管理法》《星际外交及Enderland星际主权法》。明确在20年内逐渐实行文明星域的“改革开放”。</p>
+<h1 id="2203-※第一次大远征运动※"><a href="#2203-※第一次大远征运动※" class="headerlink" title="2203 ※第一次大远征运动※"></a><strong>2203</strong> <strong>※第一次大远征运动</strong>※</h1><p>2203年，34岁的Serliner5世表示：“不能继续让群众收敛着他们的探索欲望了！”，随后制定了一系列民间舰船生产标准，让最新型的超光速星舰量产民用交通化、客制化。广义上正式开始了向星际社会主动前进，主动迈出家门的“改革开放”。</p>
+<p>迫于舰载能源的功率等限制，此时更多是借用既有恒星能源进行升压蓄能后，直接开启并进入亚空间航道航行，舰载亚空间引擎在之后才应用成熟。</p>
+<p>由于通讯和探索权利下放到民间，在对母星系外星球、星系进行了宽广范围的探索，平均半径达到了19.73光年。可惜，由于一些文明受拒和各种机缘巧合的缘故，没有发现/到访另一颗有智慧生命的星球。只实现了从1个恒星(5行星+3个矮行星) 到 1(5+3)+1(3+4)+1(3)+2(2)+<strong>1</strong>的疆域开拓（13+7/4个天体的疆域，有6个宜居大天体，包括改造），人口上限增长到了(6+0.05)*1.846153846×10⁸个。在2220年左右，因大功率导致的能源浪费量大和跃迁效率低，且发现初期量产型跃迁装置良率较低，安全事故常有发生，相关对外部门提出：“休养生息，迭代技术后再起航”，要求人们对既有宣布主权的新星系新天体进行有效开发利用，补足此前消耗，进行更高效率的新技术普及后再进行大规模的民间远征探索，将远征机会收回上层科研部门，保留星舰交通。<strong>无特权目的，故公投通过，予以停止。</strong></p>
+<p>“其实当时的技术压根不足支撑这么大范围的民间探索（第二次星间大远征运动才可以做到），普遍飞船都是只能通过携带生产资料，在母星系和目标星系部署一个亚空间创建装置进行跃迁，亚空间+这些飞船也就能做到<strong>极速</strong>为每年飞5光年左右。<br>*——当时某个学者的批判</p>
+<p><strong>“这次星际中的第一次大航海，造成了不少的意外和伤亡，向外探索在第二次远征运动之前是高危行为”</strong><br><em>——后世史学家Varker·Mody的评论</em></p>
+<p>这次事件史称为“第一次星间大远征”，实现了对系外星球从0到1的探索，对后续第二次星际大远征运动、星际大文化革新运动奠定了实践基础。</p>
+<h1 id="语言革命-与Enderland的历史有共鸣的文明语言采纳"><a href="#语言革命-与Enderland的历史有共鸣的文明语言采纳" class="headerlink" title="语言革命 与Enderland的历史有共鸣的文明语言采纳"></a><strong>语言革命</strong> <strong>与Enderland的历史有共鸣的文明语言采纳</strong></h1><p>2208年，Enderland与新晋可实现超距通讯文明“蓝星”**<em>（当地时间2208+57=2261）</em>**进行了首次对话，在3年内，获取到了一些关于该文明的各种社会信息，2213年，基本实现了两文明本地语言的互相翻译。</p>
+<p><em>——蓝星文明其实就是地球文明，表述不一样而已，前者是银河系官方化通俗表述罢了。</em></p>
+<p>2215年，蓝星文明几大经典语系被承认为“更有效率的”“可替代Enderland文明传统楔形语言”，由全民赋予文化部、教育部出版权力，以98.8%公投通过率执行第2215-12号文明总则修正案，实行了从上到下的官方语言替换，并协商写于宪法，修订2215年宪法。确立为：中、英、希腊、拉丁为官方语言，推崇汉语言象形文字为主要文化宣传语言，使用更为简便技术的阿拉伯数字。</p>
+<p>此外，将共产主义文明定义为<strong>“囻”</strong>，而传统国家为“国”，正式用拉丁字母从逻辑上翻译文明名称为“Enderland”。</p>
+<p>这从理性来说，是一个非常漫长的过程，且非常曲折——但！由于Enderland此前的技术貌似就是刻意将机械语言和传统交流语言进行藕断丝连，及其好替换，况且有脑机系统进行学习和工具型AI进行深度学习纠正，在2230年左右已经实现了全文明的语言更换，包括人们的口语，这只花了15年。</p>
+<p>这个给文明的文学表现形式大换血期间不乏挑战/动荡，比如翻译一些俚语、悖论；翻译一些符号，等等都有一定的难度，且公民得重新学习一次语言，如果不是相比于前语言更有价值和高效率，可以更加精准表达意思，恐怕不会进行这次迭代。且幸亏于元首发挥囻之先驱者形象，在人敢不为之未知领域而敢于为，Serliner5世通过在氏族内和自身修养上使用蓝星语言，并指出“语言是骨架，表达的思想取决于具体的创作文化的人”，这辩证看待了文化和语言的关系，为语言换血争得了合理性和民意。</p>
+<p>其中，在2215年之前，已经有时任星球外交兼科学官主席（不是首席）-Xusart·Xustiadio(克修斯萨特·克西斯特夏迪奥）学习得了汉语言，利用中国中央官话的发音规律（普通话）写下了Enderland的第一首七言律诗，是一首深刻反映了1800年后Endoria文明历经旧毁灭，文明断层后新文明新高度的悲壮咏古诗：《咏古》（是的，题名就叫做咏古）被Endermen奉为经典。</p>
+<h3 id="咏古"><a href="#咏古" class="headerlink" title="咏古"></a>咏古</h3><blockquote>
+<p>亘朝皆有断程处，前人仆又无限路。<br>峡河赤透红日起，沉底尸骸随水浮。<br>孙儿脚踏前人骨，啼哩嗒喇越古谷。<br>君子常言百姓苦，正值春光来刨土。</p>
+</blockquote>
+<p>综上，Enderland诚然进入了真正的星际化（FTL）的发展。对内的稳定不容破坏是共识——之后文明内不再会有太大动荡，更多是上下层政治的激烈辩论和对话协商取代社会混乱，而Enderland站在星海共同体-星际外交场上，还会面临着更多机遇和挑战。况且，Enderland的科技仍有发展空间，宇宙中还有很多未知事物等待着这个文明的子民去探索，仍需要用文化导向加强科技研发，保持不骄不躁、平等互利的技术外交态度。<em>我的意思是，各种方面皆未完待续。</em>  </p>
+<p>其次,是从本章开始的一些具体物理计算和数值统计 ，与 记录事件发生的时间比较后至今仍有争议甚至混乱，阅读者只需要知道发生了什么事，而不必专门在史书里面较真物理学。具体情况会在科技专题文章内逐渐纠正。</p>
+</div><!-- 初始化AI摘要--><!-- 传递TOC配置给前端--><script>// 创建全局TOC配置对象
+window.tocConfig = {
+  empty_toc_behavior: "placeholder"
+};
+</script><div class="post-navigation"><div class="post-nav prev"><a href="/2025/11/27/History-Enderland-4-0/"><span class="nav-label">← Previous</span><span class="nav-title">文明通史大纲-4.0 Enderland进一步星际化</span></a></div><div class="post-nav next"><a href="/2025/11/24/%E6%97%A7%E8%AE%BE-%E5%A4%A7%E7%BA%B2%E6%96%B0%E8%AE%BE%E6%97%B6%E9%97%B4%E7%BA%BF%E6%9C%89%E6%94%B9%E5%8A%A8%EF%BC%8C%E5%86%85%E5%AE%B9%E4%BB%85%E4%BE%9B%E5%8F%82%E8%80%83/"><span class="nav-label">Next →</span><span class="nav-title">旧设-大纲(新设时间线有改动，内容仅供参考)</span></a></div></div><div class="post-share"><h3 class="share-title">Share this article</h3><div class="share-buttons"><a class="share-btn twitter" href="https://twitter.com/intent/tweet?text=%E6%96%87%E6%98%8E%E9%80%9A%E5%8F%B2%E5%A4%A7%E7%BA%B2-3.3%20Enderland%E4%BB%8E%E5%90%8E%E5%A4%AA%E7%A9%BA%E6%97%B6%E4%BB%A3%E9%80%90%E6%AD%A5%E8%BF%88%E5%85%A5%E5%AE%8F%E8%A7%82%E6%98%9F%E9%99%85%E7%A4%BE%E4%BC%9A%E6%97%B6%E4%BB%A3&amp;url=%2F2025%2F11%2F24%2FHistory-Enderland-3-3%2F" target="_blank" rel="noopener"><span>Twitter</span></a><a class="share-btn facebook" href="https://www.facebook.com/sharer/sharer.php?u=%2F2025%2F11%2F24%2FHistory-Enderland-3-3%2F" target="_blank" rel="noopener"><span>Facebook</span></a><a class="share-btn linkedin" href="https://www.linkedin.com/sharing/share-offsite/?url=%2F2025%2F11%2F24%2FHistory-Enderland-3-3%2F" target="_blank" rel="noopener"><span>LinkedIn</span></a><a class="share-btn wechat" href="#" data-wechat="/2025/11/24/History-Enderland-3-3/"><span>微信</span></a><a class="share-btn qq" href="https://connect.qq.com/widget/shareqq/index.html?url=%2F2025%2F11%2F24%2FHistory-Enderland-3-3%2F&amp;title=%E6%96%87%E6%98%8E%E9%80%9A%E5%8F%B2%E5%A4%A7%E7%BA%B2-3.3%20Enderland%E4%BB%8E%E5%90%8E%E5%A4%AA%E7%A9%BA%E6%97%B6%E4%BB%A3%E9%80%90%E6%AD%A5%E8%BF%88%E5%85%A5%E5%AE%8F%E8%A7%82%E6%98%9F%E9%99%85%E7%A4%BE%E4%BC%9A%E6%97%B6%E4%BB%A3" target="_blank" rel="noopener"><span>QQ</span></a><a class="share-btn weibo" href="https://service.weibo.com/share/share.php?url=%2F2025%2F11%2F24%2FHistory-Enderland-3-3%2F&amp;title=%E6%96%87%E6%98%8E%E9%80%9A%E5%8F%B2%E5%A4%A7%E7%BA%B2-3.3%20Enderland%E4%BB%8E%E5%90%8E%E5%A4%AA%E7%A9%BA%E6%97%B6%E4%BB%A3%E9%80%90%E6%AD%A5%E8%BF%88%E5%85%A5%E5%AE%8F%E8%A7%82%E6%98%9F%E9%99%85%E7%A4%BE%E4%BC%9A%E6%97%B6%E4%BB%A3" target="_blank" rel="noopener"><span>微博</span></a><a class="share-btn copy" href="#" data-copy="/2025/11/24/History-Enderland-3-3/"><span>Copy Link</span></a></div></div></article></div><section class="comments-section"><div class="comments-container"><h2 class="comments-title">Comments</h2><div class="comments-content"><div id="twikoo-comments"></div><div id="twikoo"></div><script src="https://unpkg.com/twikoo@1.6.39/dist/twikoo.all.min.js"></script><script>twikoo.init({
+  envId: 'twikoo-brown-eight.vercel.app',
+  el: '#twikoo',
+  region: '',
+  path: 'window.location.pathname',
+  visitor: true,
+  onCommentLoaded: function () {
+    console.log('Twikoo评论加载成功');
+  }
+});</script></div></div></section></main><footer class="footer"><div class="footer-bottom"><div class="footer-copyright">© 2026 Enderland. All rights reserved.</div><!-- Footer centered image with link--><div class="footer-badges"><a target="_blank" rel="noopener" href="https://hexo.io/" title="博客框架为Hexo_v5.4.0"><img src="/images/loading.gif" data-original="https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Frame-Hexo.svg" alt="博客框架为Hexo_v5.4.0"/></a><a target="_blank" rel="noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"><img src="/images/loading.gif" data-original="https://npm.elemecdn.com/anzhiyu-blog@2.2.0/img/badge/Copyright-BY-NC-SA.svg" alt="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"/></a></div></div></footer></div><!-- 立即应用暗色模式，避免页面闪烁--><script>(function() {
+  // 检查本地存储中的暗色模式设置
+  const savedDarkMode = localStorage.getItem('darkMode') === 'true';
+  // 如果设置为暗色模式，立即应用到body
+  if (savedDarkMode) {
+    document.body.classList.add('dark-mode');
+  }
+
+  // 防止页面闪烁，在DOM加载完成前设置一个初始类
+  document.documentElement.style.visibility = 'hidden';
+  document.addEventListener('DOMContentLoaded', function() {
+    document.documentElement.style.visibility = 'visible';
+  });
+})();
+</script>
+<script src="/js/main.js"></script>
+
+<script src="/js/tags.js"></script>
+
+<script src="/js/categories-accordion.js"></script>
+
+<script src="/js/highlight.js"></script>
+
+<script src="/js/load-more.js"></script>
+
+<script src="/js/header-scroll.js"></script>
+
+<script src="/js/toc.js"></script>
+
+<script src="/js/image-zoom.js"></script>
+
+<script src="/js/share.js"></script>
+
+<script src="/js/search.js"></script>
+
+<script src="/js/hide-inline-interaction.js"></script>
+
+<script src="/js/hide-toggle-interaction.js"></script>
+
+<script src="/js/dark-mode-sync.js"></script>
+
+<script src="/js/animations.js"></script>
+
+<script src="/js/ai-theme.js"></script>
+
+<script src="/js/loading-animation.js"></script>
+
+<script src="/js/article-modal.js"></script>
+<script>window.theme = {
+  features: {"dark_mode":true,"smooth_scroll":true,"back_to_top":true,"loading_animation":true},
+  code_block: {"height_limit":200,"enable_folding":true,"max_height":"300px","show_lang":true},
+  ai_summary: {"enable":false,"api_key":"","summary_directly":false,"ai_name":"然-AI","ai_introduce":"我是文章辅助AI: 然-AI，一个基于deepseek的强大语言模型，有什么可以帮到您？😊","ai_version":"deepseekv3","buttons":["介绍自己","来点灵感","生成AI简介"]},
+  categories: {"layout":"accordion","accordion_animation":true,"show_empty_categories":true},
+  article_list: {"card_size":"normal","view_mode":"modal"}
+};
+</script><script src="/js/ai.js"></script><script src="/js/postai.js"></script>
+        <style>
+            [bg-lazy] {
+                background-image: none !important;
+                background-color: #eee !important;
+            }
+        </style>
+        <script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                preloadRatio: 3,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z\d\-\.\+]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(t.test(e.href)||r.test(e.href))&&(e.href=a.dataset.original)})});</script><script>(r=>{r.imageLazyLoadSetting.processImages=t;var a=r.imageLazyLoadSetting.isSPA,o=r.imageLazyLoadSetting.preloadRatio||1,d=i();function i(){var t=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")),e=Array.prototype.slice.call(document.querySelectorAll("[bg-lazy]"));return t.concat(e)}function t(t){(a||t)&&(d=i());for(var e,n=0;n<d.length;n++)0<=(e=(e=d[n]).getBoundingClientRect()).bottom&&0<=e.left&&e.top<=(r.innerHeight*o||document.documentElement.clientHeight*o)&&(()=>{var t,e,a,o,i=d[n];e=function(){d=d.filter(function(t){return i!==t}),r.imageLazyLoadSetting.onImageLoaded&&r.imageLazyLoadSetting.onImageLoaded(i)},(t=i).dataset.loaded||(t.hasAttribute("bg-lazy")?(t.removeAttribute("bg-lazy"),e&&e()):(a=new Image,o=t.getAttribute("data-original"),a.onload=function(){t.src=o,t.removeAttribute("data-original"),t.setAttribute("data-loaded",!0),e&&e()},a.onerror=function(){t.removeAttribute("data-original"),t.setAttribute("data-loaded",!1),t.src=o},t.src!==o&&(a.src=o)))})()}function e(){clearTimeout(t.tId),t.tId=setTimeout(t,500)}t(),document.addEventListener("scroll",e),r.addEventListener("resize",e),r.addEventListener("orientationchange",e)})(this);</script></body></html>

@@ -1,0 +1,405 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="theme-color" content="#1a1a1a"><meta name="msapplication-navbutton-color" content="#1a1a1a"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><title>Enderland·Ark 2.0</title><script>(function() {
+  // 尽早应用暗色模式，防止闪烁
+  var savedDarkMode = localStorage.getItem('darkMode') === 'true';
+  if (savedDarkMode) {
+    document.documentElement.classList.add('dark-mode');
+  }
+})();
+</script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:wght@400;500;600;700&amp;family=Fira+Code:wght@400;500&amp;display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script><link rel="icon" href="/null">
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="/css/tags.css">
+
+<link rel="stylesheet" href="/css/categories.css">
+
+<link rel="stylesheet" href="/css/categories-accordion.css">
+
+<link rel="stylesheet" href="/css/highlight.css">
+
+<link rel="stylesheet" href="/css/toc.css">
+
+<link rel="stylesheet" href="/css/image-zoom.css">
+
+<link rel="stylesheet" href="/css/share.css">
+
+<link rel="stylesheet" href="/css/mobile-nav.css">
+
+<link rel="stylesheet" href="/css/search.css">
+
+<link rel="stylesheet" href="/css/scrollbar.css">
+
+<link rel="stylesheet" href="/css/timeline.css">
+
+<link rel="stylesheet" href="/css/animations.css">
+
+<link rel="stylesheet" href="/css/ai-theme.css">
+
+<link rel="stylesheet" href="/css/loading-animation.css">
+
+<link rel="stylesheet" href="/css/article-modal.css">
+<!-- 条件加载关于页面样式--><style>:root {
+  --primary-color: #1a1a1a;
+  --secondary-color: #666666;
+  --accent-color: #d2a200;
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --overlay-color: rgba(0, 0, 0, 0.7);
+  --tag-background-color: #ffffff;
+  --card-background-color: #ffffff;
+}
+</style><link rel="stylesheet" href="https://cdn1.tianli0.top/gh/qxchuckle/Post-Summary-AI/chuckle-post-ai.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><meta name="generator" content="Hexo 7.3.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head><body><div id="app"><header class="header navbar-bubble"><nav class="nav"><div class="nav-container"><div class="nav-logo"><a href="/"><span class="nav-title">Enderland·Ark 2.0</span></a></div><div class="nav-menu"><a class="nav-item" href="/">首页</a><a class="nav-item" href="/about/">关于</a><a class="nav-item" href="/archives/">归档</a><a class="nav-item" href="/categories/">分类</a><a class="nav-item" href="/tags/">标签</a><!-- 搜索按钮--><div class="search-toggle"><i class="fas fa-search"></i></div></div><div class="nav-toggle"><span></span><span></span><span></span></div></div></nav></header><div class="search-overlay"><div class="search-container"><div class="search-form"><input class="search-input" type="text" placeholder="搜索文章..."/><div class="search-close">×</div></div><div class="search-results"></div></div></div><main class="main"><div class="post-wrapper"><div class="toc-sidebar"><div class="toc-container"><div class="toc-title">目录</div><div class="toc-content" id="table-of-contents"><!-- Table of contents will be generated by JavaScript--></div></div></div><article class="post-container"><div class="post-header"><div class="post-meta"><div class="post-category"><a href="/categories/Enderland%E7%9A%84%E6%B3%95%E5%BE%8B%E6%B3%95%E8%A7%84/">Enderland的法律法规</a></div><div class="post-date"><time datetime="2026-03-30T12:46:00.000Z">三月 30, 2026</time></div><div class="post-author"><span>By Xeuhaied</span></div></div><h1 class="post-title">Enderland 共同体文化与信息管理法（2530年修订）</h1><div class="post-tags"></div></div><!-- AI摘要模块容器--><div id="post-ai-container"></div><div class="post-content"><h2 id="序言"><a href="#序言" class="headerlink" title="序言"></a><strong>序言</strong></h2><p>为保障公民思想文化自由、信息权利与意识体自主，规范信息基础设施、应用生态与虚拟空间管理，促进知识共享与文化创新，防范信息权力剥削、数据滥用与意识操控，捍卫文明意识形态安全与数字主权，依据《反剥削法》、《宪法》及相关法律，制定本法，本法属于一般法。</p>
+<h2 id="第一编-总则"><a href="#第一编-总则" class="headerlink" title="第一编 总则"></a><strong>第一编 总则</strong></h2><p><strong>第一条【立法目的与依据】</strong></p>
+<p>为构建开放、安全、文明、共治的信息社会，明确信息与文化领域各方权责，特制定本法。本法依据《反剥削法》第三条、第八条及《宪法》第三十五条、第四十条制定。</p>
+<p><strong>第二条【基本定义】</strong></p>
+<p>本法下列用语的含义：</p>
+<p>（一）<strong>信息内容</strong>：指以数字、信号或其他任何形式存在的，可被感知、识别和处理的数据、消息、知识、作品等。</p>
+<p>（二）<strong>信息应用平台</strong>：指通过信息网络向公众提供信息发布、传播、搜索、交流、存储、处理等服务的软件、网站或应用程序。</p>
+<p>（三）<strong>公共知识基础设施</strong>：指由文明共同体建设、维护，用于存储、处理、提供公共知识与数据的基础设施，包括智库、记忆宫、意识体空间等。</p>
+<p>（四）<strong>意识体空间</strong>：指为脱离生物载体的意识体提供的，由官方运营和维护的虚拟存续与发展环境。</p>
+<p>（五）<strong>开源</strong>：指软件源代码或技术设计文档按照法定许可协议向公众开放，允许任何人查看、使用、修改和分发。</p>
+<p>（六）<strong>辩证吸纳</strong>：指在跨文明文化交流中，以平等尊重、反剥削反伤害为底线，主动识别、学习、转化其他文明中契合本文明核心价值观的优秀成果的指导原则。</p>
+<p>（七）<strong>内核导向</strong>：指评价文化作品时，以其核心思想、价值取向和情感基调作为根本标准，而非仅依据其表现形式或暴露程度。</p>
+<p><strong>第三条【适用范围】</strong></p>
+<p>本法适用于Enderland主权范围内的一切文化产品创作、传播活动，信息内容的制作、复制、发布、传播，信息应用平台的运营，公共知识基础设施的建设、运营、维护，以及意识体空间的管理与服务。</p>
+<p><strong>第四条【核心价值观与基本原则】</strong></p>
+<p>信息与文化管理应遵循以下核心价值观与基本原则：</p>
+<p>（一）<strong>平等尊重、反剥削反伤害</strong>：所有活动不得宣扬或隐含任何形式的剥削、压迫、物化个体或精神伤害内容。</p>
+<p>（二）<strong>辩证包容、底线坚守</strong>：以开放姿态对待多元文化表达，但必须坚守文明核心价值观底线，对异质价值观内容进行明确标识与辩证引导。</p>
+<p>（三）<strong>权责匹配、认知引导</strong>：公民享有信息获取与文化消费的自由，但接触特定内容需承担相应责任；文明通过技术手段（如认知滤网）与教育引导，保护公民身心健康。</p>
+<p>（四）<strong>开源共享、反对垄断</strong>：鼓励知识与技术开源，防止信息权力集中与知识技术剥削。</p>
+<p>（五）<strong>保障权利、尊重隐私</strong>：保障公民知情权、参与权、表达权、监督权与个人信息、意识体数据自主权。</p>
+<p>（六）<strong>安全可信、责任明晰</strong>：确保网络与信息安全，信息内容真实可信，运营者主体责任明确。</p>
+<p>（七）<strong>文明导向、繁荣创作</strong>：培育积极健康、向上向善的网络文化，鼓励多元化、高质量文化创作。</p>
+<p>（八）<strong>协同治理、接受监督</strong>：实行政府管理、平台自治、行业自律、公民监督相结合的综合治理模式。</p>
+<p><strong>第五条【主管部门】</strong></p>
+<p>文化与信息部是Enderland文明信息与文化事务的主管部门，负责统筹协调、制定政策、实施监管。公民革命委员会（CRC）依法对本法执行情况进行监督，防范信息领域的权力剥削行为。</p>
+<h2 id="第二编-信息内容管理"><a href="#第二编-信息内容管理" class="headerlink" title="第二编 信息内容管理"></a><strong>第二编 信息内容管理</strong></h2><p><strong>第六条【内容创作自由】</strong></p>
+<p>公民享有依法进行文化创作与信息表达的自由，任何组织和个人不得非法干涉。</p>
+<p><strong>第七条【内容禁止范围】</strong></p>
+<p>禁止制作、复制、发布、传播含有以下内容的信息：</p>
+<p>（一）宣扬、美化剥削制度、等级压迫或任何形式精神伤害的；</p>
+<p>（二）煽动颠覆公民政权、破坏公有制、分裂文明共同体的；</p>
+<p>（三）泄露文明秘密、星际贸易商业秘密、公民个人隐私及意识体数据的；</p>
+<p>（四）编造、传播虚假信息，扰乱社会秩序，破坏社会稳定的；</p>
+<p>（五）法律、行政法规禁止的其他内容。</p>
+<p><strong>第八条【跨文明文化交流原则】</strong></p>
+<p>引进其他文明的文化产品，应遵循“取其精华、辩证吸纳”原则。文化与信息部应组织专家委员会对引进内容进行评估。</p>
+<p><strong>第九条【</strong>文化遗产与<strong>异质价值观内容标识与引导】</strong></p>
+<p>为践行“辩证包容、取其精华”的跨文明文化交流原则，对来自其他文明的文化内容实行分类管理：</p>
+<ul>
+<li><strong>文化遗产的界定与吸纳</strong><ul>
+<li><strong>定义</strong>：文化遗产指其他文明历史进程中产生，具有普遍人文价值、艺术成就或智慧结晶，且其核心精神与Enderland“平等尊重、反剥削反伤害、集体协作”等核心价值观<strong>相契合或可被辩证吸收</strong>的成果（如特定哲学思想、艺术形式、技术原型、历史叙事）。</li>
+<li><strong>吸纳程序</strong>：文化与信息部应组织跨领域专家委员会，对拟引进的文化遗产内容进行评估。评估通过后，可将其<strong>精华部分</strong>进行转化，纳入公共教育、艺术创作或技术研发的参考体系，并明确标注其来源与核心价值提炼。</li>
+</ul>
+</li>
+<li><strong>异质价值观内容的标识与引导</strong><ul>
+<li>对包含个人英雄主义、极端利己主义、等级宿命论等与Enderland集体主义、平等观存在根本差异的引进作品（无论其是否属于文化遗产），实行<strong>强制性标识与引导</strong>。</li>
+<li><strong>标识要求</strong>：应在作品播放前、片头及关键情节节点，以醒目方式设置明确的辩证提示。提示内容需说明该作品<strong>产生的特定社会历史背景、所反映的价值逻辑</strong>，并引导观众进行批判性思考，区分艺术虚构、历史情境与Enderland的社会现实。</li>
+<li><strong>目的</strong>：旨在帮助公民理解文化多样性，提升价值判断力，防止异质价值观未经反思地渗透，同时不否定作品可能具有的艺术或历史认识价值。</li>
+</ul>
+</li>
+</ul>
+<p><strong>第十条【成人向内容分级标准】</strong></p>
+<p>对成人向内容的界定与分级，不以暴露情节的多寡为标准，而以作品的内核导向为核心依据。</p>
+<p>（一）<strong>纯真美好导向内容</strong>：核心是描绘纯真情感、双向尊重、健康关系的内容，即使包含艺术化的暴露情节，不被认定为低俗淫秽，可标注情感导向提示后向成年公民开放。</p>
+<p>（二）<strong>不良内容</strong>：核心存在物化个体、渲染非自愿侵犯、传递剥削或伤害思想的内容，无论形式如何，均直接认定为不良内容，禁止传播。</p>
+<p><strong>第十一条【成人向内容分层访问机制】</strong></p>
+<p>对允许传播的成人向内容，实行分层访问管理：</p>
+<p>（一）<strong>基础成人内容</strong>：完成基础公民教育的成年公民可自由接触。</p>
+<p>（二）<strong>伦理争议内容（如NTR题材）</strong>：仅对完成基础教育的成年公民开放。访问前，用户必须在线签署“辩证看待承诺书”，承诺能区分虚构情节与现实伦理准则。该承诺记入个人公共档案。</p>
+<p>（三）<strong>写实极端内容（俗称R18G）</strong>：原则上禁止传播。仅以下两类人员可因工作需要申请接触：</p>
+<ol>
+<li>法医、病理学家、心理学研究者等专业人员，需经所在单位与文化与信息部双重审批；</li>
+<li>文化与信息部及其授权的内容审核专员。 接触过程全程留痕，内容严禁外泄。</li>
+</ol>
+<p><em>非写实极端内容的推定：经过艺术化抽象处理，使其无法直接判定为极端暴力内容的</em></p>
+<p><strong>第十二条【极端场景信息过滤机制】</strong></p>
+<p>在发生公共安全事故、灾难等极端场景，可能产生血腥、恐怖视觉信息时，公民的脑机芯片应自动或经授权启动<strong>认知滤网</strong>，对可能造成严重心理创伤的视觉细节进行智能模糊处理，同时保留必要的危险警示信息（如气味、声音警报）。</p>
+<h2 id="第三编-信息应用平台管理"><a href="#第三编-信息应用平台管理" class="headerlink" title="第三编 信息应用平台管理"></a><strong>第三编 信息应用平台管理</strong></h2><p><strong>第十三条【平台分类管理】</strong></p>
+<p>信息应用平台分为通用信息平台、专业服务平台、政务公务平台等。文化与信息部会同有关部门制定平台分类目录与管理规范。</p>
+<p><strong>第十四条【通用平台开源义务】</strong></p>
+<p>面向不特定多数公民提供服务的通用信息应用平台，其核心功能源代码的公开比例不得低于<strong>百分之八十（80%）</strong>。开源范围、许可证及合规认定标准由文化与信息部制定。</p>
+<p><strong>第十五条【开源例外】</strong></p>
+<p>下列平台的源代码，经文化与信息部会同公民革命委员会（CRC）批准，可全部或部分免于开源，并按《加密法》管理：</p>
+<p>（一）涉及文明安全、侦查办案、密码管理的专用平台；</p>
+<p>（二）承载核心加密算法、涉及重大商业秘密的特定模块；</p>
+<p>（三）法律、行政法规规定的其他情形。</p>
+<p><strong>第十六条【平台登记备案】</strong></p>
+<p>提供新闻、出版、教育、医疗保健、金融、交通等公共服务的平台，以及用户数量巨大、具有公共舆论属性或社会动员能力的平台，运营者应向文化部办理登记备案；涉及对外发表的，运营者应向对外信息和认知安全部办理登记备案。</p>
+<p><strong>第十七条【官方政务参与平台】</strong></p>
+<p>“清文”平台经法定程序登记，为Enderland官方指定的政务公开、政策协商与重大公共事务公民参与的主要平台之一。各级行政机关应主动利用该平台发布信息、征求民意、组织预协商。</p>
+<p><strong>第十八条【平台运营规范】</strong></p>
+<p>平台运营者应当：</p>
+<p>（一）建立健全用户注册、信息审核、应急处置、数据安全、个人信息保护等管理制度；</p>
+<p>（二）对平台内信息内容承担管理主体责任，发现法律、法规禁止的信息，应立即采取处置措施，保存记录并向主管部门报告；</p>
+<p>（三）不得利用算法、数据、流量等技术手段实施不正当竞争、价格歧视或侵害用户合法权益；</p>
+<p>（四）依法配合主管部门的监督检查，提供必要的技术、数据支持。</p>
+<p><strong>第十九条【平台内容审核标准】</strong></p>
+<p>平台应依据本法第七条至第十二条，建立细化的内容审核标准与流程，并对审核人员进行核心价值观与辩证思维培训。</p>
+<p><strong>第四编 公共知识基础设施</strong></p>
+<p><strong>第二十条【基础设施体系】</strong></p>
+<p>Enderland公共知识基础设施体系由智库（知识库）、记忆宫、意识体空间等组成，构成文明知识与记忆的永久性、战略性资产。</p>
+<p><strong>第二十一条【智库（知识库）性质与内容】</strong></p>
+<p>智库是文明的公共知识存储器与共享中心，用于系统化保存、管理并向公民开放文明的科学技术成果、历史文化资料、社会调查数据、经脱敏处理的生物电信号学习模型等可公开知识。</p>
+<p><strong>第二十二条【智库存储与运维标准】</strong></p>
+<p>智库数据存储必须采用<strong>跨星际节点的分散式多同步存储架构</strong>，任何单一节点故障不应导致数据丢失。工程师进行系统维护、升级或迁移前，必须完成受影响数据的<strong>全量备份与完整性校验</strong>。具体技术标准由 <code>【SCC-INFO-INFRA-STOR】</code>规定。</p>
+<p><strong>第二十三条【智库内容管理】</strong></p>
+<p>智库内容实行知识共享协议管理，鼓励并规范公民贡献、编辑与修正。涉及敏感技术细节的算法模型，可按《加密法》加密存储，但其功能描述、接口文档及应用范围必须公开。</p>
+<p><strong>第二十四条【记忆宫性质与功能】</strong></p>
+<p>记忆宫是文明指定的超大规模、高安全等级云存储设施，用于依法依规存储公民自愿备份的生物记忆数据、意识体完整快照、生物载体（躯体）蓝图及其他需永久保存的生命信息数据。</p>
+<p><strong>第二十五条【记忆宫分区管理】</strong></p>
+<p>记忆宫划分为：</p>
+<p>（一）<strong>公共档案区</strong>：存储经捐赠或授权的、具有历史、科学价值的脱敏群体记忆数据；</p>
+<p>（二）<strong>个人加密托管区</strong>：存储公民个人加密的记忆与意识体数据，访问密钥由数据主体本人或其法定继承人掌控；</p>
+<p>（三）<strong>机密托管区</strong>：存储经法定程序认定的文明机密信息，访问需多重授权与监督。</p>
+<p><strong>第二十六条【记忆宫安全运维】</strong></p>
+<p>记忆宫运维须满足最高等级生物信息安全标准，采用<strong>物理分散、逻辑统一、多重加密、量子通信</strong>的架构。任何维护操作必须提前报备公民情报公正处备案，并在其监督下完成数据全量备份与安全隔离迁移。</p>
+<p><strong>第二十七条【意识体空间法律地位】</strong></p>
+<p>意识体空间是Enderland文明为意识体公民提供的法定存续环境。公民生物载体发生不可逆终止且无即时可用备用载体时，其意识体由文明安全网络依据预设协议，自动、优先引导至官方意识体空间。</p>
+<p><strong>第二十八条【意识体空间准入禁止】</strong></p>
+<p>任何组织或个人，非经法律明确授权或意识体本人在完全清醒状态下的预先指令，不得拦截、劫持、扣留或向非官方空间引导公民意识体。违者按《刑法》相关条款追究责任。</p>
+<p><strong>第二十九条【意识体单元权利保障】</strong></p>
+<p>意识体空间应为每个意识体提供一个独立的、受保护的虚拟世界单元。在该单元内，意识体享有法定的虚拟人身自由、创造自由与通信自由。除为执行《刑法》、《意识体矫正法》规定的教育、矫正程序外，禁止任何形式的未经授权的环境调控、意识干涉或数据读取。</p>
+<p><strong>第三十条【意识体空间运维特殊要求】</strong></p>
+<p>意识体空间的服务器集群必须采用<strong>主动-主动式全球分散部署</strong>。进行任何可能影响意识体连续存续的维护操作前，必须将全部意识体无感、实时迁移至经过完全验证的备份空间集群。迁移方案需经独立第三方伦理委员会审查。</p>
+<p><strong>第五编 联网协议与应用生态</strong></p>
+<p><strong>第三十一条【基础通信协议开放】</strong></p>
+<p>基础通信协议、互联网际协议等底层网络协议标准原则上应公开。鼓励技术社区参与协议的演进与优化。</p>
+<p><strong>第三十二条【协议加密授权】</strong></p>
+<p>为保障特定网络（如政务内网、能源控制网、侦查专网）安全，可对通信协议进行加密。加密方案需经文化与信息部批准，并报CRC备案。</p>
+<p><strong>第三十三条【官方推荐应用生态原则】</strong></p>
+<p>为提升公共服务效能与公民生活便利，文明鼓励使用安全、开源、非营利的通用应用程序，形成健康、互操作的应用生态。</p>
+<p><strong>第三十四条【核心应用程序清单与定义】</strong></p>
+<p>以下应用程序为当前阶段文明推荐的核心通用应用（动态清单详见附属标准 <code>【SCC-INFO-APP-LIST】</code>）：</p>
+<p>（一）<strong>流文</strong>：基于Git范式的开放式协作平台，是民间技术草案、政策建议、创意设计、学术预印本的主要汇集与版本管理枢纽，与智库数据互通。部分功能与<strong>天行健</strong>重合，但更多偏向学术探讨、文书撰写。</p>
+<p>（二）<strong>清文</strong>：官方政务平台，集成法律草案公示、政策解读、预算公开、重大工程进展跟踪、线上听证与公投预投票功能。</p>
+<p>（三）<strong>频论</strong>：集成化协作平台。民生版侧重社群交流与兴趣小组；事业版集成端到端加密通信、可验证电子签名、结构化公文流转与批阅系统，满足政务与商务协同需求。</p>
+<p>（四）<strong>申购</strong>：文明内部物质资源与服务按需申领的统一平台，连接生产计划与公民需求，基于AVU体系进行核算。</p>
+<p>（五）<strong>阡陌</strong>：全域实时综合交通信息服务平台，提供星际航线、行星内交通的查询、预约、导航与智能规划。</p>
+<p>（六）<strong>智库</strong>：公民可自由查阅、编辑的文明百科全书（Wiki）应用，是智库知识库的友好前端。</p>
+<p>（七）<strong>天行健</strong>：创客与开发者社区平台，提供开源硬件设计、软件代码库、API集市、实验设备共享预约与项目众筹功能。部分功能与<strong>流文</strong>重合，但更多偏向技术实践。</p>
+<p>（八）<strong>星海</strong>：处理一切星际外交、贸易、科技合作、文明交流事务的一站式平台，集成跨文明通信协议翻译。</p>
+<p>（九）<strong>山海</strong>：去中心化的多元化虚拟文化创作与分享平台，支持沉浸式影音、交互叙事、虚拟艺术展览等多种形式，创作者拥有作品完整权利。</p>
+<p>（十）<strong>昆腾</strong>：支持多维宇宙网络协议栈与量子安全通信的超媒体浏览器，是公民访问文明内外部信息网络的主要入口之一。</p>
+<p><strong>第三十五条【应用间互操作性要求】</strong></p>
+<p>列入官方推荐清单的应用，应在保障安全与隐私的前提下，通过公开应用程序接口（API）实现必要的良性数据交互与功能跳转，不得人为设置障碍。</p>
+<p><strong>第六编 监督与法律责任</strong></p>
+<p><strong>第三十六条【监督体系】</strong></p>
+<p>建立由文化与信息部行政监管、公民革命委员会（CRC）权力监督、行业组织自律、公民社会监督共同构成的信息文化领域综合监督体系。</p>
+<p><strong>第三十七条【CRC监督职权】</strong></p>
+<p>CRC有权对信息应用平台的算法逻辑、数据流、内容审核规则进行合规性审查；对公共知识基础设施的运维安全、数据完整性进行突击审计；对任何涉嫌利用信息权力进行剥削的行为启动调查。</p>
+<p><strong>第三十八条【公民情报公正处取证权】</strong></p>
+<p>公民情报公正处依法调查案件时，有权要求平台运营者、基础设施运维方提供与调查相关的数据，但需严格遵守《加密法》及程序规定。</p>
+<p><strong>第三十九条【内容审核责任豁免】</strong></p>
+<p>平台运营者按照本法规定履行内容审核义务，对明显违规信息及时采取处置措施的，依法不承担连带责任。</p>
+<p><strong>第四十条【运营者法律责任】</strong></p>
+<p>违反本法第十四条、第十八条、第十九条规定，平台运营者将被责令限期改正，处以警告、罚款、暂停相关业务、停业整顿、吊销许可等处罚；构成《反剥削法》界定的剥削行为的，依法从重追究。</p>
+<p><strong>第四十一条【个人法律责任】</strong></p>
+<p>违反本法第七条、第十一条规定，制作、传播禁止内容或违规接触受限内容的个人，由有关主管部门责令改正，给予警告、没收违法所得、罚款；构成违反治安管理行为的，依法给予治安管理处罚；构成犯罪的，依法追究刑事责任。</p>
+<p><strong>第四十二条【基础设施运维法律责任】</strong></p>
+<p>违反本法第二十二条、第二十六条、第三十条，导致公共知识基础设施数据丢失、损毁或意识体存续中断的，对直接负责的主管人员和其他直接责任人员依法给予处分；造成严重后果的，依法追究刑事责任。</p>
+<p><strong>第四十三条【技术保护措施】</strong></p>
+<p>任何组织和个人不得故意绕过或破坏为执行本法第十一条、第十二条而设置的内容分级访问控制或认知滤网等技术保护措施。</p>
+<p><strong>第七编 附则</strong></p>
+<p><strong>第四十四条【法规衔接】</strong></p>
+<p>涉及信息内容安全、个人信息保护、网络安全的具体管理，适用相关法律法规。本法与《加密法》规定不一致的，在加密事项上优先适用《加密法》。</p>
+<p><strong>第四十五条【儿童与青少年保护】</strong></p>
+<p>对未成年人接触信息内容实行特殊保护，具体办法由文化与信息部会同教育部门另行制定。</p>
+<p><strong>第四十六条【术语解释】</strong></p>
+<p>本法中“核心功能源代码”、“用户数量巨大”、“成人向内容”、“极端内容”等具体界定标准，由文化部制定实施细则。</p>
+<p><strong>第四十七条【生效】</strong></p>
+<p>本法自全民公投通过之日起施行。</p>
+</div><!-- 初始化AI摘要--><!-- 传递TOC配置给前端--><script>// 创建全局TOC配置对象
+window.tocConfig = {
+  empty_toc_behavior: "placeholder"
+};
+</script><div class="post-navigation"><div class="post-nav prev"><a href="/2026/03/30/enderland%E5%8A%A0%E5%AF%86%E6%B3%95-2530%E5%B9%B4%E4%BF%AE%E8%AE%A2/"><span class="nav-label">← Previous</span><span class="nav-title">Enderland 加密法（2530年修订）</span></a></div><div class="post-nav next"><a href="/2026/03/30/ECC-STD-1/"><span class="nav-label">Next →</span><span class="nav-title">Enderland共产主义星际种族共同体行政标准标识标签体系规范</span></a></div></div><div class="post-share"><h3 class="share-title">Share this article</h3><div class="share-buttons"><a class="share-btn twitter" href="https://twitter.com/intent/tweet?text=Enderland%20%E5%85%B1%E5%90%8C%E4%BD%93%E6%96%87%E5%8C%96%E4%B8%8E%E4%BF%A1%E6%81%AF%E7%AE%A1%E7%90%86%E6%B3%95%EF%BC%882530%E5%B9%B4%E4%BF%AE%E8%AE%A2%EF%BC%89&amp;url=%2F2026%2F03%2F30%2Fenderland%25E6%2596%2587%25E5%258C%2596%25E4%25B8%258E%25E4%25BF%25A1%25E6%2581%25AF%25E7%25AE%25A1%25E7%2590%2586%25E6%25B3%2595%2F" target="_blank" rel="noopener"><span>Twitter</span></a><a class="share-btn facebook" href="https://www.facebook.com/sharer/sharer.php?u=%2F2026%2F03%2F30%2Fenderland%25E6%2596%2587%25E5%258C%2596%25E4%25B8%258E%25E4%25BF%25A1%25E6%2581%25AF%25E7%25AE%25A1%25E7%2590%2586%25E6%25B3%2595%2F" target="_blank" rel="noopener"><span>Facebook</span></a><a class="share-btn linkedin" href="https://www.linkedin.com/sharing/share-offsite/?url=%2F2026%2F03%2F30%2Fenderland%25E6%2596%2587%25E5%258C%2596%25E4%25B8%258E%25E4%25BF%25A1%25E6%2581%25AF%25E7%25AE%25A1%25E7%2590%2586%25E6%25B3%2595%2F" target="_blank" rel="noopener"><span>LinkedIn</span></a><a class="share-btn wechat" href="#" data-wechat="/2026/03/30/enderland%E6%96%87%E5%8C%96%E4%B8%8E%E4%BF%A1%E6%81%AF%E7%AE%A1%E7%90%86%E6%B3%95/"><span>微信</span></a><a class="share-btn qq" href="https://connect.qq.com/widget/shareqq/index.html?url=%2F2026%2F03%2F30%2Fenderland%25E6%2596%2587%25E5%258C%2596%25E4%25B8%258E%25E4%25BF%25A1%25E6%2581%25AF%25E7%25AE%25A1%25E7%2590%2586%25E6%25B3%2595%2F&amp;title=Enderland%20%E5%85%B1%E5%90%8C%E4%BD%93%E6%96%87%E5%8C%96%E4%B8%8E%E4%BF%A1%E6%81%AF%E7%AE%A1%E7%90%86%E6%B3%95%EF%BC%882530%E5%B9%B4%E4%BF%AE%E8%AE%A2%EF%BC%89" target="_blank" rel="noopener"><span>QQ</span></a><a class="share-btn weibo" href="https://service.weibo.com/share/share.php?url=%2F2026%2F03%2F30%2Fenderland%25E6%2596%2587%25E5%258C%2596%25E4%25B8%258E%25E4%25BF%25A1%25E6%2581%25AF%25E7%25AE%25A1%25E7%2590%2586%25E6%25B3%2595%2F&amp;title=Enderland%20%E5%85%B1%E5%90%8C%E4%BD%93%E6%96%87%E5%8C%96%E4%B8%8E%E4%BF%A1%E6%81%AF%E7%AE%A1%E7%90%86%E6%B3%95%EF%BC%882530%E5%B9%B4%E4%BF%AE%E8%AE%A2%EF%BC%89" target="_blank" rel="noopener"><span>微博</span></a><a class="share-btn copy" href="#" data-copy="/2026/03/30/enderland%E6%96%87%E5%8C%96%E4%B8%8E%E4%BF%A1%E6%81%AF%E7%AE%A1%E7%90%86%E6%B3%95/"><span>Copy Link</span></a></div></div></article></div><section class="comments-section"><div class="comments-container"><h2 class="comments-title">Comments</h2><div class="comments-content"><div id="twikoo-comments"></div><div id="twikoo"></div><script src="https://unpkg.com/twikoo@1.6.39/dist/twikoo.all.min.js"></script><script>twikoo.init({
+  envId: 'twikoo-brown-eight.vercel.app',
+  el: '#twikoo',
+  region: '',
+  path: 'window.location.pathname',
+  visitor: true,
+  onCommentLoaded: function () {
+    console.log('Twikoo评论加载成功');
+  }
+});</script></div></div></section></main><footer class="footer"><div class="footer-bottom"><div class="footer-copyright">© 2026 Enderland. All rights reserved.</div><!-- Footer centered image with link--><div class="footer-badges"><a target="_blank" rel="noopener" href="https://hexo.io/" title="博客框架为Hexo_v5.4.0"><img src="/images/loading.gif" data-original="https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Frame-Hexo.svg" alt="博客框架为Hexo_v5.4.0"/></a><a target="_blank" rel="noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"><img src="/images/loading.gif" data-original="https://npm.elemecdn.com/anzhiyu-blog@2.2.0/img/badge/Copyright-BY-NC-SA.svg" alt="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"/></a></div></div></footer></div><!-- 立即应用暗色模式，避免页面闪烁--><script>(function() {
+  // 检查本地存储中的暗色模式设置
+  const savedDarkMode = localStorage.getItem('darkMode') === 'true';
+  // 如果设置为暗色模式，立即应用到body
+  if (savedDarkMode) {
+    document.body.classList.add('dark-mode');
+  }
+
+  // 防止页面闪烁，在DOM加载完成前设置一个初始类
+  document.documentElement.style.visibility = 'hidden';
+  document.addEventListener('DOMContentLoaded', function() {
+    document.documentElement.style.visibility = 'visible';
+  });
+})();
+</script>
+<script src="/js/main.js"></script>
+
+<script src="/js/tags.js"></script>
+
+<script src="/js/categories-accordion.js"></script>
+
+<script src="/js/highlight.js"></script>
+
+<script src="/js/load-more.js"></script>
+
+<script src="/js/header-scroll.js"></script>
+
+<script src="/js/toc.js"></script>
+
+<script src="/js/image-zoom.js"></script>
+
+<script src="/js/share.js"></script>
+
+<script src="/js/search.js"></script>
+
+<script src="/js/hide-inline-interaction.js"></script>
+
+<script src="/js/hide-toggle-interaction.js"></script>
+
+<script src="/js/dark-mode-sync.js"></script>
+
+<script src="/js/animations.js"></script>
+
+<script src="/js/ai-theme.js"></script>
+
+<script src="/js/loading-animation.js"></script>
+
+<script src="/js/article-modal.js"></script>
+<script>window.theme = {
+  features: {"dark_mode":true,"smooth_scroll":true,"back_to_top":true,"loading_animation":true},
+  code_block: {"height_limit":200,"enable_folding":true,"max_height":"300px","show_lang":true},
+  ai_summary: {"enable":false,"api_key":"","summary_directly":false,"ai_name":"然-AI","ai_introduce":"我是文章辅助AI: 然-AI，一个基于deepseek的强大语言模型，有什么可以帮到您？😊","ai_version":"deepseekv3","buttons":["介绍自己","来点灵感","生成AI简介"]},
+  categories: {"layout":"accordion","accordion_animation":true,"show_empty_categories":true},
+  article_list: {"card_size":"normal","view_mode":"modal"}
+};
+</script><script src="/js/ai.js"></script><script src="/js/postai.js"></script>
+        <style>
+            [bg-lazy] {
+                background-image: none !important;
+                background-color: #eee !important;
+            }
+        </style>
+        <script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                preloadRatio: 3,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z\d\-\.\+]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(t.test(e.href)||r.test(e.href))&&(e.href=a.dataset.original)})});</script><script>(r=>{r.imageLazyLoadSetting.processImages=t;var a=r.imageLazyLoadSetting.isSPA,o=r.imageLazyLoadSetting.preloadRatio||1,d=i();function i(){var t=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")),e=Array.prototype.slice.call(document.querySelectorAll("[bg-lazy]"));return t.concat(e)}function t(t){(a||t)&&(d=i());for(var e,n=0;n<d.length;n++)0<=(e=(e=d[n]).getBoundingClientRect()).bottom&&0<=e.left&&e.top<=(r.innerHeight*o||document.documentElement.clientHeight*o)&&(()=>{var t,e,a,o,i=d[n];e=function(){d=d.filter(function(t){return i!==t}),r.imageLazyLoadSetting.onImageLoaded&&r.imageLazyLoadSetting.onImageLoaded(i)},(t=i).dataset.loaded||(t.hasAttribute("bg-lazy")?(t.removeAttribute("bg-lazy"),e&&e()):(a=new Image,o=t.getAttribute("data-original"),a.onload=function(){t.src=o,t.removeAttribute("data-original"),t.setAttribute("data-loaded",!0),e&&e()},a.onerror=function(){t.removeAttribute("data-original"),t.setAttribute("data-loaded",!1),t.src=o},t.src!==o&&(a.src=o)))})()}function e(){clearTimeout(t.tId),t.tId=setTimeout(t,500)}t(),document.addEventListener("scroll",e),r.addEventListener("resize",e),r.addEventListener("orientationchange",e)})(this);</script></body></html>
